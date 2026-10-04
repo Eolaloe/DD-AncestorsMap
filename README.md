@@ -1,114 +1,116 @@
+**English** · [한국어](README.ko.md) · [日本語](README.ja.md) · [简体中文](README.zh.md)
+
 # Ancestor's Map — DD Field Guide
 
-다키스트 던전 1을 하는 동안 **게임이 보여 주지 않는 상세 던전 지도 · 전투 정보 · 활동 일지**를 게임 화면 위에 띄워 주는 오버레이입니다.
-항상 최상위 창으로 떠서 전체화면 게임 위에 겹쳐지고, 앱을 클릭해도 입력은 게임이 그대로 받습니다.
+An overlay for Darkest Dungeon that puts **the dungeon map, combat numbers and an activity log the game never shows you** right on top of your game.
+It stays on top even over a fullscreen game, and clicking it doesn't steal your input — the game keeps receiving it.
 
-바닐라 정보를 고정으로 넣어 둔 것이 아닙니다. **지금 불러온 세이브에 켜진 본편 + DLC + 모드 데이터를 읽어 병합**하므로, 모드가 추가하거나 바꾼 골동품 · 적 · 장신구 · 기벽도 실제 인게임 값 그대로 보입니다. 다른 세이브를 불러오면 알아서 다시 맞춥니다.
+Nothing is hard-coded from vanilla. It **reads the base game, DLC and every mod enabled in your current save and merges them**, so curios, monsters, trinkets and quirks added or changed by mods show up with their real in-game values. Load a different save and it re-syncs on its own.
 
-**[⬇ 최신 버전 받기](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)**
+**[⬇ Download the latest version](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)**
 
-## 무엇이 되나
+## What it does
 
-- **상세 지도** — 인게임 지도와 같은 꼴에 골동품 · 함정 · 적 구성 · 상호작용 결과를 마우스 호버로. 퀘스트 골동품 · 보스 · 안뜰의 **최단 경로 안내**, 아직 남은 골동품의 **보급품 트래커**, 정찰 확률, 밝기 보정 수치, 특수 조우(별에서 온 존재 · 광신도 · 기는 혼돈 · 수집가) 안내.
-- **전투 정보** — 각 자리에서 쓸 수 있는 기술의 명중 · 피해 · 치명 · 효과 확률, 적의 기술 · 대상 선택 확률, 턴 순서, 스톨링(증원 방지 횟수 · 다음 라운드 예고), 후퇴 판정.
-- **활동 일지 · 미터기** — 전투 · 탐험 · 야영 기록이 자동으로 쌓이고, 영웅별 처치 · 입힌 피해 · 입은 피해 · 회복 · 스트레스를 막대그래프로 비교.
-- **도감 검색** — 적 · 장신구 · 마을 이벤트 · 질병 · 각성 · 붕괴 · 기벽을 이름 · 등급 · 직업 · 효과 어떤 값으로든. 모드 항목도 같이.
-- **마을에서** — 던전 · 길이별 **추천 보급품**, 건물 증축 · 추가 건물 **요구 재화 계산**(보유량 + 이번 원정 획득분 대비).
-- **화면 안내** — 오른쪽 위 물음표(?) 단추를 누르면 각 화면을 단계별로 짚어 설명합니다(마을에서도 샘플 원정으로).
+- **Detailed map** — Laid out like the in-game map. Hover any tile for curios, traps, enemy groups and interaction results. **Shortest-route guidance** to quest curios, the boss and the Courtyard, a **provision tracker** for curios you haven't touched yet, scouting chance, exact light-level modifiers, and alerts for special encounters (Thing from the Stars, Fanatic, Shambler, Collector).
+- **Combat info** — Accuracy, damage, crit and effect chance for every skill from every rank, which skill an enemy is likely to use and on whom, turn order, a stalling tracker (how many anti-reinforcement actions you've taken this round and what the next round will bring), and retreat odds.
+- **Activity log & meter** — Combat, exploration and camping are logged automatically, and a meter compares each hero's kills, damage dealt and taken, healing and stress.
+- **Database search** — Look up enemies, trinkets, town events, diseases, virtues, afflictions and quirks by name, rarity, class or effect. Modded entries included.
+- **In the Hamlet** — **Recommended provisions** by dungeon and length, and a **cost calculator** for building and district upgrades (against what you own plus this expedition's haul).
+- **Guided tour** — Press the **?** button in the top-right corner for a step-by-step tour of each screen (it uses a sample expedition, so it works in town too).
 
-일부 기능은 게임이 의도적으로 감추는 정보를 보여 줍니다. 지도는 기본으로 **탐색한 곳만** 보이고 전체 보기는 상단 단추로 켭니다. 턴 순서와 후퇴 성공 여부는 기본으로 켜져 있고, 전투 막대 가운데 타이틀을 눌러 끌 수 있습니다.
+Some features reveal information the game deliberately hides. By default the map shows **only explored areas**; the full map is a toggle at the top. Turn order and the retreat outcome are on by default — click the title in the middle of the combat bar to turn them off.
 
 <details>
-<summary>기능 자세히</summary>
+<summary>Full feature list</summary>
 
-### 지도
-- 인게임 지도와 비슷한 모양의 상세 지도. 탐색한 곳만 볼지, 전체를 볼지 고를 수 있습니다.
-- 남은 전투 · 골동품 · 함정 · 허기짐 칸 수와, 골동품에 쓸 보급품이 몇 개 필요한지 알려줍니다.
-- 칸에 마우스를 올리면 적 구성, 골동품에 쓸 보급품과 결과, 함정과 장애물의 효과, 허기짐 활성 여부, 비밀방을 볼 수 있습니다.
-- 핏빛 궁정 안뜰 대서사시 지도도 지원합니다.
+### Map
+- A detailed map shaped like the in-game one. Choose between explored areas only and the whole dungeon.
+- Counts of remaining battles, curios, traps and hunger tiles, plus how many provisions your curios will need.
+- Hover a tile to see the enemy group, which provisions a curio takes and what they do, trap and obstacle effects, whether hunger is about to hit, and secret rooms.
+- Supports the Crimson Court's Courtyard maps.
 
-### 길 안내 · 특수 인카운터 · 밝기
-- 퀘스트 골동품, 보스, 안뜰 대서사시까지 **가장 짧은 길**을 안내합니다.
-- 별에서 온 존재와 광신도는 지도에서 **위치를 짚어 주고**, 수집가와 기는 혼돈은 **등장 조건과 확률**을 알려줍니다.
-- 밝기에 따라 달라지는 스트레스, 정찰, 기습, 회피, 치명타, 적 명중과 피해, 추가 전리품 보정을 **정확한 수치**로 보여줍니다.
+### Routing, special encounters, light
+- The **shortest route** to quest curios, the boss and the Courtyard.
+- **Pinpoints** the Thing from the Stars and the Fanatic on the map, and shows **trigger conditions and odds** for the Collector and the Shambler.
+- **Exact numbers** for every light-level effect: stress, scouting, surprise, dodge, crit, enemy accuracy and damage, and bonus loot.
 
-### 전투
-- 이번 라운드 아군과 적의 **턴 순서**, 그리고 지금 누구 차례인지.
-- 초상에 마우스를 올리면 **전투 카드**가 뜹니다.
-  - 아군은 적 각 열을 칠 때의 명중, 피해, 치명타, 효과 확률 — 장신구 · 기벽 · 질병 · 버프를 모두 반영한 최종 성능이고, 게임이 따로 보여 주지 않는 숨은 보정까지 넣은 실제 명중률입니다.
-  - 적은 아군 각 열을 칠 때의 같은 수치와 함께, 어떤 기술을 쓸지 · 누구를 노릴지의 확률.
-  - 괴인이나 결투가처럼 모드가 바뀌는 캐릭터는 **지금 모드**의 모습과 기술로.
-- **스톨링** — 다음 라운드에 증원이 올 위험을 색으로 알려주고, 이번 라운드에 증원 방지 행동을 몇 번 했는지 실시간으로 셉니다.
-- **후퇴** — 성공 확률, 그리고 턴 순서를 켜 두면 지금 후퇴했을 때 성공할지 실패할지.
-- **원정 미터기** — 가운데 타이틀에 마우스를 올리면 이번 원정에서 영웅마다 처치, 입힌 피해, 입은 피해, 체력 회복, 받은 스트레스, 스트레스 해소, 기절을 비교합니다. 야영 기술과 식사, 아이템 회복도 셉니다.
+### Combat
+- This round's **turn order** for both sides, and whose turn it is right now.
+- Hover a portrait for a **combat card**.
+  - For heroes: accuracy, damage, crit and effect chance against each enemy rank — final values with trinkets, quirks, diseases and buffs applied, including hidden modifiers the game never displays.
+  - For enemies: the same numbers against each hero rank, plus the odds of which skill they'll use and who they'll target.
+  - Characters that change modes, like the Abomination or the Duelist, are shown in **their current mode** with that mode's skills.
+- **Stalling** — Color-coded risk of reinforcements next round, and a live count of anti-reinforcement actions taken this round.
+- **Retreat** — Success chance, and with turn order enabled, whether retreating right now will succeed.
+- **Expedition meter** — Hover the title in the middle to compare each hero's kills, damage dealt, damage taken, HP healed, stress taken, stress healed and stuns this expedition. Camping skills, meals and item heals count too.
 
-### 활동 일지
-- 전투와 탐험에서 일어난 일을 게임 용어와 색으로 기록합니다. 기술, 명중, 피해, 효과, 저항, 반격, 심장마비, 부가 행동부터 골동품, 함정, 장애물, 허기짐까지.
-- 판정은 짐작하지 않고 **게임이 띄운 판정 결과**를 그대로 읽어 적습니다.
-- 전투가 시작되면 자동으로 일지로, 끝나면 지도로 돌아갑니다.
-- 던전 한 번이 일지 하나이고, 세이브마다 최근 10개를 남겨 두어 다시 볼 수 있습니다.
+### Activity log
+- Records everything that happens in combat and exploration, using the game's own wording and colors: skills, hits, damage, effects, resists, ripostes, heart attacks and act-outs, plus curios, traps, obstacles and hunger.
+- Outcomes aren't guessed — it reads **the results the game itself displays**.
+- Switches to the log when a battle starts and back to the map when it ends.
+- One log per dungeon run; the last 10 per save are kept so you can look back.
 
-### 마을
-- 던전과 원정 길이에 맞는 **보급품 추천 수량**.
-- **도감** — 적, 장신구, 마을 이벤트, 질병, 각성, 붕괴, 기벽을 어떤 값으로든 검색.
-- **건물 증축 · 추가 건물 요구량** — 고른 단계에 필요한 재화를 보유량(영지 + 원정 중 획득)과 비교. 효과 설명은 인게임과 같고, 원정 중에도 열 수 있습니다.
+### Hamlet
+- **Recommended provision counts** for each dungeon and expedition length.
+- **Database** — Search enemies, trinkets, town events, diseases, virtues, afflictions and quirks by any value.
+- **Building & district costs** — Compares what a chosen upgrade tier needs against what you have (estate plus this expedition's loot). Effect text matches the game, and it's available mid-expedition too.
 
 </details>
 
-## 설치
+## Installation
 
-1. [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest) 에서 `AncestorsMap.zip` 을 받아 아무 폴더에 풉니다.
-2. `AncestorsMap.exe` 를 실행합니다. **.NET 8 Desktop Runtime** 이 필요하며, 없으면 설치 안내 창이 뜹니다.
-3. 게임을 켜면 세이브를 자동으로 찾습니다. 처음이면 물음표 단추로 화면 안내를 한 번 보세요.
+1. Download `AncestorsMap.zip` from [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest) and extract it anywhere.
+2. Run `AncestorsMap.exe`. It needs the **.NET 8 Desktop Runtime** — if it's missing, Windows will point you to the installer.
+3. Launch the game and the app finds your save automatically. On first run, take the tour with the **?** button.
 
-## 요구 · 호환
+## Requirements & compatibility
 
-- Windows 10/11, [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0).
-- 게임을 **64비트로 실행**해야 실시간 정보(턴 순서 · 스톨링 · 후퇴 · 골동품 창)를 읽습니다. 스팀 공개판 · coming_in_hot 베타, 스팀 · DRM 없는(`_windowsnosteam`) 실행 파일을 지원합니다. 32비트거나 아직 모르는 게임 버전이면 메모리는 읽지 않고 **세이브만으로 동작**하며, 활동 일지 위 상태 줄에 이유가 뜹니다.
-- 모드는 세이브에 적힌 활성 목록과 우선순위를 읽어 자동 반영합니다. 게임 데이터를 바꾸는 대부분의 모드와 함께 쓸 수 있습니다(던전 추가 모드는 농장+, 태양을 향한 섬, 버민타이드로 확인).
-- 스팀판 기준으로 만들고 DRM 없는 실행 파일로도 확인했습니다. GOG 등 다른 플랫폼은 게임 경로 · 세이브 위치 인식이 다를 수 있습니다.
-- 한국어 · English · 日本語 · 简体中文. 처음에는 게임 언어를 따라가고, 이름과 설명은 게임 번역을 그대로 씁니다.
+- Windows 10/11 and the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0).
+- Live combat data (turn order, stalling, retreat, curio windows) requires running the game **as 64-bit**. Supported: the Steam public build and the coming_in_hot beta, with either the Steam or the DRM-free (`_windowsnosteam`) executable. On 32-bit or an unrecognized game version the app skips memory reading, **runs from your save alone**, and tells you why in the status line above the activity log.
+- Mods are picked up automatically from the enabled list and load order in your save. Works alongside most mods that change game data (dungeon mods tested: Farmstead Plus, The Sunward Isles, Vermintide).
+- Built and tested on the Steam version, and confirmed on the DRM-free executable. Other platforms such as GOG may store the game or saves elsewhere and might not be detected.
+- English · 한국어 · 日本語 · 简体中文. It follows the game's language at first and uses the game's own translations for names and descriptions.
 
-## 안전
+## Safety
 
-- 세이브 · 게임 파일 · 게임 메모리에 **아무것도 쓰지 않습니다.** 게임에 코드를 끼워 넣지도 않습니다(후킹 · 인젝션 없음).
-- 메모리는 **읽기 권한으로만** 엽니다. 세이브는 한 턴 늦게 쓰이고 판정 결과는 세이브에 남지 않아서, 전투 중 실시간 값을 맞추는 데만 씁니다. 값을 찾아 **고치는** 치트 엔진과 달리, 찾아서 **보여 주기**만 합니다.
-- 통신은 **시작할 때 새 버전 확인 한 번**(GitHub 릴리스 조회)뿐입니다. 계정 · 키 · 수집 없음.
-- 다른 프로그램의 메모리를 읽는 특성상 일부 백신이 오탐할 수 있습니다. 받은 파일이 원본인지는 릴리스 노트의 SHA-256 으로 확인할 수 있습니다.
-- 그림과 문구는 설치된 게임에서 읽습니다. 게임 자산을 포함하지 않으며, 프로그램은 실행 파일 하나(약 3.5MB)입니다.
+- It **never writes** to your saves, game files or game memory, and never injects anything into the game (no hooks, no injection).
+- Game memory is opened **read-only**. Saves are written a turn late and roll outcomes aren't saved at all, so memory is used only to keep combat info live. Unlike Cheat Engine, which finds values to **change** them, this only finds values to **show** them.
+- The only network traffic is **one update check at startup** (a GitHub release lookup). No accounts, no keys, no data collection.
+- Because it reads another program's memory, some antivirus software may flag it. You can verify your download against the SHA-256 in the release notes.
+- Art and text are read from your game install. No game assets are bundled — the app is a single ~3.5 MB executable.
 
-## 업데이트
+## Updates
 
-새 버전이 나오면 앱을 켤 때 안내 창이 뜨고, "업데이트 확인"을 누르면 이 저장소의 릴리스 페이지가 열립니다. 자동으로 내려받거나 교체하지는 않습니다 — 새 zip 을 받아 덮어쓰면 됩니다. 왼쪽 위 서명을 누르면 지금 버전과 업데이트 확인 단추가 있습니다. 설정과 원정 기록은 `%LocalAppData%\AncestorsMap` 에 남습니다.
+When a new version is out, a notice appears when you start the app, and **Check for updates** opens this repository's release page. Nothing is downloaded or replaced automatically — just grab the new zip and overwrite. Click the signature in the top-left corner to see your current version and check for updates. Settings and expedition logs are kept in `%LocalAppData%\AncestorsMap`.
 
-## 조작
+## Controls
 
-| 키 · 마우스 | 동작 |
+| Key / mouse | Action |
 |---|---|
-| `` ` `` (Tab 위) | 보이기 · 숨기기 |
-| `Caps Lock` | 게임의 **기본 원정대 설정** 단추 누르기 (게임에 단축키가 없는 기능) |
-| `Home` | 도감 · 활동 일지 · 영지를 닫고 기본 화면(지도)으로 |
-| 좌클릭 드래그 · 우클릭 드래그 | 창 이동 · 지도 이동 |
-| 휠 · 휠 클릭 | 확대 · 축소 · 지도 ↔ 활동 일지 |
-| 창 경계 드래그 · 상단 슬라이더 | 창 크기 · 투명도 |
-| 물음표 단추 · 왼쪽 위 서명 | 화면 안내 · 앱 정보(버전 · 업데이트 확인) |
+| `` ` `` (above Tab) | Show / hide |
+| `Caps Lock` | Presses the game's **Default Party Order** button (the game has no hotkey for it) |
+| `Home` | Close the database, log or estate view and return to the map |
+| Left-drag · right-drag | Move the window · pan the map |
+| Wheel · wheel click | Zoom · switch between map and log |
+| Drag window edge · top slider | Resize · opacity |
+| **?** button · top-left signature | Guided tour · app info (version, update check) |
 
-`` ` ``, `Caps Lock`, `Home`, 게임 위 휠 클릭은 **게임 화면이 앞에 있을 때만** 동작하고, 다른 프로그램에서는 원래대로 쓰입니다.
+`` ` ``, `Caps Lock`, `Home` and wheel-clicking over the game **only work while the game window is in front**; everywhere else they behave normally.
 
-## 알려진 한계
+## Known limitations
 
-- 실시간 정보는 지원하는 64비트 게임 버전에서만 읽습니다. 게임이 업데이트되면 앱이 새 버전에 맞춰질 때까지 세이브만으로 동작합니다.
-- 추천 보급품 표는 영문 위키 · 공략 글 · 던전 생성 규칙 계산을 합친 참고값입니다.
-- 모든 모드를 검증하지는 못했습니다. 이상하게 보이면 아래로 알려 주세요.
+- Live data is only read on supported 64-bit game versions. After a game update, the app runs from saves alone until it's updated for the new version.
+- The recommended provisions table combines the English wiki, community guides and the dungeon generation rules — treat it as a guide.
+- Not every mod has been tested. If something looks off, please report it below.
 
-## 문제 신고
+## Reporting issues
 
-[Issues](https://github.com/Eolaloe/DD-AncestorsMap/issues) 에 아래를 함께 적어 주세요.
-- 앱 버전(왼쪽 위 서명 클릭) · 게임 버전(스팀 공개판 / coming_in_hot / DRM 없는 판)
-- 켜 둔 모드 목록 · 어느 화면에서 무엇을 했을 때인지 · 가능하면 스크린샷
+Open an [issue](https://github.com/Eolaloe/DD-AncestorsMap/issues) and include:
+- App version (click the signature, top left) and game version (Steam public / coming_in_hot / DRM-free)
+- Your enabled mods, which screen you were on and what you did, and a screenshot if you can
 
-## 라이선스 · 크레딧
+## License & credits
 
-[LICENSE](LICENSE) — 개인 사용 자유, 원본 그대로 출처를 밝힌 재배포만 허용, 판매 금지.
-Darkest Dungeon 은 Red Hook Studios 의 게임이며, 이 앱은 게임 자산을 포함하지 않습니다.
-Claude · ChatGPT 의 도움을 받아 만들었습니다.
+[LICENSE](LICENSE) — free for personal use; redistribution only unmodified and with attribution; no selling.
+Darkest Dungeon is a game by Red Hook Studios. This app doesn't include any game assets.
+Made with help from Claude and ChatGPT.
