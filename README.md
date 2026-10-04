@@ -3,7 +3,7 @@
 **[⬇ Download / 다운로드 / ダウンロード / 下载](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)**
 
 <details>
-<summary><b>한국어</b> — 다키스트 던전 상세 지도 · 전투 정보 · 활동 일지 오버레이</summary>
+<summary><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f1f0-1f1f7.png" width="20" alt="🇰🇷"> <b>한국어</b> — 다키스트 던전 상세 지도 · 전투 정보 · 활동 일지 오버레이</summary>
 
 다키스트 던전 1을 하는 동안 **게임이 보여 주지 않는 상세 던전 지도 · 전투 정보 · 활동 일지**를 게임 화면 위에 띄워 주는 오버레이입니다.
 항상 최상위 창으로 떠서 전체화면 게임 위에 겹쳐지고, 앱을 클릭해도 입력은 게임이 그대로 받습니다.
@@ -114,7 +114,7 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 </details>
 
 <details>
-<summary><b>日本語</b> — ダーケスト・ダンジョンの詳細マップ・戦闘情報・アクティビティログのオーバーレイ</summary>
+<summary><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f1ef-1f1f5.png" width="20" alt="🇯🇵"> <b>日本語</b> — ダーケスト・ダンジョンの詳細マップ・戦闘情報・アクティビティログのオーバーレイ</summary>
 
 ダーケスト・ダンジョンのプレイ中に、**ゲームが見せてくれない詳細なダンジョンマップ・戦闘情報・アクティビティログ**をゲーム画面の上に表示するオーバーレイです。
 フルスクリーンのゲームの上にも常に最前面で重なり、アプリをクリックしても入力はそのままゲーム側に届きます。
@@ -225,7 +225,7 @@ Claude と ChatGPT の助けを借りて作りました。
 </details>
 
 <details>
-<summary><b>简体中文</b> — 《暗黑地牢》详细地图 · 战斗数据 · 活动日志悬浮窗</summary>
+<summary><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f1e8-1f1f3.png" width="20" alt="🇨🇳"> <b>简体中文</b> — 《暗黑地牢》详细地图 · 战斗数据 · 活动日志悬浮窗</summary>
 
 一款《暗黑地牢》悬浮窗工具，在游戏画面上方显示**游戏本身不会给你看的详细地牢地图、战斗数据和活动日志**。
 即使游戏全屏也会始终置顶显示，点击工具窗口也不会抢走输入，操作仍然由游戏接收。
@@ -336,6 +336,8 @@ Claude と ChatGPT の助けを借りて作りました。
 </details>
 
 ---
+
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" width="20" alt="🇺🇸"> <b>English</b>
 
 An overlay for Darkest Dungeon that puts **the dungeon map, combat numbers and an activity log the game never shows you** right on top of your game.
 It stays on top even over a fullscreen game, and clicking it doesn't steal your input — the game keeps receiving it.
