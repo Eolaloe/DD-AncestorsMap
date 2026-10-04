@@ -10,6 +10,10 @@
 
 바닐라 정보를 고정으로 넣어 둔 것이 아닙니다. **지금 불러온 세이브에 켜진 본편 + DLC + 모드 데이터를 읽어 병합**하므로, 모드가 추가하거나 바꾼 골동품 · 적 · 장신구 · 기벽도 실제 인게임 값 그대로 보입니다. 다른 세이브를 불러오면 알아서 다시 맞춥니다.
 
+<p align="center">
+<img src="images/map_hover.webp" width="49%" alt="지도 칸에 마우스를 올리면 카드가 뜬다"> <img src="images/curio_preview.webp" width="49%" alt="골동품 창이 열리면 그 골동품 카드가 뜬다">
+</p>
+
 ### 무엇이 되나
 
 - **상세 지도** — 인게임 지도와 같은 꼴에 골동품 · 함정 · 적 구성 · 상호작용 결과를 마우스 호버로. 퀘스트 골동품 · 보스 · 안뜰의 **최단 경로 안내**, 아직 남은 골동품의 **보급품 트래커**, 정찰 확률, 밝기 보정 수치, 특수 조우(별에서 온 존재 · 광신도 · 기는 혼돈 · 수집가) 안내.
@@ -20,6 +24,11 @@
 - **화면 안내** — 오른쪽 위 물음표(?) 단추를 누르면 각 화면을 단계별로 짚어 설명합니다(마을에서도 샘플 원정으로).
 
 일부 기능은 게임이 의도적으로 감추는 정보를 보여 줍니다. 지도는 기본으로 **탐색한 곳만** 보이고 전체 보기는 상단 단추로 켭니다. 턴 순서와 후퇴 성공 여부는 기본으로 켜져 있고, 전투 막대 가운데 타이틀을 눌러 끌 수 있습니다.
+
+<table>
+<tr><td align="center"><img src="images/map.ko.webp" alt="지도"><br><sub>지도</sub></td><td align="center"><img src="images/hero.ko.webp" alt="영웅 전투 카드"><br><sub>영웅 전투 카드</sub></td><td align="center"><img src="images/foe.ko.webp" alt="적 전투 카드"><br><sub>적 전투 카드</sub></td></tr>
+<tr><td align="center"><img src="images/meter.ko.webp" alt="미터기"><br><sub>미터기</sub></td><td align="center"><img src="images/codex.ko.webp" alt="도감"><br><sub>도감</sub></td><td align="center"><img src="images/supplies.ko.webp" alt="권장 보급품"><br><sub>권장 보급품</sub></td></tr>
+</table>
 
 #### 지도
 - 인게임 지도와 비슷한 모양의 상세 지도. 탐색한 곳만 볼지, 전체를 볼지 고를 수 있습니다.
@@ -87,6 +96,7 @@
 | `Caps Lock` | 게임의 **기본 원정대 설정** 단추 누르기 (게임에 단축키가 없는 기능) |
 | `Home` | 도감 · 활동 일지 · 영지를 닫고 기본 화면(지도)으로 |
 | 좌클릭 드래그 · 우클릭 드래그 | 창 이동 · 지도 이동 |
+| 앱 지도의 방 클릭 | 게임에서 그 방으로 이동 (방에 있을 때 이어진 방) |
 | 휠 · 휠 클릭 | 확대 · 축소 · 지도 ↔ 활동 일지 |
 | 창 경계 드래그 · 상단 슬라이더 | 창 크기 · 투명도 |
 | 물음표 단추 · 왼쪽 위 서명 | 화면 안내 · 앱 정보(버전 · 업데이트 확인) |
@@ -121,6 +131,10 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 
 バニラの情報を固定で埋め込んでいるわけではありません。**いまロードしているセーブで有効な本編・DLC・MODのデータを読み込んで統合する**ので、MODで追加・変更されたキュリオ・敵・トリンケット・奇癖も、実際のゲーム内の数値どおりに表示されます。別のセーブをロードしても自動で合わせ直します。
 
+<p align="center">
+<img src="images/map_hover.webp" width="49%" alt="マスにマウスを乗せるとカードを表示"> <img src="images/curio_preview.webp" width="49%" alt="キュリオの画面が開くとそのカードを表示">
+</p>
+
 ### できること
 
 - **詳細マップ** — ゲーム内マップと同じ形。マスにマウスを乗せると、キュリオ・トラップ・敵の編成・調べたときの結果を表示します。クエスト用キュリオ・ボス・呪われた庭園への**最短ルート案内**、まだ調べていないキュリオに必要な**物資のトラッカー**、偵察確率、明るさによる補正値、特殊エンカウント（シング・フロム・ザ・スター、ファナティック、シャンブラー、コレクター）の案内も。
@@ -131,6 +145,11 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 - **画面ガイド** — 右上の **?** ボタンを押すと、各画面を順を追って説明します（サンプルの遠征を使うので、村にいても見られます）。
 
 一部の機能は、ゲームが意図的に隠している情報を表示します。マップは初期状態では**探索済みの場所だけ**を表示し、全体表示は上部のボタンで切り替えます。行動順と退却の成否は初期状態でオンになっていて、戦闘バー中央のタイトルをクリックするとオフにできます。
+
+<table>
+<tr><td align="center"><img src="images/map.ja.webp" alt="マップ"><br><sub>マップ</sub></td><td align="center"><img src="images/hero.ja.webp" alt="英雄の戦闘カード"><br><sub>英雄の戦闘カード</sub></td><td align="center"><img src="images/foe.ja.webp" alt="敵の戦闘カード"><br><sub>敵の戦闘カード</sub></td></tr>
+<tr><td align="center"><img src="images/meter.ja.webp" alt="メーター"><br><sub>メーター</sub></td><td align="center"><img src="images/codex.ja.webp" alt="データベース"><br><sub>データベース</sub></td><td align="center"><img src="images/supplies.ja.webp" alt="おすすめ物資"><br><sub>おすすめ物資</sub></td></tr>
+</table>
 
 #### マップ
 - ゲーム内マップに近い形の詳細マップ。探索済みの場所だけを見るか、全体を見るかを選べます。
@@ -198,6 +217,7 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 | `Caps Lock` | ゲームの**デフォルトの整列順**ボタンを押す（ゲームにショートカットのない機能） |
 | `Home` | データベース・アクティビティログ・領地を閉じて基本画面（マップ）へ |
 | 左ドラッグ・右ドラッグ | ウィンドウの移動・マップの移動 |
+| アプリのマップの部屋をクリック | ゲームでその部屋へ移動（部屋にいるとき、つながった部屋） |
 | ホイール・ホイールクリック | 拡大・縮小・マップとログの切り替え |
 | ウィンドウの縁をドラッグ・上部のスライダー | ウィンドウの大きさ・透明度 |
 | **?** ボタン・左上の署名 | 画面ガイド・アプリ情報（バージョン・更新確認） |
@@ -232,6 +252,10 @@ Claude と ChatGPT の助けを借りて作りました。
 
 工具里没有写死任何原版数据。它会**读取当前存档所启用的本体、DLC 和所有模组的数据并合并**，因此模组新增或修改的奇物、敌人、饰品和特质，也会按游戏内的实际数值显示。读取另一个存档时会自动重新同步。
 
+<p align="center">
+<img src="images/map_hover.webp" width="49%" alt="鼠标悬停在格子上即可显示卡片"> <img src="images/curio_preview.webp" width="49%" alt="打开奇物界面时显示该奇物的卡片">
+</p>
+
 ### 功能一览
 
 - **详细地图** — 与游戏内地图同样的布局。鼠标悬停在格子上即可查看奇物、陷阱、敌人编组和互动结果。提供前往任务奇物、首领和庭院的**最短路线导航**、尚未互动奇物所需的**补给追踪**、侦察几率、亮度带来的修正数值，以及特殊遭遇（星空怪、狂信者、跛行者、收集者）的提示。
@@ -242,6 +266,11 @@ Claude と ChatGPT の助けを借りて作りました。
 - **界面引导** — 点击右上角的 **?** 按钮，会逐步讲解每个界面（使用示例远征，在小镇里也能看）。
 
 部分功能会显示游戏刻意隐藏的信息。地图默认**只显示已探索的区域**，全图显示可通过顶部按钮切换。行动顺序和撤退成败默认开启，点击战斗栏中间的标题即可关闭。
+
+<table>
+<tr><td align="center"><img src="images/map.zh.webp" alt="地图"><br><sub>地图</sub></td><td align="center"><img src="images/hero.zh.webp" alt="英雄战斗卡片"><br><sub>英雄战斗卡片</sub></td><td align="center"><img src="images/foe.zh.webp" alt="敌人战斗卡片"><br><sub>敌人战斗卡片</sub></td></tr>
+<tr><td align="center"><img src="images/meter.zh.webp" alt="远征统计"><br><sub>远征统计</sub></td><td align="center"><img src="images/codex.zh.webp" alt="数据库"><br><sub>数据库</sub></td><td align="center"><img src="images/supplies.zh.webp" alt="推荐补给"><br><sub>推荐补给</sub></td></tr>
+</table>
 
 #### 地图
 - 与游戏内地图相近的详细地图，可选择只看已探索区域或查看整张地图。
@@ -309,6 +338,7 @@ Claude と ChatGPT の助けを借りて作りました。
 | `Caps Lock` | 按下游戏中的**初始队伍阵型**按钮（游戏没有为此提供快捷键） |
 | `Home` | 关闭数据库、活动日志或领地界面，回到默认界面（地图） |
 | 左键拖动 · 右键拖动 | 移动窗口 · 移动地图 |
+| 点击应用地图上的房间 | 在游戏中移动到该房间（身处房间时的相邻房间） |
 | 滚轮 · 滚轮点击 | 缩放 · 在地图和日志之间切换 |
 | 拖动窗口边缘 · 顶部滑块 | 调整窗口大小 · 透明度 |
 | **?** 按钮 · 左上角署名 | 界面引导 · 工具信息（版本、检查更新） |
@@ -344,6 +374,10 @@ It stays on top even over a fullscreen game, and clicking it doesn't steal your 
 
 Nothing is hard-coded from vanilla. It **reads the base game, DLC and every mod enabled in your current save and merges them**, so curios, monsters, trinkets and quirks added or changed by mods show up with their real in-game values. Load a different save and it re-syncs on its own.
 
+<p align="center">
+<img src="images/map_hover.webp" width="49%" alt="Hover a tile to see its card"> <img src="images/curio_preview.webp" width="49%" alt="The curio card pops up when a curio window opens">
+</p>
+
 ## What it does
 
 - **Detailed map** — Laid out like the in-game map. Hover any tile for curios, traps, enemy groups and interaction results. **Shortest-route guidance** to quest curios, the boss and the Courtyard, a **provision tracker** for curios you haven't touched yet, scouting chance, exact light-level modifiers, and alerts for special encounters (Thing from the Stars, Fanatic, Shambler, Collector).
@@ -354,6 +388,11 @@ Nothing is hard-coded from vanilla. It **reads the base game, DLC and every mod 
 - **Guided tour** — Press the **?** button in the top-right corner for a step-by-step tour of each screen (it uses a sample expedition, so it works in town too).
 
 Some features reveal information the game deliberately hides. By default the map shows **only explored areas**; the full map is a toggle at the top. Turn order and the retreat outcome are on by default — click the title in the middle of the combat bar to turn them off.
+
+<table>
+<tr><td align="center"><img src="images/map.en.webp" alt="Map"><br><sub>Map</sub></td><td align="center"><img src="images/hero.en.webp" alt="Hero combat card"><br><sub>Hero combat card</sub></td><td align="center"><img src="images/foe.en.webp" alt="Enemy combat card"><br><sub>Enemy combat card</sub></td></tr>
+<tr><td align="center"><img src="images/meter.en.webp" alt="Meter"><br><sub>Meter</sub></td><td align="center"><img src="images/codex.en.webp" alt="Database"><br><sub>Database</sub></td><td align="center"><img src="images/supplies.en.webp" alt="Recommended provisions"><br><sub>Recommended provisions</sub></td></tr>
+</table>
 
 <details>
 <summary>Full feature list</summary>
@@ -426,6 +465,7 @@ When a new version is out, a notice appears when you start the app, and **Check 
 | `Caps Lock` | Presses the game's **Default Party Order** button (the game has no hotkey for it) |
 | `Home` | Close the database, log or estate view and return to the map |
 | Left-drag · right-drag | Move the window · pan the map |
+| Click a room on the app map | Move there in the game (a connected room, while you're in a room) |
 | Wheel · wheel click | Zoom · switch between map and log |
 | Drag window edge · top slider | Resize · opacity |
 | **?** button · top-left signature | Guided tour · app info (version, update check) |
