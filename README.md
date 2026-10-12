@@ -20,10 +20,10 @@
 - **전투 정보** — 각 자리에서 쓸 수 있는 기술의 명중 · 피해 · 치명 · 효과 확률, 적의 기술 · 대상 선택 확률, 턴 순서, 스톨링(증원 방지 횟수 · 다음 라운드 예고), 후퇴 판정.
 - **활동 일지 · 미터기** — 전투 · 탐험 · 야영 기록이 자동으로 쌓이고, 영웅별 처치 · 입힌 피해 · 입은 피해 · 회복 · 스트레스를 막대그래프로 비교.
 - **도감 검색** — 적 · 장신구 · 마을 이벤트 · 질병 · 각성 · 붕괴 · 기벽을 이름 · 등급 · 직업 · 효과 어떤 값으로든. 모드 항목도 같이.
-- **마을에서** — 던전 · 길이별 **추천 보급품**, 건물 증축 · 추가 건물 **요구 재화 계산**(보유량 + 이번 원정 획득분 대비).
+- **마을에서** — 보유 영웅의 레벨 · 원정 횟수 · 누적 미터기를 비교하는 **영웅 표**, 던전 · 길이별 **추천 보급품**(던전 추가 모드 포함)과 줄을 두 번 누르면 상점을 대신 눌러 사 주는 **자동 구매**, 건물 증축 · 추가 건물 **요구 재화 계산**(보유량 + 이번 원정 획득분 대비).
 - **화면 안내** — 오른쪽 위 물음표(?) 단추를 누르면 각 화면을 단계별로 짚어 설명합니다(마을에서도 샘플 원정으로).
 
-일부 기능은 게임이 의도적으로 감추는 정보를 보여 줍니다. 지도는 기본으로 **탐색한 곳만** 보이고 전체 보기는 상단 단추로 켭니다. 턴 순서와 후퇴 성공 여부는 기본으로 켜져 있고, 전투 막대 가운데 타이틀을 눌러 끌 수 있습니다.
+일부 기능은 게임이 의도적으로 감추는 정보를 보여 줍니다. 지도는 기본으로 **탐색한 곳만** 보이고 전체 보기는 상단 단추로 켭니다. 아직 가 보지 않은 칸의 적 구성 · 허기짐 칸은 지도 아래 줄의 전투 · 허기짐 아이콘으로 끌 수 있습니다. 턴 순서와 후퇴 성공 여부는 기본으로 켜져 있고, 전투 막대 가운데 타이틀을 눌러 끌 수 있습니다.
 
 <table>
 <tr><td align="center"><img src="images/map.ko.webp" alt="지도"><br><sub>지도</sub></td><td align="center"><img src="images/hero.ko.webp" alt="영웅 전투 카드"><br><sub>영웅 전투 카드</sub></td><td align="center"><img src="images/foe.ko.webp" alt="적 전투 카드"><br><sub>적 전투 카드</sub></td></tr>
@@ -33,6 +33,7 @@
 #### 지도
 - 인게임 지도와 비슷한 모양의 상세 지도. 탐색한 곳만 볼지, 전체를 볼지 고를 수 있습니다.
 - 남은 전투 · 골동품 · 함정 · 허기짐 칸 수와, 골동품에 쓸 보급품이 몇 개 필요한지 알려줍니다.
+- 아래 줄의 전투 · 허기짐 아이콘을 누르면 **게임이 알려주지 않는 정보를 끌 수 있습니다** — 아직 가 보지 않은 칸의 특수 인카운터 위치와 적 구성, 지도의 허기짐 칸. 탐색한 곳만 보기와 따로 적용되고, 끈 상태는 다음 실행에도 유지됩니다.
 - 칸에 마우스를 올리면 적 구성, 골동품에 쓸 보급품과 결과, 함정과 장애물의 효과, 허기짐 활성 여부, 비밀방을 볼 수 있습니다.
 - 핏빛 궁정 안뜰 대서사시 지도도 지원합니다.
 
@@ -55,10 +56,12 @@
 - 전투와 탐험에서 일어난 일을 게임 용어와 색으로 기록합니다. 기술, 명중, 피해, 효과, 저항, 반격, 심장마비, 부가 행동부터 골동품, 함정, 장애물, 허기짐까지.
 - 판정은 짐작하지 않고 **게임이 띄운 판정 결과**를 그대로 읽어 적습니다.
 - 전투가 시작되면 자동으로 일지로, 끝나면 지도로 돌아갑니다.
-- 던전 한 번이 일지 하나이고, 세이브마다 최근 10개를 남겨 두어 다시 볼 수 있습니다.
+- 던전 한 번이 일지 하나이고, 원정이 끝나면 일지 맨 아래에 **최종 미터기**가 남습니다. 세이브마다 최근 10개를 남겨 두어 다시 볼 수 있습니다.
 
 #### 마을
-- 던전과 원정 길이에 맞는 **보급품 추천 수량**.
+- **영웅 표** — 마을 기본 화면에서 보유 영웅의 레벨, 원정 횟수, 걸음과 **누적 미터기**(처치, 입힌 피해, 입은 피해, 체력 회복, 받은 스트레스, 스트레스 해소, 기절)를 비교합니다. 누적은 이 기능이 생긴 뒤의 원정부터 쌓입니다. 초상에 마우스를 올리면 영웅의 모습과 무기 · 방어구 레벨, 전투 기술 레벨, 야영 기술을 볼 수 있습니다.
+- 보급품 구입 화면에서 던전과 원정 길이에 맞는 **보급품 추천 수량**. 켜 둔 던전 모드(안뜰+, 농장+, 태양을 향한 섬들, 버민타이드, 악마의 축제)의 던전도 함께 나오고, 고른 퀘스트의 줄을 강조해 그 던전을 표 맨 위로 올립니다.
+- **자동 구매** — 보급품 표의 줄을 두 번 누르면 그 줄의 추천 수량(범위는 큰 값)에 맞춰 게임 상점을 대신 눌러 삽니다. 이미 더 가지고 있으면 남는 만큼만 되팔고, 영웅이 무료로 준 보급품은 건드리지 않으며, 끝나면 상점 순서로 칸을 정리합니다. 크림슨 코트에서는 원정대의 핏빛 저주 영웅 수에 맞춰 피도 챙기고(저주 영웅 1명당 짧음 1 · 중간 2 · 긺 3 · 기진맥진 4개), 마을에서 대기 중인 영웅에게 필요한 피는 영지에 남깁니다.
 - **도감** — 적, 장신구, 마을 이벤트, 질병, 각성, 붕괴, 기벽을 어떤 값으로든 검색.
 - **건물 증축 · 추가 건물 요구량** — 고른 단계에 필요한 재화를 보유량(영지 + 원정 중 획득)과 비교. 효과 설명은 인게임과 같고, 원정 중에도 열 수 있습니다.
 
@@ -72,17 +75,18 @@
 
 - Windows 10/11, [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0).
 - 게임을 **64비트로 실행**해야 실시간 정보(턴 순서 · 스톨링 · 후퇴 · 골동품 창)를 읽습니다. 스팀 공개판 · coming_in_hot 베타, 스팀 · DRM 없는(`_windowsnosteam`) 실행 파일을 지원합니다. 32비트거나 아직 모르는 게임 버전이면 메모리는 읽지 않고 **세이브만으로 동작**하며, 활동 일지 위 상태 줄에 이유가 뜹니다.
-- 모드는 세이브에 적힌 활성 목록과 우선순위를 읽어 자동 반영합니다. 게임 데이터를 바꾸는 대부분의 모드와 함께 쓸 수 있습니다(던전 추가 모드는 Farmstead Plus, The Sunward Isles, Vermintide로 확인).
+- 모드는 세이브에 적힌 활성 목록과 우선순위를 읽어 자동 반영합니다. 게임 데이터를 바꾸는 대부분의 모드와 함께 쓸 수 있습니다(던전 추가 모드는 Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide, The Fiend Festival 로 확인).
 - 스팀판 기준으로 만들고 DRM 없는 실행 파일로도 확인했습니다. GOG 등 다른 플랫폼은 게임 경로 · 세이브 위치 인식이 다를 수 있습니다.
 - 한국어 · English · 日本語 · 简体中文. 처음에는 게임 언어를 따라가고, 이름과 설명은 게임 번역을 그대로 씁니다.
 
 ### 안전
 
 - 세이브 · 게임 파일 · 게임 메모리에 **아무것도 쓰지 않습니다.** 게임에 코드를 끼워 넣지도 않습니다(후킹 · 인젝션 없음).
+- 방 이동 · 기본 원정대 설정 · 자동 구매 같은 편의 기능은 사용자가 시킬 때만 게임 화면을 대신 클릭할 뿐, 게임 값을 직접 바꾸지 않습니다.
 - 메모리는 **읽기 권한으로만** 엽니다. 세이브는 한 턴 늦게 쓰이고 판정 결과는 세이브에 남지 않아서, 전투 중 실시간 값을 맞추는 데만 씁니다. 값을 찾아 **고치는** 치트 엔진과 달리, 찾아서 **보여 주기**만 합니다.
 - 통신은 **시작할 때 새 버전 확인 한 번**(GitHub 릴리스 조회)뿐입니다. 계정 · 키 · 수집 없음.
 - 다른 프로그램의 메모리를 읽는 특성상 일부 백신이 오탐할 수 있습니다. 받은 파일이 원본인지는 릴리스 노트의 SHA-256 으로 확인할 수 있습니다.
-- 그림과 문구는 설치된 게임에서 읽습니다. 게임 자산을 포함하지 않으며, 프로그램은 실행 파일 하나(약 3.5MB)입니다.
+- 그림과 문구는 설치된 게임에서 읽습니다. 게임 자산을 포함하지 않으며, 프로그램은 실행 파일 하나(약 3.8MB)입니다.
 
 ### 업데이트
 
@@ -94,9 +98,10 @@
 |---|---|
 | `` ` `` (Tab 위) | 보이기 · 숨기기 |
 | `Caps Lock` | 게임의 **기본 원정대 설정** 단추 누르기 (게임에 단축키가 없는 기능) |
-| `Home` | 도감 · 활동 일지 · 영지를 닫고 기본 화면(지도)으로 |
+| `Home` | 도감 · 활동 일지 · 영지를 닫고 기본 화면으로 (지도, 마을이면 영웅 표, 보급품 구입 중엔 보급품 표) |
 | 좌클릭 드래그 · 우클릭 드래그 | 창 이동 · 지도 이동 |
 | 앱 지도의 방 클릭 | 게임에서 그 방으로 이동 (방에 있을 때 이어진 방) |
+| 보급품 표의 줄 두 번 클릭 | 그 줄의 추천 수량대로 자동 구매 (보급품 구입 화면에서) |
 | 휠 · 휠 클릭 | 확대 · 축소 · 지도 ↔ 활동 일지 |
 | 창 경계 드래그 · 상단 슬라이더 | 창 크기 · 투명도 |
 | 물음표 단추 · 왼쪽 위 서명 | 화면 안내 · 앱 정보(버전 · 업데이트 확인) |
@@ -106,7 +111,8 @@
 ### 알려진 한계
 
 - 실시간 정보는 지원하는 64비트 게임 버전에서만 읽습니다. 게임이 업데이트되면 앱이 새 버전에 맞춰질 때까지 세이브만으로 동작합니다.
-- 추천 보급품 표는 영문 위키 · 공략 글 · 던전 생성 규칙 계산을 합친 참고값입니다.
+- 추천 보급품 표는 영문 위키 · 공략 글 · 던전 생성 규칙 계산을 합친 참고값입니다. 던전 모드의 값은 모드의 던전 생성 규칙과 골동품 등장 가중치로 계산한 추정치입니다.
+- 자동 구매는 실제 마우스 입력으로 상점을 누르므로, 진행 중에는 마우스를 움직이지 마세요.
 - 모든 모드를 검증하지는 못했습니다. 이상하게 보이면 아래로 알려 주세요.
 
 ### 문제 신고
@@ -141,10 +147,10 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 - **戦闘情報** — 各位置から使えるスキルの命中・ダメージ・クリティカル・効果の確率、敵がどのスキルを誰に使いそうか、行動順、戦闘の引き延ばし（ストーリング）の状況（このラウンドに増援を防ぐ行動を何回したか・次のラウンドに何が起きるか）、退却の判定。
 - **アクティビティログ・メーター** — 戦闘・探索・キャンプの記録が自動で残り、英雄ごとの撃破数・与ダメージ・被ダメージ・回復・ストレスを棒グラフで比較できます。
 - **データベース検索** — 敵・トリンケット・村のイベント・病気・徳・精神崩壊・奇癖を、名前・レア度・クラス・効果など、どんな値からでも検索できます。MODの項目も含みます。
-- **村で** — ダンジョンと遠征の長さに応じた**おすすめ物資**、建物・区画の強化に必要な**資源の計算**（手持ち＋今回の遠征で得た分と比較）。
+- **村で** — 所属英雄のレベル・遠征回数・累計メーターを比べる**英雄表**、ダンジョンと遠征の長さに応じた**おすすめ物資**（ダンジョン追加MODも含む）と、行を2回クリックすると店を代わりにクリックして買う**自動購入**、建物・区画の強化に必要な**資源の計算**（手持ち＋今回の遠征で得た分と比較）。
 - **画面ガイド** — 右上の **?** ボタンを押すと、各画面を順を追って説明します（サンプルの遠征を使うので、村にいても見られます）。
 
-一部の機能は、ゲームが意図的に隠している情報を表示します。マップは初期状態では**探索済みの場所だけ**を表示し、全体表示は上部のボタンで切り替えます。行動順と退却の成否は初期状態でオンになっていて、戦闘バー中央のタイトルをクリックするとオフにできます。
+一部の機能は、ゲームが意図的に隠している情報を表示します。マップは初期状態では**探索済みの場所だけ**を表示し、全体表示は上部のボタンで切り替えます。まだ訪れていないマスの敵の編成と空腹マスは、マップ下段の戦闘・空腹アイコンで隠せます。行動順と退却の成否は初期状態でオンになっていて、戦闘バー中央のタイトルをクリックするとオフにできます。
 
 <table>
 <tr><td align="center"><img src="images/map.ja.webp" alt="マップ"><br><sub>マップ</sub></td><td align="center"><img src="images/hero.ja.webp" alt="英雄の戦闘カード"><br><sub>英雄の戦闘カード</sub></td><td align="center"><img src="images/foe.ja.webp" alt="敵の戦闘カード"><br><sub>敵の戦闘カード</sub></td></tr>
@@ -154,6 +160,7 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 #### マップ
 - ゲーム内マップに近い形の詳細マップ。探索済みの場所だけを見るか、全体を見るかを選べます。
 - 残りの戦闘・キュリオ・トラップ・空腹マスの数と、キュリオに使う物資がいくつ必要かを表示します。
+- 下段の戦闘・空腹アイコンをクリックすると、**ゲームが示さない情報を隠せます** — まだ訪れていないマスの特殊エンカウントの位置と敵の編成、マップの空腹マス。探索済みの場所だけの表示とは別に働き、隠した状態は次回の起動でも保たれます。
 - マスにマウスを乗せると、敵の編成、キュリオに使う物資とその結果、トラップや障害物の効果、空腹が発生するかどうか、隠し部屋が分かります。
 - 赤の宮廷の呪われた庭園のマップにも対応しています。
 
@@ -176,10 +183,12 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 - 戦闘と探索で起きたことを、ゲームの用語と色のまま記録します。スキル・命中・ダメージ・効果・抵抗・カウンター・心臓発作・勝手な行動から、キュリオ・トラップ・障害物・空腹まで。
 - 判定は推測せず、**ゲームが表示した判定結果**をそのまま読み取って記録します。
 - 戦闘が始まると自動でログに、終わるとマップに戻ります。
-- ダンジョン1回につきログ1つ。セーブごとに直近10件を残すので、あとから見返せます。
+- ダンジョン1回につきログ1つ。遠征が終わるとログの最後に**最終メーター**が残ります。セーブごとに直近10件を残すので、あとから見返せます。
 
 #### 村
-- ダンジョンと遠征の長さごとの**おすすめ物資数**。
+- **英雄表** — 村の基本画面で、所属英雄のレベル・遠征回数・歩数と**累計メーター**（撃破数・与ダメージ・被ダメージ・HP回復・受けたストレス・ストレス回復・スタン）を比較します。累計はこの機能が追加された後の遠征から数えます。肖像にマウスを乗せると、英雄の姿と武器・防具のレベル、戦闘スキルのレベル、キャンプスキルが見られます。
+- 物資の購入画面で、ダンジョンと遠征の長さごとの**おすすめ物資数**。有効にしたダンジョンMOD（Courtyard Plus・Farmstead Plus・The Sunward Isles・Vermintide・The Fiend Festival）のダンジョンも表示し、選んだクエストの行を強調してそのダンジョンを表の一番上に移します。
+- **自動購入** — 物資表の行を2回クリックすると、その行のおすすめ数（範囲は大きい方）に合わせてゲームの店を代わりにクリックして買います。すでに多く持っていれば多い分だけ売り戻し、英雄が無料でくれた物資には手を付けず、終わると店の順に枠を整理します。赤の宮廷では、パーティーにいる赤の呪いの英雄の数に合わせて血も用意し（呪われた英雄1人につき 短い 1・普通 2・長い 3・疲れ果てる 4個）、村で待機している英雄に必要な血は領地に残します。
 - **データベース** — 敵・トリンケット・村のイベント・病気・徳・精神崩壊・奇癖を、どんな値からでも検索。
 - **建物・区画の強化に必要な量** — 選んだ段階に必要な資源を、手持ち（領地＋遠征中に得た分）と比較します。効果の説明はゲーム内と同じで、遠征中にも開けます。
 
@@ -193,17 +202,18 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 
 - Windows 10/11、[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)。
 - リアルタイムの情報（行動順・ストーリング・退却・キュリオの画面）を読むには、ゲームを **64ビットで起動**する必要があります。Steam の公開版と coming_in_hot ベータ、Steam 版・DRMフリー版（`_windowsnosteam`）の実行ファイルに対応しています。32ビット、またはまだ対応していないゲームのバージョンでは、メモリは読まず**セーブだけで動作**し、アクティビティログ上部のステータス欄に理由を表示します。
-- MODは、セーブに記録された有効なMODの一覧と優先順位を読んで自動で反映します。ゲームデータを変更するほとんどのMODと一緒に使えます（ダンジョン追加MODは Farmstead Plus、The Sunward Isles、Vermintide で確認済み）。
+- MODは、セーブに記録された有効なMODの一覧と優先順位を読んで自動で反映します。ゲームデータを変更するほとんどのMODと一緒に使えます（ダンジョン追加MODは Courtyard Plus、Farmstead Plus、The Sunward Isles、Vermintide、The Fiend Festival で確認済み）。
 - Steam 版をもとに作り、DRMフリー版の実行ファイルでも動作を確認しています。GOG など他のプラットフォームでは、ゲームやセーブの場所が異なり認識できない可能性があります。
 - English・한국어・日本語・简体中文。最初はゲームの言語に合わせ、名前や説明はゲームの翻訳をそのまま使います（農場など、公式に訳されていない部分は日本語化MODの訳に従う場合があります）。
 
 ### 安全性
 
 - セーブ・ゲームファイル・ゲームのメモリには**何も書き込みません**。ゲームにコードを差し込むこともありません（フック・インジェクションなし）。
+- 部屋の移動・デフォルトの整列順・自動購入といった便利機能は、操作したときにだけゲーム画面を代わりにクリックするもので、ゲームの値を直接変えることはありません。
 - メモリは**読み取り専用**で開きます。セーブは1ターン遅れて書かれ、判定結果はセーブに残らないため、戦闘中の値をリアルタイムに合わせるためだけに使います。チートエンジンが値を探して**書き換える**のに対し、こちらは探して**表示する**だけです。
 - 通信は**起動時の更新確認1回**（GitHub のリリース確認）だけです。アカウント・キー・データ収集はありません。
 - 他のプログラムのメモリを読む性質上、一部のウイルス対策ソフトが誤検知することがあります。ダウンロードしたファイルが本物かどうかは、リリースノートの SHA-256 で確認できます。
-- 画像や文章はインストール済みのゲームから読み込みます。ゲームの素材は同梱しておらず、アプリは実行ファイル1つ（約3.5MB）です。
+- 画像や文章はインストール済みのゲームから読み込みます。ゲームの素材は同梱しておらず、アプリは実行ファイル1つ（約3.8MB）です。
 
 ### アップデート
 
@@ -215,9 +225,10 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 |---|---|
 | `` ` ``（Tab の上） | 表示・非表示 |
 | `Caps Lock` | ゲームの**デフォルトの整列順**ボタンを押す（ゲームにショートカットのない機能） |
-| `Home` | データベース・アクティビティログ・領地を閉じて基本画面（マップ）へ |
+| `Home` | データベース・アクティビティログ・領地を閉じて基本画面へ（マップ、村では英雄表、物資の購入中は物資表） |
 | 左ドラッグ・右ドラッグ | ウィンドウの移動・マップの移動 |
 | アプリのマップの部屋をクリック | ゲームでその部屋へ移動（部屋にいるとき、つながった部屋） |
+| 物資表の行を2回クリック | その行のおすすめ数で自動購入（物資の購入画面で） |
 | ホイール・ホイールクリック | 拡大・縮小・マップとログの切り替え |
 | ウィンドウの縁をドラッグ・上部のスライダー | ウィンドウの大きさ・透明度 |
 | **?** ボタン・左上の署名 | 画面ガイド・アプリ情報（バージョン・更新確認） |
@@ -227,7 +238,8 @@ Claude · ChatGPT 의 도움을 받아 만들었습니다.
 ### 既知の制限
 
 - リアルタイムの情報は、対応している64ビット版のゲームでのみ読み取ります。ゲームがアップデートされると、アプリが新しいバージョンに対応するまではセーブだけで動作します。
-- おすすめ物資の表は、英語版 Wiki・攻略記事・ダンジョン生成ルールの計算をまとめた参考値です。
+- おすすめ物資の表は、英語版 Wiki・攻略記事・ダンジョン生成ルールの計算をまとめた参考値です。ダンジョンMODの値は、MODのダンジョン生成ルールとキュリオの出現の重みから計算した推定値です。
+- 自動購入は実際のマウス入力で店をクリックするため、実行中はマウスを動かさないでください。
 - すべてのMODを検証できてはいません。おかしな表示があれば、下記からお知らせください。
 
 ### 不具合の報告
@@ -262,10 +274,10 @@ Claude と ChatGPT の助けを借りて作りました。
 - **战斗信息** — 每个站位可用技能的命中、伤害、暴击和效果几率，敌人可能对谁使用哪个技能，行动顺序，拖回合（Stalling）计数（本回合做了几次阻止增援的行动、下回合会发生什么），以及撤退判定。
 - **活动日志与统计** — 自动记录战斗、探索和扎营，并以柱状图比较每位英雄的击杀、造成伤害、承受伤害、治疗和压力。
 - **数据库搜索** — 敌人、饰品、城镇事件、疾病、美德、折磨和特质，可按名称、稀有度、职业、效果等任意值搜索，模组内容也包括在内。
-- **在小镇时** — 按地牢和远征长度给出**推荐补给**，并计算建筑和区域建筑升级**所需资源**（与现有资源加本次远征所得相比较）。
+- **在小镇时** — 比较所有英雄等级、远征次数和累计统计的**英雄表**，按地牢和远征长度给出的**推荐补给**（包括新增地牢的模组），点两次表中的一行即可代为点击商店购买的**自动购买**，并计算建筑和区域建筑升级**所需资源**（与现有资源加本次远征所得相比较）。
 - **界面引导** — 点击右上角的 **?** 按钮，会逐步讲解每个界面（使用示例远征，在小镇里也能看）。
 
-部分功能会显示游戏刻意隐藏的信息。地图默认**只显示已探索的区域**，全图显示可通过顶部按钮切换。行动顺序和撤退成败默认开启，点击战斗栏中间的标题即可关闭。
+部分功能会显示游戏刻意隐藏的信息。地图默认**只显示已探索的区域**，全图显示可通过顶部按钮切换。尚未到过的格子里的敌人编组和饥饿格，可以用地图底部的战斗、饥饿图标隐藏。行动顺序和撤退成败默认开启，点击战斗栏中间的标题即可关闭。
 
 <table>
 <tr><td align="center"><img src="images/map.zh.webp" alt="地图"><br><sub>地图</sub></td><td align="center"><img src="images/hero.zh.webp" alt="英雄战斗卡片"><br><sub>英雄战斗卡片</sub></td><td align="center"><img src="images/foe.zh.webp" alt="敌人战斗卡片"><br><sub>敌人战斗卡片</sub></td></tr>
@@ -275,6 +287,7 @@ Claude と ChatGPT の助けを借りて作りました。
 #### 地图
 - 与游戏内地图相近的详细地图，可选择只看已探索区域或查看整张地图。
 - 显示剩余的战斗、奇物、陷阱和饥饿格数量，以及奇物需要多少补给。
+- 点击底部的战斗、饥饿图标，可以**隐藏游戏不会告诉你的信息**——尚未到过的格子里特殊遭遇的位置和敌人编组，以及地图上的饥饿格。与只看已探索区域的设置互不影响，隐藏状态在下次启动时也会保留。
 - 鼠标悬停在格子上可查看敌人编组、奇物所需的补给及结果、陷阱和障碍的效果、是否即将触发饥饿，以及隐藏房间。
 - 支持猩红庭院 DLC 的庭院地图。
 
@@ -297,10 +310,12 @@ Claude と ChatGPT の助けを借りて作りました。
 - 用游戏本身的用语和颜色记录战斗与探索中发生的一切：技能、命中、伤害、效果、抵抗、反击、心脏病发作、擅自行动，以及奇物、陷阱、障碍和饥饿。
 - 判定结果不靠推测，而是直接读取**游戏显示的判定结果**。
 - 战斗开始时自动切换到日志，结束后回到地图。
-- 每次进入地牢生成一份日志，每个存档保留最近 10 份，方便回顾。
+- 每次进入地牢生成一份日志，远征结束后日志末尾会留下**最终统计**。每个存档保留最近 10 份，方便回顾。
 
 #### 小镇
-- 每个地牢和远征长度的**推荐补给数量**。
+- **英雄表** — 在小镇主界面比较所有英雄的等级、远征次数、步数和**累计统计**（击杀、造成伤害、承受伤害、生命恢复、承受压力、压力缓解、眩晕）。累计从此功能加入后的远征开始计算。鼠标悬停在头像上，可查看英雄的外观、武器和护甲等级、战斗技能等级以及扎营技能。
+- 在补给购买界面按地牢和远征长度给出**推荐补给数量**。已启用的地牢模组（Courtyard Plus、Farmstead Plus、The Sunward Isles、Vermintide、The Fiend Festival）的地牢也会列出，并高亮所选任务的行，把该地牢移到表格最上方。
+- **自动购买** — 在补给表中点两次同一行，工具会按该行的推荐数量（范围取较大值）代为点击游戏商店购买。已经多带的只卖回多出的部分，英雄免费提供的补给不会动，完成后按商店顺序整理格子。在猩红庭院中，还会按队伍里受猩红诅咒的英雄人数准备血酿（每位受诅咒的英雄：小型 1、中型 2、大型 3、精疲力竭 4 个），并把城镇中待命英雄所需的血酿留在领地。
 - **数据库** — 敌人、饰品、城镇事件、疾病、美德、折磨和特质，可按任意值搜索。
 - **建筑与区域建筑所需资源** — 将所选升级阶段的需求与现有资源（领地加远征中获得的部分）进行比较。效果说明与游戏内一致，远征途中也能打开。
 
@@ -314,17 +329,18 @@ Claude と ChatGPT の助けを借りて作りました。
 
 - Windows 10/11，[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)。
 - 要读取实时数据（行动顺序、拖回合、撤退、奇物互动窗口），游戏必须以 **64 位运行**。支持 Steam 正式版和 coming_in_hot 测试版，Steam 版与无 DRM 版（`_windowsnosteam`）的可执行文件均可。如果是 32 位或尚未适配的游戏版本，工具不会读取内存，**只依靠存档运行**，并在活动日志上方的状态栏说明原因。
-- 模组会根据存档中记录的启用列表和加载顺序自动生效。可与大多数修改游戏数据的模组一起使用（新增地牢的模组已在 Farmstead Plus、The Sunward Isles、Vermintide 上验证）。
+- 模组会根据存档中记录的启用列表和加载顺序自动生效。可与大多数修改游戏数据的模组一起使用（新增地牢的模组已在 Courtyard Plus、Farmstead Plus、The Sunward Isles、Vermintide、The Fiend Festival 上验证）。
 - 基于 Steam 版开发和测试，也确认可在无 DRM 版可执行文件上运行。GOG 等其他平台的游戏或存档位置可能不同，可能无法识别。
 - English · 한국어 · 日本語 · 简体中文。默认跟随游戏语言，名称和说明直接使用游戏的翻译。
 
 ### 安全性
 
 - **不会写入**存档、游戏文件或游戏内存，也不会向游戏注入任何代码（无挂钩、无注入）。
+- 房间移动、初始队伍阵型、自动购买等便利功能，只在你操作时代为点击游戏画面，不会直接修改游戏数值。
 - 游戏内存以**只读**方式打开。存档会晚一回合写入，判定结果也不会保存在存档里，因此内存只用于让战斗数据保持实时。CE 修改器是找到数值后**修改**它，而本工具只是找到数值后**显示**出来。
 - 唯一的网络通信是**启动时的一次更新检查**（查询 GitHub 发布页）。不需要账号或密钥，也不收集任何数据。
 - 由于会读取其他程序的内存，部分杀毒软件可能会误报。可以用发布说明中的 SHA-256 核对下载的文件是否为原版。
-- 图片和文字均从已安装的游戏中读取，不附带任何游戏素材，工具本身只是一个约 3.5 MB 的可执行文件。
+- 图片和文字均从已安装的游戏中读取，不附带任何游戏素材，工具本身只是一个约 3.8 MB 的可执行文件。
 
 ### 更新
 
@@ -336,9 +352,10 @@ Claude と ChatGPT の助けを借りて作りました。
 |---|---|
 | `` ` ``（Tab 键上方） | 显示 / 隐藏 |
 | `Caps Lock` | 按下游戏中的**初始队伍阵型**按钮（游戏没有为此提供快捷键） |
-| `Home` | 关闭数据库、活动日志或领地界面，回到默认界面（地图） |
+| `Home` | 关闭数据库、活动日志或领地界面，回到默认界面（地图；在小镇时为英雄表，购买补给时为补给表） |
 | 左键拖动 · 右键拖动 | 移动窗口 · 移动地图 |
 | 点击应用地图上的房间 | 在游戏中移动到该房间（身处房间时的相邻房间） |
+| 点两次补给表中的一行 | 按该行推荐数量自动购买（在补给购买界面） |
 | 滚轮 · 滚轮点击 | 缩放 · 在地图和日志之间切换 |
 | 拖动窗口边缘 · 顶部滑块 | 调整窗口大小 · 透明度 |
 | **?** 按钮 · 左上角署名 | 界面引导 · 工具信息（版本、检查更新） |
@@ -348,7 +365,8 @@ Claude と ChatGPT の助けを借りて作りました。
 ### 已知限制
 
 - 实时数据只在已适配的 64 位游戏版本上读取。游戏更新后，在工具适配新版本之前只依靠存档运行。
-- 推荐补给表综合了英文 Wiki、社区攻略和地牢生成规则的计算，仅供参考。
+- 推荐补给表综合了英文 Wiki、社区攻略和地牢生成规则的计算，仅供参考。地牢模组的数值是根据模组的地牢生成规则和奇物出现权重计算的估算值。
+- 自动购买通过真实的鼠标输入点击商店，进行中请勿移动鼠标。
 - 并未验证所有模组。如果显示有异常，欢迎通过下方渠道反馈。
 
 ### 问题反馈
@@ -384,10 +402,10 @@ Nothing is hard-coded from vanilla. It **reads the base game, DLC and every mod 
 - **Combat info** — Accuracy, damage, crit and effect chance for every skill from every rank, which skill an enemy is likely to use and on whom, turn order, a stalling tracker (how many anti-reinforcement actions you've taken this round and what the next round will bring), and retreat odds.
 - **Activity log & meter** — Combat, exploration and camping are logged automatically, and a meter compares each hero's kills, damage dealt and taken, healing and stress.
 - **Database search** — Look up enemies, trinkets, town events, diseases, virtues, afflictions and quirks by name, rarity, class or effect. Modded entries included.
-- **In the Hamlet** — **Recommended provisions** by dungeon and length, and a **cost calculator** for building and district upgrades (against what you own plus this expedition's haul).
+- **In the Hamlet** — A **hero table** comparing every hero's level, expeditions and lifetime meter, **recommended provisions** by dungeon and length (dungeon mods included) with **auto-buy** — click a row twice and the app clicks the store for you — and a **cost calculator** for building and district upgrades (against what you own plus this expedition's haul).
 - **Guided tour** — Press the **?** button in the top-right corner for a step-by-step tour of each screen (it uses a sample expedition, so it works in town too).
 
-Some features reveal information the game deliberately hides. By default the map shows **only explored areas**; the full map is a toggle at the top. Turn order and the retreat outcome are on by default — click the title in the middle of the combat bar to turn them off.
+Some features reveal information the game deliberately hides. By default the map shows **only explored areas**; the full map is a toggle at the top. Enemy groups on unvisited tiles and hunger tiles can be hidden with the battle and hunger icons under the map. Turn order and the retreat outcome are on by default — click the title in the middle of the combat bar to turn them off.
 
 <table>
 <tr><td align="center"><img src="images/map.en.webp" alt="Map"><br><sub>Map</sub></td><td align="center"><img src="images/hero.en.webp" alt="Hero combat card"><br><sub>Hero combat card</sub></td><td align="center"><img src="images/foe.en.webp" alt="Enemy combat card"><br><sub>Enemy combat card</sub></td></tr>
@@ -400,6 +418,7 @@ Some features reveal information the game deliberately hides. By default the map
 ### Map
 - A detailed map shaped like the in-game one. Choose between explored areas only and the whole dungeon.
 - Counts of remaining battles, curios, traps and hunger tiles, plus how many provisions your curios will need.
+- Click the battle or hunger icon in the bottom row to **hide info the game doesn't give you** — special encounter locations and enemy groups on tiles you haven't visited, and hunger tiles on the map. This works separately from the explored-only view and stays set the next time you start the app.
 - Hover a tile to see the enemy group, which provisions a curio takes and what they do, trap and obstacle effects, whether hunger is about to hit, and secret rooms.
 - Supports the Crimson Court's Courtyard maps.
 
@@ -422,10 +441,12 @@ Some features reveal information the game deliberately hides. By default the map
 - Records everything that happens in combat and exploration, using the game's own wording and colors: skills, hits, damage, effects, resists, ripostes, heart attacks and act-outs, plus curios, traps, obstacles and hunger.
 - Outcomes aren't guessed — it reads **the results the game itself displays**.
 - Switches to the log when a battle starts and back to the map when it ends.
-- One log per dungeon run; the last 10 per save are kept so you can look back.
+- One log per dungeon run, with the **final meter** at the bottom once the expedition ends; the last 10 per save are kept so you can look back.
 
 ### Hamlet
-- **Recommended provision counts** for each dungeon and expedition length.
+- **Hero table** — On the town home screen, compare every hero's level, expeditions, steps and **lifetime meter** (kills, damage dealt, damage taken, HP healed, stress taken, stress healed, stuns). Lifetime totals count expeditions since this feature was added. Hover a portrait to see the hero's look, weapon and armor levels, combat skill levels and camping skills.
+- **Recommended provision counts** for each dungeon and expedition length on the provisioning screen. Dungeons from enabled dungeon mods (Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide, The Fiend Festival) are listed too, and the quest you picked is highlighted with its dungeon moved to the top.
+- **Auto-buy** — Click a row in the supply table twice and the app clicks the store for you to buy up to that row's recommended amounts (the higher number of a range). Extras are sold back, free supplies from heroes are left alone, and your slots are tidied into store order afterwards. With The Crimson Court, it also packs blood for each cursed hero in the party (1 for Short, 2 for Medium, 3 for Long, 4 for Exhausting per cursed hero), leaving in the Estate the blood that heroes waiting in town need.
 - **Database** — Search enemies, trinkets, town events, diseases, virtues, afflictions and quirks by any value.
 - **Building & district costs** — Compares what a chosen upgrade tier needs against what you have (estate plus this expedition's loot). Effect text matches the game, and it's available mid-expedition too.
 
@@ -441,17 +462,18 @@ Some features reveal information the game deliberately hides. By default the map
 
 - Windows 10/11 and the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0).
 - Live combat data (turn order, stalling, retreat, curio windows) requires running the game **as 64-bit**. Supported: the Steam public build and the coming_in_hot beta, with either the Steam or the DRM-free (`_windowsnosteam`) executable. On 32-bit or an unrecognized game version the app skips memory reading, **runs from your save alone**, and tells you why in the status line above the activity log.
-- Mods are picked up automatically from the enabled list and load order in your save. Works alongside most mods that change game data (dungeon mods tested: Farmstead Plus, The Sunward Isles, Vermintide).
+- Mods are picked up automatically from the enabled list and load order in your save. Works alongside most mods that change game data (dungeon mods tested: Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide, The Fiend Festival).
 - Built and tested on the Steam version, and confirmed on the DRM-free executable. Other platforms such as GOG may store the game or saves elsewhere and might not be detected.
 - English · 한국어 · 日本語 · 简体中文. It follows the game's language at first and uses the game's own translations for names and descriptions.
 
 ## Safety
 
 - It **never writes** to your saves, game files or game memory, and never injects anything into the game (no hooks, no injection).
+- Convenience features like room moves, Default Party Order and auto-buy only click the game screen for you when you ask; they never change game values directly.
 - Game memory is opened **read-only**. Saves are written a turn late and roll outcomes aren't saved at all, so memory is used only to keep combat info live. Unlike Cheat Engine, which finds values to **change** them, this only finds values to **show** them.
 - The only network traffic is **one update check at startup** (a GitHub release lookup). No accounts, no keys, no data collection.
 - Because it reads another program's memory, some antivirus software may flag it. You can verify your download against the SHA-256 in the release notes.
-- Art and text are read from your game install. No game assets are bundled — the app is a single ~3.5 MB executable.
+- Art and text are read from your game install. No game assets are bundled — the app is a single ~3.8 MB executable.
 
 ## Updates
 
@@ -463,9 +485,10 @@ When a new version is out, a notice appears when you start the app, and **Check 
 |---|---|
 | `` ` `` (above Tab) | Show / hide |
 | `Caps Lock` | Presses the game's **Default Party Order** button (the game has no hotkey for it) |
-| `Home` | Close the database, log or estate view and return to the map |
+| `Home` | Close the database, log or estate view and return to the home screen (the map; the hero table in town, the supply table while provisioning) |
 | Left-drag · right-drag | Move the window · pan the map |
 | Click a room on the app map | Move there in the game (a connected room, while you're in a room) |
+| Click a supply table row twice | Auto-buy that row's recommended amounts (on the provisioning screen) |
 | Wheel · wheel click | Zoom · switch between map and log |
 | Drag window edge · top slider | Resize · opacity |
 | **?** button · top-left signature | Guided tour · app info (version, update check) |
@@ -475,7 +498,8 @@ When a new version is out, a notice appears when you start the app, and **Check 
 ## Known limitations
 
 - Live data is only read on supported 64-bit game versions. After a game update, the app runs from saves alone until it's updated for the new version.
-- The recommended provisions table combines the English wiki, community guides and the dungeon generation rules — treat it as a guide.
+- The recommended provisions table combines the English wiki, community guides and the dungeon generation rules — treat it as a guide. Values for dungeon mods are estimates worked out from each mod's dungeon generation rules and curio weights.
+- Auto-buy clicks the store with real mouse input, so don't move the mouse while it runs.
 - Not every mod has been tested. If something looks off, please report it below.
 
 ## Reporting issues
