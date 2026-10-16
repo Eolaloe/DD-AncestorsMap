@@ -56,7 +56,7 @@
 - 아래 계수기에서 남은 칸을, 보급품 그림에서 그 품목의 사용처를 확인합니다. 전투·허기짐 아이콘으로 아직 가 보지 않은 칸의 적 구성과 허기짐 칸 표시를 따로 끌 수 있습니다. 정찰 확률, 밝기 보정, 특수 조우의 위치 또는 출현 조건도 볼 수 있습니다.
 - 게임에서 골동품·장애물·허기짐 창이 열리면 대응하는 카드가 뜹니다. 열을 누르면 게임의 선택지를 실행하며, 골동품 아이템 열은 해당 아이템을 사용합니다. 보급품이 부족한 열은 실행하지 않습니다.
 - 정찰된 함정 앞 자동 멈춤은 기본으로 켜져 있으며 함정 계수기로 끕니다. 해체는 자동으로 하지 않습니다. 카드에서 영웅을 고르면 그 영웅으로 해체를 시도합니다.
-- 탐험 대기 중 가방 단추나 `[I]`로 같은 품목 묶음을 합치고 칸을 정리합니다. 퀘스트 아이템은 제자리에, 빈 칸은 뒤에 둡니다. 원정대 단추로 전투 후 기본 원정대 자동 복귀를 켤 수 있습니다. 기본은 꺼짐이며, 켜면 전리품 창을 닫고 탐험으로 돌아왔을 때 복귀합니다.
+- 탐험 대기 중 가방 단추나 `[I]`로 같은 품목 묶음을 합치고 칸을 정리합니다. 퀘스트 아이템은 제자리에, 빈 칸은 뒤에 둡니다. 전투 후에는 전리품 창을 닫고 탐험으로 돌아왔을 때 기본 원정대로 자동 복귀합니다. 기본으로 켜져 있으며 원정대 단추로 끕니다.
 
 #### 기록과 마을 준비
 
@@ -85,7 +85,7 @@
 
 - **게임 파일·세이브·게임 메모리에 직접 쓰지 않으며, 게임 프로세스에 코드를 주입하지 않습니다.** 메모리는 읽기 권한으로 엽니다. 앱 자체의 설정과 원정 기록은 따로 저장합니다.
 - **입력 보조 기능은 실제 게임 조작입니다.** 방 이동, 카드 선택과 아이템 사용, 함정 해체, 자동 구매, 소지품 정리, 기본 원정대 설정은 게임에 클릭·키·끌어 놓기 입력을 보냅니다. 이 조작의 결과는 게임의 정상 저장에 반영될 수 있습니다.
-- 함정 앞 자동 멈춤은 이동 키·마우스 버튼을 떼는 입력과 이동 키 반복 차단을 사용합니다. **기본 켬**이며 함정 계수기로 끕니다. 전투 후 자동 원정대 복귀는 **기본 끔**이며 원정대 단추로 켭니다.
+- 함정 앞 자동 멈춤은 이동 키·마우스 버튼을 떼는 입력과 이동 키 반복 차단을 사용합니다. **기본 켬**이며 함정 계수기로 끕니다. 전투 후 자동 원정대 복귀도 **기본 켬**이며 원정대 단추로 끕니다.
 - 가방에 마우스를 올려 판매가를 볼 때도, 탐험 중 게임이 지도 탭이면 `[Tab]` 입력으로 소지품 탭을 엽니다. 보기 기능 중에도 이처럼 입력을 보내는 경우가 있습니다.
 - 자동 구매·정리 중에는 마우스를 움직이지 마세요. 정리할 때 `[Shift]`를 누르지 마세요. 게임의 버리기 조작과 겹쳐 앱이 끌어 놓기를 진행하지 않습니다.
 - 앱의 통신은 GitHub 릴리스 확인입니다. 시작할 때 자동 확인하며 앱 정보에서 수동으로 다시 확인할 수 있습니다. 계정·API 키가 필요 없고 게임 기록을 업로드하지 않습니다.
@@ -188,7 +188,7 @@ Darkest Dungeon 1の**マップ・戦闘情報・アクティビティ・ログ*
 - 下段のカウンターで残りのマスを、補給品のアイコンで使い道を確認できます。戦闘・空腹アイコンから、未訪問マスの敵編成と空腹マスの表示を個別に隠せます。偵察確率、明るさの補正、特殊エンカウントの位置や出現条件も表示します。
 - ゲームでキュリオ・障害物・空腹の画面が開くと、対応するカードが現れます。列をクリックするとゲームの選択肢を実行し、キュリオのアイテム列ならそのアイテムを使います。補給品が足りない列は実行しません。
 - 偵察済みトラップの手前での自動停止は初期状態でオンです。トラップのカウンターでオフにできます。自動解除はしません。カードで英雄を選ぶと、その英雄で解除を試みます。
-- 探索待機中にバッグか[I]を押すと、同じ品目をまとめて並べ直します。クエストアイテムはそのまま、空き枠は末尾に置きます。パーティーのボタンで戦闘後の自動整列を有効にできます。初期状態はオフで、有効にすると戦利品画面を閉じて探索に戻った時点でデフォルトの整列順に戻します。
+- 探索待機中にバッグか[I]を押すと、同じ品目をまとめて並べ直します。クエストアイテムはそのまま、空き枠は末尾に置きます。戦闘後は、戦利品画面を閉じて探索に戻った時点でデフォルトの整列順に自動で戻します。初期状態はオンで、パーティーのボタンでオフにできます。
 
 #### 記録と村での準備
 
@@ -217,7 +217,7 @@ Darkest Dungeon 1の**マップ・戦闘情報・アクティビティ・ログ*
 
 - **ゲームファイル・セーブ・ゲームメモリに直接書き込まず、ゲームのプロセスにコードを注入しません。** メモリは読み取り権限だけで開きます。アプリ自身の設定と遠征記録は別に保存します。
 - **操作補助は実際にゲームを操作します。** 部屋の移動、カードの選択とアイテム使用、トラップ解除、自動購入、所持品整理、整列は、クリック・キー・ドラッグ入力を送ります。その結果はゲームの通常のセーブに反映されることがあります。
-- トラップ手前の自動停止では、移動キーやマウスボタンを離す入力を送り、移動キーのリピート入力を止めます。**初期状態はオン**で、トラップのカウンターから切り替えます。戦闘後の自動整列は**初期状態でオフ**、パーティーのボタンで有効にします。
+- トラップ手前の自動停止では、移動キーやマウスボタンを離す入力を送り、移動キーのリピート入力を止めます。**初期状態はオン**で、トラップのカウンターから切り替えます。戦闘後の自動整列も**初期状態はオン**で、パーティーのボタンで切り替えます。
 - バッグにマウスを合わせて売却額を見るときも、探索中にゲームがマップタブを開いていれば、[Tab]入力で所持品タブを開きます。表示のために入力を送る場合もあります。
 - 自動購入・整理中はマウスを動かさないでください。整理時は[Shift]を押さないでください。ゲームの破棄操作と重なるため、アプリはドラッグを行いません。
 - 通信はGitHubのリリース確認に使います。起動時に自動で確認し、アプリ情報から手動でも確認できます。アカウントやAPIキーは不要で、ゲームの記録をアップロードしません。
@@ -320,7 +320,7 @@ Claude と Codex の助けを借りて作りました。
 - 下方计数器显示剩余格子，补给图标显示该物品的用途。战斗与饥饿图标可分别隐藏未到访格子的敌人组成和饥饿格。还可查看侦察概率、亮度修正，以及特殊遭遇的位置或出现条件。
 - 游戏打开奇物、障碍物或饥饿窗口时，工具会显示对应卡片。点击列即可执行游戏选项；点击奇物的物品列会使用相应物品。补给不足的列不会执行。
 - 已侦察陷阱前的自动停步默认开启，可点击陷阱计数器关闭。工具不会自动解除陷阱；需要在卡片中选择英雄，由该英雄尝试解除。
-- 探索待机时点击背包或按[I]，会合并同类堆叠并整理顺序。任务物品留在原位，空格移到末尾。队伍按钮可开启战斗后自动恢复初始队伍阵型；此功能默认关闭，开启后会在关闭战利品窗口、返回探索时恢复阵型。
+- 探索待机时点击背包或按[I]，会合并同类堆叠并整理顺序。任务物品留在原位，空格移到末尾。战斗后，关闭战利品窗口、返回探索时会自动恢复初始队伍阵型；此功能默认开启，可通过队伍按钮关闭。
 
 #### 记录与城镇准备
 
@@ -349,7 +349,7 @@ Claude と Codex の助けを借りて作りました。
 
 - **不会直接写入游戏文件、存档或游戏内存，也不会向游戏进程注入代码。** 内存仅以读取权限打开。工具自身的设置与远征记录另行保存。
 - **输入辅助会实际操作游戏。** 房间移动、卡片选项和物品使用、陷阱解除、自动购买、物品整理及阵型恢复，都会发送点击、按键或拖放输入。这些操作的结果可能由游戏正常写入存档。
-- 陷阱前自动停步会发送松开移动键或鼠标按钮的输入，并拦截移动键的重复输入。此功能**默认开启**，通过陷阱计数器切换。战斗后自动恢复阵型则**默认关闭**，通过队伍按钮开启。
+- 陷阱前自动停步会发送松开移动键或鼠标按钮的输入，并拦截移动键的重复输入。此功能**默认开启**，通过陷阱计数器切换。战斗后自动恢复阵型同样**默认开启**，通过队伍按钮关闭。
 - 将鼠标移到背包上查看售价时，如果探索中的游戏正显示地图标签，也会发送[Tab]来打开物品栏。因此，部分显示功能也会发送输入。
 - 自动购买或整理时请勿移动鼠标。整理时也请勿按住[Shift]；这会与游戏的丢弃操作冲突，工具因此不会执行拖放。
 - 联网用于查询GitHub发行版：启动时自动检查，也可在应用信息中手动检查。不需要账号或API密钥，不会上传游戏记录。
@@ -453,7 +453,7 @@ Nothing is hard-coded from vanilla. It **reads the base game, DLC and every mod 
 - The bottom counters show remaining tiles, while supply icons show where each item can be used. The battle and hunger icons separately hide enemy groups in unvisited tiles and hunger tile markers. You can also check scouting chance, light modifiers and special encounter locations or spawn conditions.
 - Opening a curio, obstacle or hunger window in the game brings up the matching card. Click a column to execute that choice in the game; an item column on a curio card uses the item. Columns that require more supplies than you have will not execute.
 - Automatic stopping before scouted traps is on by default. Toggle it with the trap counter. It does not disarm traps automatically: choose a hero on the card to attempt the disarm.
-- While idle in a dungeon, click the bag or press `[I]` to merge stacks and arrange your inventory. Quest items stay in place and empty slots move to the end. The party button enables automatic restoration of the default party order after combat. This is off by default; when enabled, it acts after the loot window closes and exploration resumes.
+- While idle in a dungeon, click the bag or press `[I]` to merge stacks and arrange your inventory. Quest items stay in place and empty slots move to the end. After combat, the default party order is restored automatically once the loot window closes and exploration resumes. This is on by default; turn it off with the party button.
 
 #### Records and town preparation
 
@@ -482,7 +482,7 @@ Nothing is hard-coded from vanilla. It **reads the base game, DLC and every mod 
 
 - **The app does not write directly to game files, saves or game memory, or inject code into the game process.** It opens memory with read permissions only. Its own settings and expedition records are stored separately.
 - **Input assistance does operate the game.** Room movement, card choices and item use, trap disarming, auto-buy, sorting and party reordering send clicks, keystrokes or drag-and-drop input. The game may save the results of these actions normally.
-- Automatic trap stopping sends key or mouse-button releases and blocks repeated movement-key input. It is **on by default**, controlled by the trap counter. Automatic party reordering after battle is **off by default**, controlled by the party button.
+- Automatic trap stopping sends key or mouse-button releases and blocks repeated movement-key input. It is **on by default**, controlled by the trap counter. Automatic party reordering after battle is also **on by default**, controlled by the party button.
 - Even hovering over the bag for sell values can send `[Tab]` to open the inventory if the game is showing its map tab during exploration. Some display features therefore also send input.
 - Do not move the mouse during auto-buy or sorting. Do not hold `[Shift]` while sorting: it overlaps with the game's discard action, so the app will not perform the drag.
 - Network access is used to check GitHub releases: automatically at startup, or manually from app info. No account or API key is needed, and game records are not uploaded.
