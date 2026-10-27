@@ -30,12 +30,32 @@
 - **기록과 마을 준비** — 활동 일지·미터기·영웅 표, 도감 검색, 추천 보급품(던전 추가 모드 포함)과 자동 구매, 건물·추가 건물 요구 재화 계산을 제공합니다.
 - **화면 안내** — 물음표 단추에서 7장 31단계 안내를 엽니다. 녹화된 견본 장면을 보며 따라가고, 일부 단계에서는 직접 마우스를 올려 카드를 볼 수 있습니다.
 
-### 화면
+### 별도 창 모드
+
+기본 모드입니다. 앱이 게임 위에 별도 창으로 떠서 지도·전투 화면·카드·기록을 한 창에 모아 보여 줍니다. 창 크기와 배경 불투명도는 자유롭게 조절할 수 있습니다.
 
 <table>
 <tr><td align="center" width="50%"><img src="images/card_curio.ko.webp" alt="맨손과 열쇠의 결과를 비교하고 선택할 수 있는 골동품 카드"><br><sub>골동품 카드</sub></td><td align="center" width="50%"><img src="images/card_trap.ko.webp" alt="영웅별 함정 해체 확률과 스트레스"><br><sub>함정 해체</sub></td></tr>
 <tr><td align="center" width="50%"><img src="images/heroes.ko.webp" alt="마을 영웅 표와 장비·기술 카드"><br><sub>영웅 표와 카드</sub></td><td align="center" width="50%"><img src="images/supplies.ko.webp" alt="던전과 원정 길이별 보급품 추천 표"><br><sub>보급품 추천</sub></td></tr>
 <tr><td align="center" width="50%"><img src="images/meter.ko.webp" alt="영웅별 원정 수치를 비교하는 미터기"><br><sub>원정 미터기</sub></td><td align="center" width="50%"><img src="images/codex.ko.webp" alt="도감 검색과 적 카드"><br><sub>도감</sub></td></tr>
+</table>
+
+### 오버레이 모드
+
+<code>[ &#96; ]</code> 키나 오른쪽 위 마름모 단추를 누르면 **오버레이 모드**로 바뀝니다. 1.1 까지의 '화면 숨기기'가 1.2.0 에서 오버레이 모드로 바뀌었습니다.
+
+별도 창 모드가 정보를 한 창에 모아 보여 준다면, 오버레이 모드는 앱 창을 촛불 단추 하나로 접고 **게임 화면 위에 투명한 층을 하나 씌워 정보를 게임 UI의 제자리에 직접 얹습니다.** 게임의 글꼴·그림·배치를 그대로 따라, 원래 게임에 있던 화면처럼 자연스럽게 정보를 보여 주는 것이 목표입니다.
+
+- **탐험** — 게임 지도 칸에 앱 지도가 들어가고, 골동품·함정·장애물·허기짐 카드는 게임 화면 가운데에 뜹니다. 정찰 확률과 횃불 단계는 게임 표시 옆에 붙습니다.
+- **전투** — 턴 순서, 머리 위 피해·확률, 걸린 상태를 인물마다 표시하고, 스톨링은 라운드 숫자 둘레의 빛 색으로 알립니다.
+- **사이드 패널** — 원정 중에는 오른쪽 패널에서 미터기·활동 일지·도감·마을 건물을 탭으로 봅니다. `[Backspace]`·`[Home]`·`[End]`로 탭을 바꿉니다.
+- **마을** — 영지 이름 아래에 명단 전체 미터기 표를, 아래 단추 줄 위 화살표로 도감·건물 증축 판을 엽니다. 보급품 화면에서는 금화 위 화살표로 보급품 표(자동 구매 포함)를 엽니다.
+- 자리는 게임이 실제로 쓰는 배치 값을 읽어 맞춥니다. 영웅 정보·메뉴·확인 창이 뜨거나 로딩 중일 때는 잠시 숨고, 촛불을 누르거나 같은 키를 다시 누르면 별도 창 모드로 돌아옵니다. 접은 채 끄면 다음에도 오버레이 모드로 시작합니다.
+
+<table>
+<tr><td align="center" width="50%"><img src="images/overlay_map.ko.webp" alt="게임 지도 칸에 들어간 앱 지도"><br><sub>탐험 — 지도</sub></td><td align="center" width="50%"><img src="images/overlay_trap.ko.webp" alt="게임 화면 가운데 뜬 함정 카드"><br><sub>탐험 — 함정 카드</sub></td></tr>
+<tr><td align="center" width="50%"><img src="images/overlay_battle.ko.webp" alt="라운드 숫자 둘레의 스톨링 빛과 적 머리 위 값"><br><sub>전투 — 스톨링·머리 위 값</sub></td><td align="center" width="50%"><img src="images/overlay_foe.ko.webp" alt="적 머리 위 값과 걸린 상태"><br><sub>전투 — 적 정보</sub></td></tr>
+<tr><td align="center" width="50%"><img src="images/overlay_town.ko.webp" alt="영지 이름 아래 미터기 표와 도감 판"><br><sub>마을 — 미터기·도감</sub></td><td align="center" width="50%"><img src="images/overlay_supplies.ko.webp" alt="금화 위 화살표로 연 보급품 표"><br><sub>마을 — 보급품</sub></td></tr>
 </table>
 
 ### 자세히
@@ -75,7 +95,7 @@
 
 ### 요구·호환
 
-- Windows 10/11, [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0), 설치된 Darkest Dungeon 1이 필요합니다. 앱 실행 파일은 약 **5.7MB**이며 런타임은 별도입니다.
+- Windows 10/11, [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0), 설치된 Darkest Dungeon 1이 필요합니다. 앱 실행 파일은 약 **7.1MB**이며 런타임은 별도입니다.
 - 실시간 정보와 입력 보조는 지원하는 **64비트** 게임에서 사용합니다. 스팀 공개판·`coming_in_hot` 베타의 스팀 및 DRM 없는(`_windowsnosteam`) 실행 파일을 지원합니다. 32비트·인식하지 못하는 게임 버전에서는 메모리를 읽지 않고 세이브 기반 기능만 제공하며, 일지 상태 줄에 이유를 표시합니다.
 - 활성 DLC·모드와 적용 순서를 읽어 반영합니다. 던전 추가 모드는 Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide, The Fiend Festival로 확인했습니다. 모든 모드를 검증한 것은 아닙니다.
 - 스팀 설치를 기준으로 하며 DRM 없는 실행 파일도 확인했습니다. GOG 등 다른 플랫폼은 설치·세이브 경로를 자동으로 찾지 못할 수 있습니다.
@@ -99,7 +119,7 @@
 
 | 키·마우스 | 동작 |
 |---|---|
-| <code>[`]</code> 또는 화면 숨기기 단추 | 촛불 단추만 남기기. 촛불 클릭 또는 같은 키로 복귀 |
+| <code>[ &#96; ]</code> 또는 마름모 단추 | 오버레이 모드 켜기·끄기 — 앱 창은 촛불 단추로 접히고 정보는 게임 화면 제자리에. 촛불 클릭으로도 복귀 |
 | `[Backspace]` | 기본 화면으로: 마을 영웅 표 / 보급품 표 / 탐험 지도 / 전투 화면 |
 | `[Home]` / `[End]` | 도감 / 활동 일지 열기·닫기 |
 | `[Caps Lock]` | 지금 기본 원정대 설정 |
@@ -114,11 +134,13 @@
 | 창 경계 끌기 / 위 슬라이더 | 창 크기 / 배경 불투명도 |
 | 물음표 / 서명에 마우스 올리기·클릭 | 화면 안내 / 조작표·앱 정보 |
 
-게임 위 단축키는 게임 창이 앞에 있을 때 동작합니다. `[I]`는 탐험 대기 중에만 앱이 가져가며, 그 밖에는 게임의 원래 키로 동작합니다. 앱 자체에서는 <code>[`]</code>·`[Home]`·`[End]`도 사용할 수 있고, 검색란에 글이 있을 때 `[Backspace]`는 글자를 지웁니다. 구매·정리는 게임 창을 활성화하며, 방 이동·카드 선택·함정 해체 등도 게임 창이 앞에 있어야 합니다.
+게임 위 단축키는 게임 창이 앞에 있을 때 동작합니다. `[I]`는 탐험 대기 중에만 앱이 가져가며, 그 밖에는 게임의 원래 키로 동작합니다. 앱 자체에서는 <code>[ &#96; ]</code>·`[Home]`·`[End]`도 사용할 수 있고, 검색란에 글이 있을 때 `[Backspace]`는 글자를 지웁니다. 구매·정리는 게임 창을 활성화하며, 방 이동·카드 선택·함정 해체 등도 게임 창이 앞에 있어야 합니다.
+
+오버레이 모드에서는 원정 중 `[Backspace]`·`[Home]`·`[End]`가 사이드 패널의 미터기·도감·활동 일지 탭을 바꾸고, 마을에서는 게임 키로 그대로 동작합니다.
 
 ### 화면 안내
 
-물음표 단추에서 처음 사용, 지도, 탐험 중 선택, 전투, 원정 관리, 마을 준비, 기록과 검색을 살펴보세요. 처음 6장은 녹화된 견본 장면이므로 게임을 실행하지 않아도 볼 수 있습니다. 마지막 ‘기록과 검색’ 장은 사용자 자료를 엽니다. 마우스를 올릴 수 있는 단계에서는 금색 테두리 안에 올려 보세요. 어두운 곳을 누르거나 앱을 숨기면 안내를 닫습니다.
+물음표 단추에서 처음 사용, 지도, 탐험 중 선택, 전투, 원정 관리, 마을 준비, 기록과 검색을 살펴보세요. 처음 6장은 녹화된 견본 장면이므로 게임을 실행하지 않아도 볼 수 있습니다. 마지막 ‘기록과 검색’ 장은 사용자 자료를 엽니다. 마우스를 올릴 수 있는 단계에서는 금색 테두리 안에 올려 보세요. 어두운 곳을 누르거나 오버레이 모드로 바꾸면 안내를 닫습니다.
 
 ### 알려진 한계
 
@@ -126,6 +148,7 @@
 - 게임이 업데이트되면 지원 여부를 확인할 때까지 실시간 기능을 사용할 수 없습니다. 일부 세이브 기반 표시는 게임이 저장할 때까지 늦을 수 있습니다.
 - 추천 보급품은 위키·공략·던전 생성 규칙을 참고한 값이며, 모드 던전은 계산 추정치를 포함합니다. 원정대와 탐험 계획에 맞춰 조절하세요.
 - 자동 입력은 게임 화면과 배치에 영향을 받습니다. 지원하지 않는 배치나 일부 모드에서는 기능이 제한될 수 있습니다.
+- 오버레이 모드는 16:9 화면에서 확인했습니다. 다른 화면비나 게임을 창 모드로 띄웠을 때는 자리가 어긋날 수 있습니다.
 
 ### 문제 신고
 
@@ -162,12 +185,32 @@ Darkest Dungeon 1の**マップ・戦闘情報・アクティビティ・ログ*
 - **記録と村での準備** — ログ・メーター・英雄表、図鑑検索、おすすめ補給品（ダンジョン追加MODを含む）と自動購入、建物・区画に必要な資源の計算を利用できます。
 - **画面ガイド** — はてなマークから全7章・31ステップの案内を開けます。録画した見本の場面で説明し、一部のステップではマウスを合わせてカードを見ることもできます。
 
-### 画面例
+### 別ウィンドウモード
+
+基本のモードです。アプリがゲームの上に別ウィンドウとして浮かび、マップ・戦闘画面・カード・記録を1つのウィンドウにまとめて表示します。ウィンドウの大きさと背景の不透明度は自由に調整できます。
 
 <table>
 <tr><td align="center" width="50%"><img src="images/card_curio.ja.webp" alt="素手と鍵の結果を比べて選べるキュリオカード"><br><sub>キュリオカード</sub></td><td align="center" width="50%"><img src="images/card_trap.ja.webp" alt="英雄ごとのトラップ解除確率とストレス"><br><sub>トラップ解除</sub></td></tr>
 <tr><td align="center" width="50%"><img src="images/heroes.ja.webp" alt="村の英雄表と装備・スキルのカード"><br><sub>英雄表とカード</sub></td><td align="center" width="50%"><img src="images/supplies.ja.webp" alt="ダンジョンと遠征の長さ別のおすすめ補給品"><br><sub>おすすめ補給品</sub></td></tr>
 <tr><td align="center" width="50%"><img src="images/meter.ja.webp" alt="英雄ごとの遠征成績を比べるメーター"><br><sub>遠征メーター</sub></td><td align="center" width="50%"><img src="images/codex.ja.webp" alt="図鑑の検索と敵のカード"><br><sub>図鑑</sub></td></tr>
+</table>
+
+### オーバーレイモード
+
+<code>[ &#96; ]</code>キーか右上のひし形ボタンで**オーバーレイモード**に切り替わります。1.1までの「画面を隠す」が、1.2.0でオーバーレイモードに変わりました。
+
+別ウィンドウモードが情報を1つのウィンドウにまとめて見せるのに対し、オーバーレイモードはアプリのウィンドウをろうそくのボタン1つにたたみ、**ゲーム画面の上に透明なレイヤーを1枚重ねて、ゲームUIの本来の位置に情報を直接表示します。** ゲームのフォント・画像・配置をそのまま使い、もともとゲームにあった画面のように自然に情報を見せることを目指しています。
+
+- **探索** — ゲームのマップ欄にアプリのマップが入り、キュリオ・トラップ・障害物・空腹のカードはゲーム画面の中央に表示されます。偵察確率とたいまつの段階は、ゲーム本来の表示の横に並びます。
+- **戦闘** — 行動順、頭上のダメージ・確率、かかっている状態を人物ごとに表示し、ストーリングはラウンド数のまわりの光の色で知らせます。
+- **サイドパネル** — 遠征中は右のパネルで、メーター・アクティビティ・ログ・図鑑・村の建物をタブで見られます。[Backspace]・[Home]・[End]でタブを切り替えます。
+- **村** — 領地名の下に名簿全体のメーター表を表示し、下のボタン列の上の矢印から図鑑・建物の増築パネルを開きます。補給品の画面では、金貨の上の矢印から補給品表（自動購入を含む）を開きます。
+- 表示位置は、ゲームが実際に使っている配置の値を読み取って合わせます。英雄の詳細・メニュー・確認ウィンドウが開いているときやロード中は一時的に隠れます。ろうそくをクリックするか同じキーをもう一度押すと、別ウィンドウモードに戻ります。たたんだまま終了すると、次回もオーバーレイモードで始まります。
+
+<table>
+<tr><td align="center" width="50%"><img src="images/overlay_map.ko.webp" alt="ゲームのマップ欄に入ったアプリのマップ"><br><sub>探索 — マップ</sub></td><td align="center" width="50%"><img src="images/overlay_trap.ko.webp" alt="ゲーム画面の中央に表示されたトラップカード"><br><sub>探索 — トラップカード</sub></td></tr>
+<tr><td align="center" width="50%"><img src="images/overlay_battle.ko.webp" alt="ラウンド数のまわりのストーリングの光と敵の頭上の数値"><br><sub>戦闘 — ストーリング・頭上の数値</sub></td><td align="center" width="50%"><img src="images/overlay_foe.ko.webp" alt="敵の頭上の数値とかかっている状態"><br><sub>戦闘 — 敵の情報</sub></td></tr>
+<tr><td align="center" width="50%"><img src="images/overlay_town.ko.webp" alt="領地名の下のメーター表と図鑑パネル"><br><sub>村 — メーター・図鑑</sub></td><td align="center" width="50%"><img src="images/overlay_supplies.ko.webp" alt="金貨の上の矢印から開いた補給品表"><br><sub>村 — 補給品</sub></td></tr>
 </table>
 
 ### 詳しい機能
@@ -207,7 +250,7 @@ Darkest Dungeon 1の**マップ・戦闘情報・アクティビティ・ログ*
 
 ### 動作環境・互換性
 
-- Windows 10/11、[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)、インストール済みのDarkest Dungeon 1が必要です。アプリ本体は約**5.7MB**の実行ファイル1つで、ランタイムは別途必要です。
+- Windows 10/11、[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)、インストール済みのDarkest Dungeon 1が必要です。アプリ本体は約**7.1MB**の実行ファイル1つで、ランタイムは別途必要です。
 - リアルタイム情報と操作補助は、対応する**64ビット版**のゲームで使えます。Steam公開版・`coming_in_hot`ベータのSteam用およびDRMフリー用（`_windowsnosteam`）実行ファイルに対応しています。32ビット版や未対応のバージョンではメモリを読まず、セーブに基づく機能だけを使い、ログの状態欄に理由を表示します。
 - 有効なDLC・MODと適用順を読み取ります。ダンジョン追加MODはCourtyard Plus、Farmstead Plus、The Sunward Isles、Vermintide、The Fiend Festivalで確認しています。すべてのMODを検証したわけではありません。
 - Steamのインストールを基準とし、DRMフリー実行ファイルでも確認しています。GOGなどではインストール先やセーブの場所を自動検出できない場合があります。
@@ -231,7 +274,7 @@ Darkest Dungeon 1の**マップ・戦闘情報・アクティビティ・ログ*
 
 | キー・マウス | 操作 |
 |---|---|
-| <code>[`]</code>または非表示ボタン | ろうそくのボタンだけを残す。ろうそくをクリックするか同じキーで再表示 |
+| <code>[ &#96; ]</code>またはひし形ボタン | オーバーレイモードのオン・オフ — アプリのウィンドウはろうそくのボタンにたたまれ、情報はゲーム画面の本来の位置に。ろうそくのクリックでも元に戻る |
 | [Backspace] | 基本画面へ：村の英雄表／補給品表／探索マップ／戦闘画面 |
 | [Home]／[End] | 図鑑／アクティビティ・ログを開く・閉じる |
 | [Caps Lock] | 今すぐデフォルトの整列順に戻す |
@@ -246,11 +289,13 @@ Darkest Dungeon 1の**マップ・戦闘情報・アクティビティ・ログ*
 | ウィンドウの端をドラッグ／上部スライダー | サイズ／背景の不透明度 |
 | はてなマーク／署名にマウスを合わせる・クリック | 画面ガイド／操作一覧・アプリ情報 |
 
-ゲーム上のショートカットは、ゲームウィンドウが前面にあるときに動きます。[I]は探索待機中だけアプリが受け取り、それ以外はゲーム本来の操作になります。アプリ側でも<code>[`]</code>・[Home]・[End]を使えます。検索欄に文字があるときの[Backspace]は文字を消します。購入・整理はゲームを前面に出して行い、部屋の移動・カードの選択・トラップ解除などもゲームが前面にある必要があります。
+ゲーム上のショートカットは、ゲームウィンドウが前面にあるときに動きます。[I]は探索待機中だけアプリが受け取り、それ以外はゲーム本来の操作になります。アプリ側でも<code>[ &#96; ]</code>・[Home]・[End]を使えます。検索欄に文字があるときの[Backspace]は文字を消します。購入・整理はゲームを前面に出して行い、部屋の移動・カードの選択・トラップ解除などもゲームが前面にある必要があります。
+
+オーバーレイモードでは、遠征中の[Backspace]・[Home]・[End]がサイドパネルのメーター・図鑑・アクティビティ・ログのタブを切り替え、村ではゲーム本来のキーとして動きます。
 
 ### 画面ガイド
 
-はてなマークから、使い始め、マップ、探索中の選択、戦闘、遠征管理、村での準備、記録と検索を確認できます。最初の6章は録画した見本の場面なので、ゲームを起動しなくても見られます。最後の「記録と調べもの」は利用者のデータを開きます。マウスを合わせられるステップでは金色の枠の中を試してください。暗い部分をクリックするかアプリを隠すと、ガイドを閉じます。
+はてなマークから、使い始め、マップ、探索中の選択、戦闘、遠征管理、村での準備、記録と検索を確認できます。最初の6章は録画した見本の場面なので、ゲームを起動しなくても見られます。最後の「記録と調べもの」は利用者のデータを開きます。マウスを合わせられるステップでは金色の枠の中を試してください。暗い部分をクリックするかオーバーレイモードに切り替えると、ガイドを閉じます。
 
 ### 制限事項
 
@@ -258,6 +303,7 @@ Darkest Dungeon 1の**マップ・戦闘情報・アクティビティ・ログ*
 - ゲームの更新後は、対応を確認するまでリアルタイム機能を使えません。セーブに基づく一部の表示は、ゲームが保存するまで遅れることがあります。
 - おすすめ補給品はWiki・攻略情報・ダンジョン生成ルールを参考にしています。MODダンジョンには計算による推定値も含みます。パーティーや探索の予定に合わせて調整してください。
 - 操作補助はゲーム画面と配置に依存します。未対応の配置や一部のMODでは機能が制限される場合があります。
+- オーバーレイモードは16:9の画面で確認しています。ほかの画面比や、ゲームをウィンドウモードで起動したときは位置がずれることがあります。
 
 ### 不具合の報告
 
@@ -294,12 +340,32 @@ Claude と Codex の助けを借りて作りました。
 - **记录与城镇准备**——提供活动日志、统计面板、英雄表、图鉴搜索、补给推荐（含地牢模组）与自动购买，以及建筑升级与区域建筑所需资源的计算。
 - **界面指南**——点击问号打开7章、31步的引导。说明使用预先录制的示例场景，部分步骤还可以移入鼠标查看卡片。
 
-### 界面示例
+### 独立窗口模式
+
+默认模式。工具以独立窗口浮在游戏上方，把地图、战斗界面、卡片和记录集中显示在一个窗口中。窗口大小和背景不透明度可自由调整。
 
 <table>
 <tr><td align="center" width="50%"><img src="images/card_curio.zh.webp" alt="比较徒手和使用钥匙的结果并执行选择的奇物卡片"><br><sub>奇物卡片</sub></td><td align="center" width="50%"><img src="images/card_trap.zh.webp" alt="各英雄的陷阱解除概率与压力"><br><sub>解除陷阱</sub></td></tr>
 <tr><td align="center" width="50%"><img src="images/heroes.zh.webp" alt="城镇英雄表及装备和技能卡片"><br><sub>英雄表与卡片</sub></td><td align="center" width="50%"><img src="images/supplies.zh.webp" alt="按地牢和远征长度列出的补给推荐表"><br><sub>补给推荐</sub></td></tr>
 <tr><td align="center" width="50%"><img src="images/meter.zh.webp" alt="比较各英雄远征数据的统计面板"><br><sub>远征统计</sub></td><td align="center" width="50%"><img src="images/codex.zh.webp" alt="图鉴搜索与敌人卡片"><br><sub>图鉴</sub></td></tr>
+</table>
+
+### 叠加模式
+
+按<code>[ &#96; ]</code>键或右上角的菱形按钮即可切换到**叠加模式**。1.1之前的“隐藏界面”在1.2.0中改为叠加模式。
+
+独立窗口模式把信息集中在一个窗口中，而叠加模式会把工具窗口收成一个蜡烛按钮，并**在游戏画面上覆盖一层透明图层，把信息直接显示在游戏界面的对应位置。** 它沿用游戏的字体、图像和布局，力求像游戏原本就有的界面一样自然地呈现信息。
+
+- **探索**——工具地图嵌入游戏的地图栏；奇物、陷阱、障碍物和饥饿卡片显示在游戏画面中央。侦察概率和火把档位紧挨在游戏原有显示旁。
+- **战斗**——在每个角色身上显示行动顺序、头顶的伤害与概率以及当前状态；拖延战斗的状态以回合数外圈的光色提示。
+- **侧边面板**——远征中可在右侧面板以标签页查看统计面板、活动日志、图鉴和城镇建筑，用[Backspace]、[Home]、[End]切换标签页。
+- **城镇**——城镇名称下方显示全体英雄的统计表；底部按钮栏上方的箭头可打开图鉴和建筑升级面板。在补给界面，金币上方的箭头可打开补给表（含自动购买）。
+- 显示位置会读取游戏实际使用的布局数值来对齐。英雄详情、菜单或确认窗口打开时以及加载中会暂时隐藏；点击蜡烛或再次按该键即可回到独立窗口模式。若在收起状态下退出，下次也会以叠加模式启动。
+
+<table>
+<tr><td align="center" width="50%"><img src="images/overlay_map.ko.webp" alt="嵌入游戏地图栏的工具地图"><br><sub>探索——地图</sub></td><td align="center" width="50%"><img src="images/overlay_trap.ko.webp" alt="显示在游戏画面中央的陷阱卡片"><br><sub>探索——陷阱卡片</sub></td></tr>
+<tr><td align="center" width="50%"><img src="images/overlay_battle.ko.webp" alt="回合数外圈的拖延战斗光效与敌人头顶数值"><br><sub>战斗——拖延战斗与头顶数值</sub></td><td align="center" width="50%"><img src="images/overlay_foe.ko.webp" alt="敌人头顶的数值与当前状态"><br><sub>战斗——敌人信息</sub></td></tr>
+<tr><td align="center" width="50%"><img src="images/overlay_town.ko.webp" alt="城镇名称下方的统计表与图鉴面板"><br><sub>城镇——统计表与图鉴</sub></td><td align="center" width="50%"><img src="images/overlay_supplies.ko.webp" alt="从金币上方箭头打开的补给表"><br><sub>城镇——补给</sub></td></tr>
 </table>
 
 ### 功能详情
@@ -339,7 +405,7 @@ Claude と Codex の助けを借りて作りました。
 
 ### 要求与兼容性
 
-- 需要Windows 10/11、[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)和已安装的《暗黑地牢》1。工具本体为约**5.7MB**的单个exe，运行时需另行安装。
+- 需要Windows 10/11、[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)和已安装的《暗黑地牢》1。工具本体为约**7.1MB**的单个exe，运行时需另行安装。
 - 实时信息与输入辅助需要受支持的**64位**游戏。支持Steam公开版和`coming_in_hot`测试版的Steam及无DRM（`_windowsnosteam`）执行文件。32位或未识别的游戏版本不会读取内存，只提供基于存档的功能，并在日志状态栏说明原因。
 - 会读取启用的DLC、模组及其加载顺序。已确认的地牢模组包括Courtyard Plus、Farmstead Plus、The Sunward Isles、Vermintide和The Fiend Festival，并非所有模组都经过验证。
 - 以Steam安装方式为基准，也确认过无DRM执行文件。GOG等其他平台的安装位置或存档路径可能无法自动识别。
@@ -363,7 +429,7 @@ Claude と Codex の助けを借りて作りました。
 
 | 按键或鼠标 | 功能 |
 |---|---|
-| <code>[`]</code>或隐藏按钮 | 只留下蜡烛按钮；点击蜡烛或再次按键恢复 |
+| <code>[ &#96; ]</code>或菱形按钮 | 开关叠加模式——工具窗口收成蜡烛按钮，信息显示在游戏画面的对应位置；点击蜡烛也可恢复 |
 | [Backspace] | 返回主界面：城镇英雄表／补给表／探索地图／战斗界面 |
 | [Home]／[End] | 打开或关闭图鉴／活动日志 |
 | [Caps Lock] | 立即恢复初始队伍阵型 |
@@ -378,11 +444,13 @@ Claude と Codex の助けを借りて作りました。
 | 拖动窗口边缘／顶部滑块 | 调整尺寸／背景不透明度 |
 | 问号／鼠标移到署名上或点击署名 | 界面指南／操作说明或应用信息 |
 
-游戏上的快捷键在游戏窗口位于前台时生效。[I]仅在探索待机时由工具接管，其他时候保留游戏原本的功能。在工具窗口中也可使用<code>[`]</code>、[Home]和[End]；搜索框有文字时，[Backspace]会删除文字。购买和整理会将游戏切到前台，房间移动、卡片选择、陷阱解除等也需要游戏窗口位于前台。
+游戏上的快捷键在游戏窗口位于前台时生效。[I]仅在探索待机时由工具接管，其他时候保留游戏原本的功能。在工具窗口中也可使用<code>[ &#96; ]</code>、[Home]和[End]；搜索框有文字时，[Backspace]会删除文字。购买和整理会将游戏切到前台，房间移动、卡片选择、陷阱解除等也需要游戏窗口位于前台。
+
+叠加模式下，远征中的[Backspace]、[Home]、[End]用于切换侧边面板的统计面板、图鉴和活动日志标签页；在城镇中则保留游戏原本的按键功能。
 
 ### 界面指南
 
-点击问号，可依次了解初次使用、地图、探索选择、战斗、远征管理、城镇准备，以及记录与查阅。前6章使用录制好的示例场景，不启动游戏也能查看；最后的“记录与查阅”会打开用户自己的数据。允许悬停的步骤可以将鼠标移入金色边框。点击暗处或隐藏工具即可关闭指南。
+点击问号，可依次了解初次使用、地图、探索选择、战斗、远征管理、城镇准备，以及记录与查阅。前6章使用录制好的示例场景，不启动游戏也能查看；最后的“记录与查阅”会打开用户自己的数据。允许悬停的步骤可以将鼠标移入金色边框。点击暗处或切换到叠加模式即可关闭指南。
 
 ### 已知限制
 
@@ -390,6 +458,7 @@ Claude と Codex の助けを借りて作りました。
 - 游戏更新后，在确认兼容前无法使用实时功能。部分基于存档的信息要等游戏保存后才会更新。
 - 补给推荐参考了Wiki、攻略和地牢生成规则，模组地牢还包含计算估值。请根据队伍与探索计划调整。
 - 输入辅助依赖游戏画面和布局；不支持的布局或某些模组可能限制功能。
+- 叠加模式已在16:9画面上确认。在其他画面比例或游戏以窗口模式运行时，显示位置可能会偏移。
 
 ### 问题反馈
 
@@ -427,12 +496,32 @@ Nothing is hard-coded from vanilla. It **reads the base game, DLC and every mod 
 - **Records and town preparation** — Use the activity log, meters, hero table, Codex search, supply recommendations (dungeon mods included), auto-buy and building or district cost planner.
 - **Screen guide** — Open a seven-chapter, 31-step tour from the question-mark button. It uses recorded example scenes, with cards you can hover over in some steps.
 
-### Screenshots
+### Standalone window mode
+
+The default mode. The app floats over the game as its own window and gathers the map, battle screen, cards and records in one place. You can resize it and adjust the background opacity.
 
 <table>
 <tr><td align="center" width="50%"><img src="images/card_curio.en.webp" alt="A curio card with clickable columns for bare-handed interaction and using a key"><br><sub>Curio card</sub></td><td align="center" width="50%"><img src="images/card_trap.en.webp" alt="Trap disarm chances and stress for each hero"><br><sub>Trap disarming</sub></td></tr>
 <tr><td align="center" width="50%"><img src="images/heroes.en.webp" alt="The town hero table with an equipment and skills card"><br><sub>Hero table and card</sub></td><td align="center" width="50%"><img src="images/supplies.en.webp" alt="Recommended provisions by dungeon and expedition length"><br><sub>Supply recommendations</sub></td></tr>
 <tr><td align="center" width="50%"><img src="images/meter.en.webp" alt="An expedition meter comparing each hero's contributions"><br><sub>Expedition meter</sub></td><td align="center" width="50%"><img src="images/codex.en.webp" alt="Codex search with an enemy card"><br><sub>Codex</sub></td></tr>
+</table>
+
+### Overlay mode
+
+Press <code>[ &#96; ]</code> or the diamond button at the top right to switch to **overlay mode**. Up to 1.1 this was "Hide screen"; in 1.2.0 it became overlay mode.
+
+Where the standalone window gathers everything in one place, overlay mode folds the app window into a single candle button and **lays a transparent layer over the game screen so the information sits directly in place on the game's own UI.** It follows the game's fonts, art and layout, aiming to feel like a natural part of the original game.
+
+- **Exploration** — The app map takes over the game's map panel, and curio, trap, obstacle and hunger cards appear in the middle of the game screen. Scouting chance and torch levels sit next to the game's own indicators.
+- **Combat** — Turn order, damage and chances overhead and active statuses are shown on each character, and stalling is signalled by the colour of the glow around the round counter.
+- **Side panel** — During an expedition, the right-hand panel holds the meter, activity log, Codex and town buildings as tabs. Switch them with `[Backspace]`, `[Home]` and `[End]`.
+- **Town** — A meter table for the whole roster sits under the estate name, and arrows above the bottom button bar open the Codex and building upgrade panels. On the provisioning screen, the arrow above your gold opens the supply table (auto-buy included).
+- Positions are read from the layout values the game actually uses. The overlay steps aside while hero details, menus or confirmation windows are open and during loading. Click the candle or press the key again to return to standalone window mode. If you quit while folded, the app starts in overlay mode next time.
+
+<table>
+<tr><td align="center" width="50%"><img src="images/overlay_map.ko.webp" alt="The app map in place of the game map panel"><br><sub>Exploration — map</sub></td><td align="center" width="50%"><img src="images/overlay_trap.ko.webp" alt="A trap card in the middle of the game screen"><br><sub>Exploration — trap card</sub></td></tr>
+<tr><td align="center" width="50%"><img src="images/overlay_battle.ko.webp" alt="The stalling glow around the round counter and values over the enemy"><br><sub>Combat — stalling and overhead values</sub></td><td align="center" width="50%"><img src="images/overlay_foe.ko.webp" alt="Values and statuses over the enemy"><br><sub>Combat — enemy details</sub></td></tr>
+<tr><td align="center" width="50%"><img src="images/overlay_town.ko.webp" alt="The meter table under the estate name and the Codex panel"><br><sub>Town — meter and Codex</sub></td><td align="center" width="50%"><img src="images/overlay_supplies.ko.webp" alt="The supply table opened from the arrow above the gold"><br><sub>Town — provisions</sub></td></tr>
 </table>
 
 ### In detail
@@ -472,7 +561,7 @@ Nothing is hard-coded from vanilla. It **reads the base game, DLC and every mod 
 
 ### Requirements & compatibility
 
-- Windows 10/11, the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) and an installed copy of Darkest Dungeon 1. The app is a single executable of about **5.7 MB**; the runtime is separate.
+- Windows 10/11, the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) and an installed copy of Darkest Dungeon 1. The app is a single executable of about **7.1 MB**; the runtime is separate.
 - Live information and input assistance require a supported **64-bit** game build. The Steam public and `coming_in_hot` beta builds are supported, with either the Steam or DRM-free (`_windowsnosteam`) executable. With a 32-bit or unrecognised build, the app skips memory reading, offers save-based features only, and explains why in the log's status line.
 - Active DLC, mods and their load order are read from your save. Dungeon mods checked include Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide and The Fiend Festival. Not every mod has been tested.
 - Built around Steam installations and also checked with the DRM-free executable. Other platforms, including GOG, may use game or save locations the app cannot find automatically.
@@ -496,7 +585,7 @@ The app checks for a new version at startup. Click the signature in the top-left
 
 | Key or mouse action | What it does |
 |---|---|
-| <code>[`]</code> or the hide button | Leave only the candle button; click the candle or press the key again to return |
+| <code>[ &#96; ]</code> or the diamond button | Toggle overlay mode — the app window folds into the candle button and the information moves onto the game screen; clicking the candle also returns |
 | `[Backspace]` | Return to the main view: town heroes / provisions / dungeon map / battle screen |
 | `[Home]` / `[End]` | Open or close the Codex / Activity Log |
 | `[Caps Lock]` | Restore the default party order now |
@@ -511,11 +600,13 @@ The app checks for a new version at startup. Click the signature in the top-left
 | Drag a window edge / top slider | Resize / adjust background opacity |
 | Question mark / hover over or click the signature | Screen guide / controls list or app info |
 
-Shortcuts over the game work while its window is active. The app takes `[I]` only while idle in a dungeon; otherwise it retains its game function. In the app itself, <code>[`]</code>, `[Home]` and `[End]` also work; `[Backspace]` deletes text when the search field contains any. Buying and sorting bring the game to the front. Room movement, card choices and trap disarming also require the game window to be active.
+Shortcuts over the game work while its window is active. The app takes `[I]` only while idle in a dungeon; otherwise it retains its game function. In the app itself, <code>[ &#96; ]</code>, `[Home]` and `[End]` also work; `[Backspace]` deletes text when the search field contains any. Buying and sorting bring the game to the front. Room movement, card choices and trap disarming also require the game window to be active.
+
+In overlay mode, `[Backspace]`, `[Home]` and `[End]` switch the side panel between the meter, Codex and activity log tabs during an expedition; in town they keep their game functions.
 
 ### Screen guide
 
-Use the question mark to explore getting started, the map, exploration choices, combat, expedition management, town preparation, and records and reference. The first six chapters use recorded example scenes, so you can view them without running the game. The final chapter opens your own records and reference views. In steps that allow hovering, try the areas inside the gold outlines. Click a darkened area or hide the app to close the guide.
+Use the question mark to explore getting started, the map, exploration choices, combat, expedition management, town preparation, and records and reference. The first six chapters use recorded example scenes, so you can view them without running the game. The final chapter opens your own records and reference views. In steps that allow hovering, try the areas inside the gold outlines. Click a darkened area or switch to overlay mode to close the guide.
 
 ### Known limitations
 
@@ -523,6 +614,7 @@ Use the question mark to explore getting started, the map, exploration choices, 
 - After a game update, live features are unavailable until support for that build is confirmed. Some save-based displays can lag until the game saves.
 - Provisions recommendations draw on wikis, guides and dungeon generation rules; mod dungeon values include calculated estimates. Adjust them for your party and exploration plans.
 - Input assistance depends on the game screen and layout. Unsupported layouts or some mods may limit these features.
+- Overlay mode has been checked on 16:9 screens. On other aspect ratios or with the game in windowed mode, positions may be off.
 
 ### Reporting issues
 
