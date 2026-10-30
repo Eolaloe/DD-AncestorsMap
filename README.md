@@ -552,8 +552,7 @@ Claude と Codex の助けを借りて作りました。
 
 ---
 
-<details>
-<summary><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" width="20" alt="🇺🇸"> <b>English</b></summary>
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f1fa-1f1f8.png" width="20" alt="🇺🇸"> <b>English</b>
 
 An overlay for Darkest Dungeon 1 that puts **maps, combat information and an activity log** over the game.
 
@@ -730,6 +729,4 @@ Darkest Dungeon is a game by Red Hook Studios.
 Made with help from Claude and Codex.
 
 Korean particle selection rules draw on [es-hangul](https://github.com/toss/es-hangul) (toss, MIT) and kohangul (MIT).
-
-</details>
 
