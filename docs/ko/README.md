@@ -1,4 +1,4 @@
-[English](README.md) · **한국어** · [日本語](README.ja.md) · [中文](README.zh.md)
+[English](../../README.md) · **한국어** · [日本語](../ja/README.md) · [中文](../zh/README.md)
 
 # Ancestor's Map — DD Field Guide
 
@@ -6,16 +6,16 @@
 
 다키스트 던전 1용 오버레이입니다. 게임 메모리와 세이브에서 현재 상태를 읽고, 활성화된 DLC와 모드 데이터를 반영해 게임과 같은 공식으로 수치를 계산합니다.
 
-[![Release](https://img.shields.io/github/v/release/Eolaloe/DD-AncestorsMap)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest) [![Downloads](https://img.shields.io/github/downloads/Eolaloe/DD-AncestorsMap/total)](https://github.com/Eolaloe/DD-AncestorsMap/releases) [![License](https://img.shields.io/badge/license-custom-blue)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/Eolaloe/DD-AncestorsMap)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest) [![Downloads](https://img.shields.io/github/downloads/Eolaloe/DD-AncestorsMap/total)](https://github.com/Eolaloe/DD-AncestorsMap/releases) [![License](https://img.shields.io/badge/license-custom-blue)](../../LICENSE)
 
 [![최신 버전 다운로드](https://img.shields.io/badge/%EC%B5%9C%EC%8B%A0%20%EB%B2%84%EC%A0%84%20%EB%8B%A4%EC%9A%B4%EB%A1%9C%EB%93%9C-blue?style=for-the-badge)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)
 
-[전체 기능](#전체-기능) · [사용 안내](docs/guide.ko.md) · [업데이트 내역](CHANGELOG.ko.md)
+[전체 기능](#전체-기능) · [사용 안내](guide.md) · [업데이트 내역](CHANGELOG.md)
 
 개인 사용 무료 · 모드 지원 · 게임 파일 직접 수정 없음. 메모리 읽기·쓰기 범위와 입력 보조에 관한 설명은 아래 [안전](#안전) 항목에서 확인할 수 있습니다.
 
 <!-- SHOT S1: 오버레이 전투 움짤 8 ~ 10초(영어 · 1600×900) — 기술을 바꿀 때마다 적 머리 위 값이 바뀌는 장면. 찍으면 같은 이름으로 덮어쓰기 -->
-<img src="images/overlay_hero.webp" width="100%" alt="게임 화면 위 오버레이 — 적 머리 위 피해 · 명중 · 치명타 확률과 턴 순서">
+<img src="../../images/overlay_hero.webp" width="100%" alt="게임 화면 위 오버레이 — 적 머리 위 피해 · 명중 · 치명타 확률과 턴 순서">
 
 - **사용 중인 모드 정보를 한곳에서 확인** — 활성화된 모드의 데이터를 자동으로 병합해, 모드가 추가하거나 변경한 적·기술·장신구·기벽 등의 상세 정보를 함께 보여줍니다.
 - **기술을 쓰기 전에 비교** — 현재 장비와 강화, 대상의 저항에 따른 피해량과 명중·치명타·효과 확률을 대상별로 비교합니다.
@@ -90,19 +90,19 @@
 <table>
 <tr>
 <!-- SHOT S2: 오버레이 지도 — 전체 지도 공개 · 보스방까지 길 안내 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_map.webp" alt="전체 지도 공개"><br><sub>전체 지도 공개</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_map.webp" alt="전체 지도 공개"><br><sub>전체 지도 공개</sub></td>
 <!-- SHOT S3: 함정 · 골동품 앞 게임 화면 가운데 상호작용 카드 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_card.webp" alt="오브젝트 정보 및 상호작용 카드"><br><sub>오브젝트 정보 및 상호작용 카드</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_card.webp" alt="오브젝트 정보 및 상호작용 카드"><br><sub>오브젝트 정보 및 상호작용 카드</sub></td>
 </tr>
 <tr>
 <!-- SHOT S4: 원정대 프리셋 판 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_preset.webp" alt="원정대 프리셋"><br><sub>원정대 프리셋</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_preset.webp" alt="원정대 프리셋"><br><sub>원정대 프리셋</sub></td>
 <!-- SHOT S5: 보급품 구입 화면 추천 표 · 자동 구매 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_supplies.webp" alt="보급품 추천 · 자동 구매"><br><sub>보급품 추천 · 자동 구매</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_supplies.webp" alt="보급품 추천 · 자동 구매"><br><sub>보급품 추천 · 자동 구매</sub></td>
 </tr>
 </table>
 
-자세한 사용법은 [사용 안내](docs/guide.ko.md)에 있습니다.
+자세한 사용법은 [사용 안내](guide.md)에 있습니다.
 
 ## 빠른 시작 3단계
 
@@ -110,7 +110,7 @@
 2. 원하는 폴더에 zip을 풉니다.
 3. 게임에서 세이브를 불러온 채 `AncestorsMap.exe`를 실행합니다. 필요한 런타임이 없으면 설치 안내가 뜹니다.
 
-처음이라면 물음표 버튼을 눌러 7장 31단계로 구성된 화면 안내를 살펴보세요. 자세한 설명은 [사용 안내](docs/guide.ko.md)에 있습니다.
+처음이라면 물음표 버튼을 눌러 7장 31단계로 구성된 화면 안내를 살펴보세요. 자세한 설명은 [사용 안내](guide.md)에 있습니다.
 
 ### 실행 환경 · 호환성
 
@@ -148,7 +148,7 @@
   앱은 업데이트를 확인하기 위해 GitHub에 연결합니다. 계정이나 API 키는 필요 없으며 게임 기록을 업로드하지 않습니다.
   백신이 잘못 탐지할 수 있으니 릴리스에 있는 SHA-256으로 파일을 확인하세요.
 
-안전과 입력 보조에 관한 자세한 설명은 [사용 안내](docs/guide.ko.md)에 있습니다.
+안전과 입력 보조에 관한 자세한 설명은 [사용 안내](guide.md)에 있습니다.
 
 ## 버전별 주요 기능
 
@@ -159,7 +159,7 @@
 | 1.2 (1.2.0) | 오버레이 모드 — 게임 UI 제자리에 정보 표시. |
 | 1.3 (1.3.0 ~ 1.3.2) | 원정대·장신구 프리셋, 턴 순서 예상 확률, 오버레이 조절, 건물 창 넘기기, 골동품 앞 자동 전환, 속도 설정(배속모드). |
 
-버전별 자세한 내용은 [전체 변경 내역](CHANGELOG.ko.md)과 [릴리스 페이지](https://github.com/Eolaloe/DD-AncestorsMap/releases)에서 확인할 수 있습니다.
+버전별 자세한 내용은 [전체 변경 내역](CHANGELOG.md)과 [릴리스 페이지](https://github.com/Eolaloe/DD-AncestorsMap/releases)에서 확인할 수 있습니다.
 
 ## 알려진 제한 사항
 
@@ -177,9 +177,9 @@
 
 ## 라이선스 · 크레딧
 
-[LICENSE](LICENSE) — 개인 용도로 자유롭게 사용할 수 있습니다. 공유할 때는 공식 저장소 링크를 이용해 주세요(파일 재업로드나 수정본 공유는 문의). 판매는 금지합니다.
+[LICENSE](../../LICENSE) — 개인 용도로 자유롭게 사용할 수 있습니다. 공유할 때는 공식 저장소 링크를 이용해 주세요(파일 재업로드나 수정본 공유는 문의). 판매는 금지합니다.
 Darkest Dungeon은 Red Hook Studios의 게임입니다.
 
 한국어 조사 처리 규칙은 [es-hangul](https://github.com/toss/es-hangul)(toss, MIT)와 kohangul(MIT)을 참고했습니다.
 
-[사용 안내](docs/guide.ko.md) · [최신 버전 다운로드](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)
+[사용 안내](guide.md) · [최신 버전 다운로드](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)

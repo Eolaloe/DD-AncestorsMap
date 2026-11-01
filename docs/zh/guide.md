@@ -1,19 +1,19 @@
-[English](guide.md) · [한국어](guide.ko.md) · [日本語](guide.ja.md) · **中文**
+[English](../en/guide.md) · [한국어](../ko/guide.md) · [日本語](../ja/guide.md) · **中文**
 
 # 使用指南
 
-[返回介绍页面](../README.zh.md)
+[返回介绍页面](README.md)
 
-本指南介绍1.3.2各项功能的用法、操作方式和安全信息。游戏内的名称与说明沿用游戏及已启用模组的译文。各版本的变化请参阅[更新日志](../CHANGELOG.zh.md)。
+本指南介绍1.3.2各项功能的用法、操作方式和安全信息。游戏内的名称与说明沿用游戏及已启用模组的译文。各版本的变化请参阅[更新日志](CHANGELOG.md)。
 
 ## 独立窗口模式
 
 工具在游戏上方打开独立窗口，把地图、战斗界面、卡片和记录集中显示在一个窗口中。窗口大小和背景不透明度可自由调整。载入存档后会自动切换到叠加模式，此后可自由切换模式。
 
 <table>
-<tr><td align="center" width="50%"><img src="../images/card_curio.zh.webp" alt="比较徒手和使用钥匙的结果并执行选择的奇物卡片"><br><sub>奇物卡片</sub></td><td align="center" width="50%"><img src="../images/card_trap.zh.webp" alt="各英雄的陷阱解除概率与压力"><br><sub>解除陷阱</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/heroes.zh.webp" alt="城镇英雄表及装备和技能卡片"><br><sub>英雄表与卡片</sub></td><td align="center" width="50%"><img src="../images/supplies.zh.webp" alt="按地牢和远征长度列出的补给推荐表"><br><sub>补给推荐</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/meter.zh.webp" alt="比较各英雄远征数据的统计面板"><br><sub>远征统计</sub></td><td align="center" width="50%"><img src="../images/codex.zh.webp" alt="图鉴搜索与敌人卡片"><br><sub>图鉴</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/card_curio.zh.webp" alt="比较徒手和使用钥匙的结果并执行选择的奇物卡片"><br><sub>奇物卡片</sub></td><td align="center" width="50%"><img src="../../images/card_trap.zh.webp" alt="各英雄的陷阱解除概率与压力"><br><sub>解除陷阱</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/heroes.zh.webp" alt="城镇英雄表及装备和技能卡片"><br><sub>英雄表与卡片</sub></td><td align="center" width="50%"><img src="../../images/supplies.zh.webp" alt="按地牢和远征长度列出的补给推荐表"><br><sub>补给推荐</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/meter.zh.webp" alt="比较各英雄远征数据的统计面板"><br><sub>远征统计</sub></td><td align="center" width="50%"><img src="../../images/codex.zh.webp" alt="图鉴搜索与敌人卡片"><br><sub>图鉴</sub></td></tr>
 </table>
 
 ## 叠加模式
@@ -165,7 +165,7 @@
 
 ## 许可与致谢
 
-[LICENSE](../LICENSE) — 可供个人自由使用；请通过官方仓库链接分享（重新上传文件或发布修改版请先联系作者）；禁止售卖。
+[LICENSE](../../LICENSE) — 可供个人自由使用；请通过官方仓库链接分享（重新上传文件或发布修改版请先联系作者）；禁止售卖。
 《暗黑地牢》（Darkest Dungeon）是 Red Hook Studios 的游戏。
 在 Claude 和 Codex 的协助下制作。
 

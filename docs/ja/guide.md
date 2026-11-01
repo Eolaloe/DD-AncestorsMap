@@ -1,19 +1,19 @@
-[English](guide.md) · [한국어](guide.ko.md) · **日本語** · [中文](guide.zh.md)
+[English](../en/guide.md) · [한국어](../ko/guide.md) · **日本語** · [中文](../zh/guide.md)
 
 # 使い方ガイド
 
-[紹介ページへ戻る](../README.ja.md)
+[紹介ページへ戻る](README.md)
 
-1.3.2の各機能の使い方、操作方法、安全性について説明します。ゲーム内の名称や説明は、ゲームと有効なMODの表記に合わせています。バージョンごとの変更点は[更新履歴](../CHANGELOG.ja.md)をご覧ください。
+1.3.2の各機能の使い方、操作方法、安全性について説明します。ゲーム内の名称や説明は、ゲームと有効なMODの表記に合わせています。バージョンごとの変更点は[更新履歴](CHANGELOG.md)をご覧ください。
 
 ## 別ウィンドウモード
 
 ゲーム画面の手前に独立したウィンドウを開き、マップ・戦闘画面・カード・記録を1つのウィンドウにまとめて表示します。ウィンドウの大きさと背景の不透明度は自由に調整できます。セーブを読み込むとオーバーレイモードに自動で切り替わり、その後は好きなモードに変更できます。
 
 <table>
-<tr><td align="center" width="50%"><img src="../images/card_curio.ja.webp" alt="素手と鍵の結果を比べて選べるキュリオカード"><br><sub>キュリオカード</sub></td><td align="center" width="50%"><img src="../images/card_trap.ja.webp" alt="英雄ごとのトラップ解除確率とストレス"><br><sub>トラップ解除</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/heroes.ja.webp" alt="村の英雄表と装備・スキルのカード"><br><sub>英雄表とカード</sub></td><td align="center" width="50%"><img src="../images/supplies.ja.webp" alt="ダンジョンと遠征の長さ別のおすすめ補給品"><br><sub>おすすめ補給品</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/meter.ja.webp" alt="英雄ごとの遠征成績を比べるメーター"><br><sub>遠征メーター</sub></td><td align="center" width="50%"><img src="../images/codex.ja.webp" alt="図鑑の検索と敵のカード"><br><sub>図鑑</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/card_curio.ja.webp" alt="素手と鍵の結果を比べて選べるキュリオカード"><br><sub>キュリオカード</sub></td><td align="center" width="50%"><img src="../../images/card_trap.ja.webp" alt="英雄ごとのトラップ解除確率とストレス"><br><sub>トラップ解除</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/heroes.ja.webp" alt="村の英雄表と装備・スキルのカード"><br><sub>英雄表とカード</sub></td><td align="center" width="50%"><img src="../../images/supplies.ja.webp" alt="ダンジョンと遠征の長さ別のおすすめ補給品"><br><sub>おすすめ補給品</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/meter.ja.webp" alt="英雄ごとの遠征成績を比べるメーター"><br><sub>遠征メーター</sub></td><td align="center" width="50%"><img src="../../images/codex.ja.webp" alt="図鑑の検索と敵のカード"><br><sub>図鑑</sub></td></tr>
 </table>
 
 ## オーバーレイモード
@@ -165,7 +165,7 @@
 
 ## ライセンス・クレジット
 
-[LICENSE](../LICENSE) — 個人での利用は自由です。共有する際は公式リポジトリのリンクをご利用ください（ファイルの再アップロードや改変版の共有は事前にご相談ください）。販売は禁止です。
+[LICENSE](../../LICENSE) — 個人での利用は自由です。共有する際は公式リポジトリのリンクをご利用ください（ファイルの再アップロードや改変版の共有は事前にご相談ください）。販売は禁止です。
 Darkest DungeonはRed Hook Studiosのゲームです。
 ClaudeとCodexの支援を受けて開発しています。
 

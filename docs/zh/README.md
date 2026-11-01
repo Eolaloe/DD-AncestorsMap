@@ -1,4 +1,4 @@
-[English](README.md) · [한국어](README.ko.md) · [日本語](README.ja.md) · **中文**
+[English](../../README.md) · [한국어](../ko/README.md) · [日本語](../ja/README.md) · **中文**
 
 # Ancestor's Map — DD Field Guide
 
@@ -6,16 +6,16 @@
 
 这是一款《暗黑地牢》一代的游戏内叠加显示工具。它从游戏内存和存档中读取当前状态，结合已启用的DLC与模组数据，按照游戏本身的公式计算各项数值。
 
-[![Release](https://img.shields.io/github/v/release/Eolaloe/DD-AncestorsMap)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest) [![Downloads](https://img.shields.io/github/downloads/Eolaloe/DD-AncestorsMap/total)](https://github.com/Eolaloe/DD-AncestorsMap/releases) [![License](https://img.shields.io/badge/license-custom-blue)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/Eolaloe/DD-AncestorsMap)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest) [![Downloads](https://img.shields.io/github/downloads/Eolaloe/DD-AncestorsMap/total)](https://github.com/Eolaloe/DD-AncestorsMap/releases) [![License](https://img.shields.io/badge/license-custom-blue)](../../LICENSE)
 
 [![下载最新版本](https://img.shields.io/badge/%E4%B8%8B%E8%BD%BD%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC-blue?style=for-the-badge)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)
 
-[完整功能列表](#完整功能列表) · [使用指南](docs/guide.zh.md) · [更新日志](CHANGELOG.zh.md)
+[完整功能列表](#完整功能列表) · [使用指南](guide.md) · [更新日志](CHANGELOG.md)
 
 个人使用免费 · 支持模组 · 不直接修改游戏文件。内存读写范围与操作辅助功能详见[安全说明](#安全说明)。
 
 <!-- SHOT S1: 오버레이 전투 움짤 8 ~ 10초(영어 · 1600×900) — 기술을 바꿀 때마다 적 머리 위 값이 바뀌는 장면. 찍으면 같은 이름으로 덮어쓰기 -->
-<img src="images/overlay_hero.webp" width="100%" alt="游戏画面上的叠加显示——敌人头顶的伤害、命中、暴击概率与行动顺序">
+<img src="../../images/overlay_hero.webp" width="100%" alt="游戏画面上的叠加显示——敌人头顶的伤害、命中、暴击概率与行动顺序">
 
 - **集中查看当前启用的模组内容。** 自动合并已启用模组的数据，在一处查看模组新增或修改的敌人、技能、饰品、怪癖等详细信息。
 - **出手前，先比较目标。** 根据当前装备、增益和目标抗性，预览对各个目标的伤害，以及命中、暴击和施加效果的概率。
@@ -90,19 +90,19 @@
 <table>
 <tr>
 <!-- SHOT S2: 오버레이 지도 — 전체 지도 공개 · 보스방까지 길 안내 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_map.webp" alt="全图显示"><br><sub>全图显示</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_map.webp" alt="全图显示"><br><sub>全图显示</sub></td>
 <!-- SHOT S3: 함정 · 골동품 앞 게임 화면 가운데 상호작용 카드 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_card.webp" alt="对象信息与交互卡片"><br><sub>对象信息与交互卡片</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_card.webp" alt="对象信息与交互卡片"><br><sub>对象信息与交互卡片</sub></td>
 </tr>
 <tr>
 <!-- SHOT S4: 원정대 프리셋 판 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_preset.webp" alt="队伍预设"><br><sub>队伍预设</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_preset.webp" alt="队伍预设"><br><sub>队伍预设</sub></td>
 <!-- SHOT S5: 보급품 구입 화면 추천 표 · 자동 구매 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_supplies.webp" alt="补给推荐与自动购买"><br><sub>补给推荐与自动购买</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_supplies.webp" alt="补给推荐与自动购买"><br><sub>补给推荐与自动购买</sub></td>
 </tr>
 </table>
 
-详细用法请参阅[使用指南](docs/guide.zh.md)。
+详细用法请参阅[使用指南](guide.md)。
 
 ## 三步上手
 
@@ -110,7 +110,7 @@
 2. 将zip解压到任意文件夹。
 3. 在游戏中载入存档后，运行`AncestorsMap.exe`。如果缺少所需的运行时，程序会提示安装。
 
-首次使用时，可以点击问号按钮，查看分为7章、共31步的界面引导。详细说明请参阅[使用指南](docs/guide.zh.md)。
+首次使用时，可以点击问号按钮，查看分为7章、共31步的界面引导。详细说明请参阅[使用指南](guide.md)。
 
 ### 系统要求与兼容性
 
@@ -148,7 +148,7 @@
   工具会连接GitHub检查更新，无需账号或API密钥，也不会上传游戏记录。
   杀毒软件可能误报。你可以使用发布页面提供的SHA-256哈希值核对下载的文件。
 
-有关安全与操作辅助功能的详细说明，请参阅[使用指南](docs/guide.zh.md)。
+有关安全与操作辅助功能的详细说明，请参阅[使用指南](guide.md)。
 
 ## 各版本系列新增内容
 
@@ -159,7 +159,7 @@
 | 1.2 (1.2.0) | 叠加显示模式：在游戏界面的对应位置显示信息。 |
 | 1.3 (1.3.0 ~ 1.3.2) | 队伍与饰品预设、行动顺序概率预测、叠加显示设置、建筑窗口切换、奇物前自动切换英雄、速度设置（倍速模式）。 |
 
-各版本的详细内容请参阅[完整更新日志](CHANGELOG.zh.md)和[发布页面](https://github.com/Eolaloe/DD-AncestorsMap/releases)。
+各版本的详细内容请参阅[完整更新日志](CHANGELOG.md)和[发布页面](https://github.com/Eolaloe/DD-AncestorsMap/releases)。
 
 ## 已知限制
 
@@ -177,9 +177,9 @@
 
 ## 许可与致谢
 
-[LICENSE](LICENSE) — 可供个人自由使用；请通过官方仓库链接分享（重新上传文件或发布修改版请先联系作者）；禁止售卖。
+[LICENSE](../../LICENSE) — 可供个人自由使用；请通过官方仓库链接分享（重新上传文件或发布修改版请先联系作者）；禁止售卖。
 《暗黑地牢》（Darkest Dungeon）是 Red Hook Studios 的游戏。
 
 韩语助词处理规则参考了[es-hangul](https://github.com/toss/es-hangul)（toss，MIT）和kohangul（MIT）。
 
-[使用指南](docs/guide.zh.md) · [下载最新版本](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)
+[使用指南](guide.md) · [下载最新版本](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)

@@ -1,4 +1,4 @@
-[English](README.md) · [한국어](README.ko.md) · **日本語** · [中文](README.zh.md)
+[English](../../README.md) · [한국어](../ko/README.md) · **日本語** · [中文](../zh/README.md)
 
 # Ancestor's Map — DD Field Guide
 
@@ -6,16 +6,16 @@
 
 Darkest Dungeon 1向けのオーバーレイツールです。ゲームのメモリとセーブデータから現在の状態を読み取り、有効なDLCやMODのデータを反映して、ゲームと同じ計算式で数値を求めます。
 
-[![Release](https://img.shields.io/github/v/release/Eolaloe/DD-AncestorsMap)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest) [![Downloads](https://img.shields.io/github/downloads/Eolaloe/DD-AncestorsMap/total)](https://github.com/Eolaloe/DD-AncestorsMap/releases) [![License](https://img.shields.io/badge/license-custom-blue)](LICENSE)
+[![Release](https://img.shields.io/github/v/release/Eolaloe/DD-AncestorsMap)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest) [![Downloads](https://img.shields.io/github/downloads/Eolaloe/DD-AncestorsMap/total)](https://github.com/Eolaloe/DD-AncestorsMap/releases) [![License](https://img.shields.io/badge/license-custom-blue)](../../LICENSE)
 
 [![最新版をダウンロード](https://img.shields.io/badge/%E6%9C%80%E6%96%B0%E7%89%88%E3%82%92%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-blue?style=for-the-badge)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)
 
-[全機能一覧](#全機能一覧) · [使い方ガイド](docs/guide.ja.md) · [更新履歴](CHANGELOG.ja.md)
+[全機能一覧](#全機能一覧) · [使い方ガイド](guide.md) · [更新履歴](CHANGELOG.md)
 
 個人利用は無料・MOD対応・ゲームファイルの直接変更なし。メモリの読み取り・書き込みの範囲と操作補助については、[安全性](#安全性)をご覧ください。
 
 <!-- SHOT S1: 오버레이 전투 움짤 8 ~ 10초(영어 · 1600×900) — 기술을 바꿀 때마다 적 머리 위 값이 바뀌는 장면. 찍으면 같은 이름으로 덮어쓰기 -->
-<img src="images/overlay_hero.webp" width="100%" alt="ゲーム画面上のオーバーレイ — 敵の頭上にダメージ・命中・クリティカル確率とターン順">
+<img src="../../images/overlay_hero.webp" width="100%" alt="ゲーム画面上のオーバーレイ — 敵の頭上にダメージ・命中・クリティカル確率とターン順">
 
 - **使用中のMODの情報をまとめて確認。** 有効なMODのデータを自動で統合し、MODで追加・変更された敵・スキル・トリンケット・奇癖などの詳細を一か所で確認できます。
 - **スキルを使う前に比較。** 現在の装備・バフ・対象の耐性を反映したダメージや、命中・クリティカル・効果の発生確率を対象ごとに確認できます。
@@ -90,19 +90,19 @@ Darkest Dungeon 1向けのオーバーレイツールです。ゲームのメモ
 <table>
 <tr>
 <!-- SHOT S2: 오버레이 지도 — 전체 지도 공개 · 보스방까지 길 안내 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_map.webp" alt="マップ全体表示"><br><sub>マップ全体表示</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_map.webp" alt="マップ全体表示"><br><sub>マップ全体表示</sub></td>
 <!-- SHOT S3: 함정 · 골동품 앞 게임 화면 가운데 상호작용 카드 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_card.webp" alt="オブジェクト情報・操作カード"><br><sub>オブジェクト情報・操作カード</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_card.webp" alt="オブジェクト情報・操作カード"><br><sub>オブジェクト情報・操作カード</sub></td>
 </tr>
 <tr>
 <!-- SHOT S4: 원정대 프리셋 판 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_preset.webp" alt="パーティープリセット"><br><sub>パーティープリセット</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_preset.webp" alt="パーティープリセット"><br><sub>パーティープリセット</sub></td>
 <!-- SHOT S5: 보급품 구입 화면 추천 표 · 자동 구매 (영어 · 1600×900) -->
-<td width="380" align="center"><img src="images/overlay_supplies.webp" alt="補給品のおすすめ・自動購入"><br><sub>補給品のおすすめ・自動購入</sub></td>
+<td width="380" align="center"><img src="../../images/overlay_supplies.webp" alt="補給品のおすすめ・自動購入"><br><sub>補給品のおすすめ・自動購入</sub></td>
 </tr>
 </table>
 
-詳しい使い方は[使い方ガイド](docs/guide.ja.md)をご覧ください。
+詳しい使い方は[使い方ガイド](guide.md)をご覧ください。
 
 ## 使い始めるまでの3ステップ
 
@@ -110,7 +110,7 @@ Darkest Dungeon 1向けのオーバーレイツールです。ゲームのメモ
 2. 任意のフォルダーにzipを展開します。
 3. ゲームでセーブデータを読み込んでから、`AncestorsMap.exe`を起動します。必要なランタイムがなければ、インストールの案内が表示されます。
 
-初めて使う方は、はてなマークのボタンから全7章・31ステップの画面ガイドをご覧ください。詳しい説明は[使い方ガイド](docs/guide.ja.md)にあります。
+初めて使う方は、はてなマークのボタンから全7章・31ステップの画面ガイドをご覧ください。詳しい説明は[使い方ガイド](guide.md)にあります。
 
 ### 動作環境・互換性
 
@@ -149,7 +149,7 @@ Darkest Dungeon 1向けのオーバーレイツールです。ゲームのメモ
   更新の確認のためにGitHubへ接続します。アカウントやAPIキーは不要で、ゲームの記録をアップロードすることもありません。
   ウイルス対策ソフトが誤検知する場合があります。ダウンロードしたファイルは、リリースページのSHA-256ハッシュ値で確認できます。
 
-安全性と操作補助については[使い方ガイド](docs/guide.ja.md)をご覧ください。
+安全性と操作補助については[使い方ガイド](guide.md)をご覧ください。
 
 ## バージョン別の主な機能
 
@@ -160,7 +160,7 @@ Darkest Dungeon 1向けのオーバーレイツールです。ゲームのメモ
 | 1.2 (1.2.0) | オーバーレイモード — ゲームUIの対応位置に情報を表示。 |
 | 1.3 (1.3.0 ~ 1.3.2) | パーティー・トリンケットプリセット、行動順の確率予測、オーバーレイ設定、施設ウィンドウの切り替え、キュリオの前で英雄を自動切り替え、速度設定（倍速モード）。 |
 
-各バージョンの詳細は[更新履歴](CHANGELOG.ja.md)と[リリースページ](https://github.com/Eolaloe/DD-AncestorsMap/releases)をご覧ください。
+各バージョンの詳細は[更新履歴](CHANGELOG.md)と[リリースページ](https://github.com/Eolaloe/DD-AncestorsMap/releases)をご覧ください。
 
 ## 制限事項
 
@@ -179,11 +179,11 @@ Darkest Dungeon 1向けのオーバーレイツールです。ゲームのメモ
 
 ## ライセンス・クレジット
 
-[LICENSE](LICENSE) — 個人での利用は自由です。
+[LICENSE](../../LICENSE) — 個人での利用は自由です。
 共有する際は公式リポジトリのリンクをご利用ください（ファイルの再アップロードや改変版の共有は事前にご相談ください）。
 販売は禁止です。
 Darkest DungeonはRed Hook Studiosのゲームです。
 
 韓国語の助詞処理ルールは[es-hangul](https://github.com/toss/es-hangul)（toss、MIT）・kohangul（MIT）を参考にしています。
 
-[使い方ガイド](docs/guide.ja.md) · [最新版をダウンロード](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)
+[使い方ガイド](guide.md) · [最新版をダウンロード](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)

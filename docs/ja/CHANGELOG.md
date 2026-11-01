@@ -1,4 +1,4 @@
-[English](CHANGELOG.md) · [한국어](CHANGELOG.ko.md) · **日本語** · [中文](CHANGELOG.zh.md)
+[English](../en/CHANGELOG.md) · [한국어](../ko/CHANGELOG.md) · **日本語** · [中文](../zh/CHANGELOG.md)
 
 # 更新履歴
 

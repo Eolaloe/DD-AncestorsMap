@@ -1,4 +1,4 @@
-**English** · [한국어](README.ko.md) · [日本語](README.ja.md) · [中文](README.zh.md)
+**English** · [한국어](docs/ko/README.md) · [日本語](docs/ja/README.md) · [中文](docs/zh/README.md)
 
 # Ancestor's Map — DD Field Guide
 
@@ -10,7 +10,7 @@ An overlay for Darkest Dungeon 1 that uses the game’s own formulas to calculat
 
 [![Download the latest release](https://img.shields.io/badge/Download%20the%20latest%20release-blue?style=for-the-badge)](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)
 
-[All features](#all-features) · [User guide](docs/guide.md) · [Changelog](CHANGELOG.md)
+[All features](#all-features) · [User guide](docs/en/guide.md) · [Changelog](docs/en/CHANGELOG.md)
 
 Free for personal use · Mod support · No direct changes to game files. See [Safety](#safety) for memory access and input assistance.
 
@@ -102,7 +102,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 </tr>
 </table>
 
-See the [user guide](docs/guide.md) for instructions.
+See the [user guide](docs/en/guide.md) for instructions.
 
 ## Get started in three steps
 
@@ -110,7 +110,7 @@ See the [user guide](docs/guide.md) for instructions.
 2. Extract it to any folder.
 3. Load your save in the game, then run `AncestorsMap.exe`. If the runtime is missing, you’ll get an installation prompt.
 
-New here? The question-mark button opens a guided tour with 31 steps across seven chapters. See the [user guide](docs/guide.md) for full instructions.
+New here? The question-mark button opens a guided tour with 31 steps across seven chapters. See the [user guide](docs/en/guide.md) for full instructions.
 
 ### Requirements & compatibility
 
@@ -149,7 +149,7 @@ New here? The question-mark button opens a guided tour with 31 steps across seve
   The app connects to GitHub to check for updates. It needs no account or API key and does not upload game records.
   Antivirus software may flag the app by mistake. Use the SHA-256 hashes on the release page to verify your downloads.
 
-See the [user guide](docs/guide.md) for details on safety and input controls.
+See the [user guide](docs/en/guide.md) for details on safety and input controls.
 
 ## What each version series added
 
@@ -160,7 +160,7 @@ See the [user guide](docs/guide.md) for details on safety and input controls.
 | 1.2 (1.2.0) | Overlay mode: information placed directly on the game's UI. |
 | 1.3 (1.3.0 ~ 1.3.2) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
 
-For details on each version, see the [full changelog](CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
+For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
 
 ## Known limitations
 
@@ -183,4 +183,4 @@ Darkest Dungeon is a game by Red Hook Studios.
 
 Korean grammatical particle handling draws on [es-hangul](https://github.com/toss/es-hangul) (toss, MIT) and kohangul (MIT).
 
-[User guide](docs/guide.md) · [Download the latest release](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)
+[User guide](docs/en/guide.md) · [Download the latest release](https://github.com/Eolaloe/DD-AncestorsMap/releases/latest)

@@ -1,19 +1,19 @@
-[English](guide.md) · **한국어** · [日本語](guide.ja.md) · [中文](guide.zh.md)
+[English](../en/guide.md) · **한국어** · [日本語](../ja/guide.md) · [中文](../zh/guide.md)
 
 # 사용 안내
 
-[첫 화면으로](../README.ko.md)
+[첫 화면으로](README.md)
 
-1.3.2 기준으로 각 기능의 사용법과 조작 방법, 안전 정보를 안내합니다. 게임 고유 명칭과 설명은 게임과 활성화된 모드의 표기를 따릅니다. 버전별 변경 사항은 [변경 이력](../CHANGELOG.ko.md)에서 확인할 수 있습니다.
+1.3.2 기준으로 각 기능의 사용법과 조작 방법, 안전 정보를 안내합니다. 게임 고유 명칭과 설명은 게임과 활성화된 모드의 표기를 따릅니다. 버전별 변경 사항은 [변경 이력](CHANGELOG.md)에서 확인할 수 있습니다.
 
 ## 별도 창 모드
 
 게임 위에 별도 창을 띄워 지도와 전투 화면, 카드, 기록을 한곳에 모아 보여 줍니다. 창 크기와 배경 불투명도는 자유롭게 조절할 수 있습니다. 세이브를 불러오면 오버레이 모드로 자동 전환되며, 이후에는 원하는 모드로 바꿀 수 있습니다.
 
 <table>
-<tr><td align="center" width="50%"><img src="../images/card_curio.ko.webp" alt="맨손과 열쇠의 결과를 비교하고 선택할 수 있는 골동품 카드"><br><sub>골동품 카드</sub></td><td align="center" width="50%"><img src="../images/card_trap.ko.webp" alt="영웅별 함정 해제 확률과 스트레스"><br><sub>함정 해제</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/heroes.ko.webp" alt="마을 영웅 표와 장비·기술 카드"><br><sub>영웅 표와 카드</sub></td><td align="center" width="50%"><img src="../images/supplies.ko.webp" alt="던전과 원정 길이별 보급품 추천 표"><br><sub>보급품 추천</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/meter.ko.webp" alt="영웅별 원정 수치를 비교하는 미터기"><br><sub>원정 미터기</sub></td><td align="center" width="50%"><img src="../images/codex.ko.webp" alt="도감 검색과 적 카드"><br><sub>도감</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/card_curio.ko.webp" alt="맨손과 열쇠의 결과를 비교하고 선택할 수 있는 골동품 카드"><br><sub>골동품 카드</sub></td><td align="center" width="50%"><img src="../../images/card_trap.ko.webp" alt="영웅별 함정 해제 확률과 스트레스"><br><sub>함정 해제</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/heroes.ko.webp" alt="마을 영웅 표와 장비·기술 카드"><br><sub>영웅 표와 카드</sub></td><td align="center" width="50%"><img src="../../images/supplies.ko.webp" alt="던전과 원정 길이별 보급품 추천 표"><br><sub>보급품 추천</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/meter.ko.webp" alt="영웅별 원정 수치를 비교하는 미터기"><br><sub>원정 미터기</sub></td><td align="center" width="50%"><img src="../../images/codex.ko.webp" alt="도감 검색과 적 카드"><br><sub>도감</sub></td></tr>
 </table>
 
 ## 오버레이 모드
@@ -33,13 +33,13 @@
 - 늘 맨 위에 있는 촛불을 누르면 별도 창으로 펼치고, 촛불의 X 버튼으로 앱을 끕니다. 앱을 한 번 더 실행해도 별도 창으로 펼쳐집니다.
 
 <table>
-<tr><td align="center" width="50%"><img src="../images/overlay_parts.ko.webp" alt="오버레이 켜기 · 끄기"><br><sub>오버레이 켜기 · 끄기</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/overlay_parts.ko.webp" alt="오버레이 켜기 · 끄기"><br><sub>오버레이 켜기 · 끄기</sub></td></tr>
 </table>
 
 <table>
-<tr><td align="center" width="50%"><img src="../images/overlay_map.ko.webp" alt="게임 지도 칸에 들어간 앱 지도"><br><sub>탐험 — 지도</sub></td><td align="center" width="50%"><img src="../images/overlay_trap.ko.webp" alt="게임 화면 가운데 뜬 함정 카드"><br><sub>탐험 — 함정 카드</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/overlay_battle.ko.webp" alt="라운드 숫자 둘레의 스톨링 빛과 적 머리 위 값"><br><sub>전투 — 스톨링·머리 위 값</sub></td><td align="center" width="50%"><img src="../images/overlay_foe.ko.webp" alt="적 머리 위 값과 걸린 상태"><br><sub>전투 — 적 정보</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/overlay_town.ko.webp" alt="영지 이름 아래 미터기 표와 도감 판"><br><sub>마을 — 미터기·도감</sub></td><td align="center" width="50%"><img src="../images/overlay_supplies.ko.webp" alt="금화 위 화살표로 연 보급품 표"><br><sub>마을 — 보급품</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/overlay_map.ko.webp" alt="게임 지도 칸에 들어간 앱 지도"><br><sub>탐험 — 지도</sub></td><td align="center" width="50%"><img src="../../images/overlay_trap.ko.webp" alt="게임 화면 가운데 뜬 함정 카드"><br><sub>탐험 — 함정 카드</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/overlay_battle.ko.webp" alt="라운드 숫자 둘레의 스톨링 빛과 적 머리 위 값"><br><sub>전투 — 스톨링·머리 위 값</sub></td><td align="center" width="50%"><img src="../../images/overlay_foe.ko.webp" alt="적 머리 위 값과 걸린 상태"><br><sub>전투 — 적 정보</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/overlay_town.ko.webp" alt="영지 이름 아래 미터기 표와 도감 판"><br><sub>마을 — 미터기·도감</sub></td><td align="center" width="50%"><img src="../../images/overlay_supplies.ko.webp" alt="금화 위 화살표로 연 보급품 표"><br><sub>마을 — 보급품</sub></td></tr>
 </table>
 
 ## 자세히
@@ -86,7 +86,7 @@
 - 출정 영웅마다 프리셋을 고르고 **장신구 장착**으로 원정대 전체에 일괄 장착합니다. 직업마다 최근 출정 때 쓴 장신구 구성 두 벌이 **최근 장신구 1 · 2**로 남습니다. 금별은 최근 1, 은별은 최근 2이며, 별을 다시 누르면 저장할 프리셋을 고를 수 있습니다.
 
 <table>
-<tr><td align="center" width="50%"><img src="../images/preset_party.ko.webp" alt="원정대 프리셋"><br><sub>원정대 프리셋</sub></td><td align="center" width="50%"><img src="../images/preset_trinket.ko.webp" alt="장신구 프리셋 · 효과 합계"><br><sub>장신구 프리셋 · 효과 합계</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/preset_party.ko.webp" alt="원정대 프리셋"><br><sub>원정대 프리셋</sub></td><td align="center" width="50%"><img src="../../images/preset_trinket.ko.webp" alt="장신구 프리셋 · 효과 합계"><br><sub>장신구 프리셋 · 효과 합계</sub></td></tr>
 </table>
 
 - **장착 뒤 커서(1.3.2)** — 장신구 프리셋 적용 후 커서가 장신구 가방의 닫기 버튼 위치로 이동합니다.
@@ -179,7 +179,7 @@
 
 ## 라이선스 · 크레딧
 
-[LICENSE](../LICENSE) — 개인 용도로 자유롭게 사용할 수 있습니다. 공유할 때는 공식 저장소 링크를 이용해 주세요(파일 재업로드나 수정본 공유는 문의). 판매는 금지합니다.
+[LICENSE](../../LICENSE) — 개인 용도로 자유롭게 사용할 수 있습니다. 공유할 때는 공식 저장소 링크를 이용해 주세요(파일 재업로드나 수정본 공유는 문의). 판매는 금지합니다.
 Darkest Dungeon은 Red Hook Studios의 게임입니다.
 Claude와 Codex의 도움을 받아 만들었습니다.
 

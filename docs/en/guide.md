@@ -1,19 +1,19 @@
-**English** · [한국어](guide.ko.md) · [日本語](guide.ja.md) · [中文](guide.zh.md)
+**English** · [한국어](../ko/guide.md) · [日本語](../ja/guide.md) · [中文](../zh/guide.md)
 
 # User guide
 
-[Back to the overview](../README.md)
+[Back to the overview](../../README.md)
 
-How to use each feature in 1.3.2, with controls and safety information. Game names and descriptions follow the game and your active mods. For changes by version, see the [changelog](../CHANGELOG.md).
+How to use each feature in 1.3.2, with controls and safety information. Game names and descriptions follow the game and your active mods. For changes by version, see the [changelog](CHANGELOG.md).
 
 ## Standalone window mode
 
 The app floats over the game as its own window and gathers the map, battle screen, cards and records in one place. You can resize it and adjust the background opacity. Loading a save switches to overlay mode automatically; you can change modes freely afterwards.
 
 <table>
-<tr><td align="center" width="50%"><img src="../images/card_curio.en.webp" alt="A curio card with clickable columns for bare-handed interaction and using a key"><br><sub>Curio card</sub></td><td align="center" width="50%"><img src="../images/card_trap.en.webp" alt="Trap disarm chances and stress for each hero"><br><sub>Trap disarming</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/heroes.en.webp" alt="The town hero table with an equipment and skills card"><br><sub>Hero table and card</sub></td><td align="center" width="50%"><img src="../images/supplies.en.webp" alt="Recommended provisions by dungeon and expedition length"><br><sub>Supply recommendations</sub></td></tr>
-<tr><td align="center" width="50%"><img src="../images/meter.en.webp" alt="An expedition meter comparing each hero's contributions"><br><sub>Expedition meter</sub></td><td align="center" width="50%"><img src="../images/codex.en.webp" alt="Codex search with an enemy card"><br><sub>Codex</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/card_curio.en.webp" alt="A curio card with clickable columns for bare-handed interaction and using a key"><br><sub>Curio card</sub></td><td align="center" width="50%"><img src="../../images/card_trap.en.webp" alt="Trap disarm chances and stress for each hero"><br><sub>Trap disarming</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/heroes.en.webp" alt="The town hero table with an equipment and skills card"><br><sub>Hero table and card</sub></td><td align="center" width="50%"><img src="../../images/supplies.en.webp" alt="Recommended provisions by dungeon and expedition length"><br><sub>Supply recommendations</sub></td></tr>
+<tr><td align="center" width="50%"><img src="../../images/meter.en.webp" alt="An expedition meter comparing each hero's contributions"><br><sub>Expedition meter</sub></td><td align="center" width="50%"><img src="../../images/codex.en.webp" alt="Codex search with an enemy card"><br><sub>Codex</sub></td></tr>
 </table>
 
 ## Overlay mode
@@ -165,7 +165,7 @@ Open an [issue](https://github.com/Eolaloe/DD-AncestorsMap/issues) with your app
 
 ## License & credits
 
-[LICENSE](../LICENSE) — free for personal use; share the official repository link (ask before re-uploading the file or sharing a modified build); no selling.
+[LICENSE](../../LICENSE) — free for personal use; share the official repository link (ask before re-uploading the file or sharing a modified build); no selling.
 Darkest Dungeon is a game by Red Hook Studios.
 Made with help from Claude and Codex.
 
