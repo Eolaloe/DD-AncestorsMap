@@ -7,6 +7,12 @@
 
 1.0.0、1.0.1和1.1.1未公开发布，首个公开版本为1.0.2。
 
+## [1.3.3] - 2026-11-02
+
+### 改进
+
+- 微调部分界面布局
+
 ## [1.3.2] - 2026-11-01
 
 ### 新增功能
@@ -202,6 +208,7 @@
 
 - 修复战斗卡片的亮度修正、远征统计归属等多项问题。
 
+[1.3.3]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.3
 [1.3.2]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.2
 [1.3.0]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.0
 [1.2.0]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.2.0

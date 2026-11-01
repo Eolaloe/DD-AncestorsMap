@@ -7,6 +7,12 @@ Ancestor's Mapの主な変更点をまとめています。バージョン番号
 
 1.0.0・1.0.1・1.1.1は一般公開されていません。最初の公開版は1.0.2です。
 
+## [1.3.3] - 2026-11-02
+
+### 改善
+
+- UIの配置を一部調整
+
 ## [1.3.2] - 2026-11-01
 
 ### 新機能
@@ -202,6 +208,7 @@ Ancestor's Mapの主な変更点をまとめています。バージョン番号
 
 - 戦闘カードの明るさ補正や遠征メーターの集計先など、各種不具合を修正しました。
 
+[1.3.3]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.3
 [1.3.2]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.2
 [1.3.0]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.0
 [1.2.0]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.2.0

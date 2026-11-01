@@ -7,6 +7,12 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.3.3] - 2026-11-02
+
+### Improvements
+
+- Minor UI layout adjustments
+
 ## [1.3.2] - 2026-11-01
 
 ### New features
@@ -202,6 +208,7 @@ There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first pub
 
 - Various fixes, including combat-card light modifiers and expedition meter attribution.
 
+[1.3.3]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.3
 [1.3.2]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.2
 [1.3.0]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.0
 [1.2.0]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.2.0

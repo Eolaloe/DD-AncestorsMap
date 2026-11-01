@@ -7,6 +7,12 @@ Ancestor's Map의 주요 변경 사항을 기록합니다. 버전 번호는 `주
 
 1.0.0·1.0.1·1.1.1은 공개 릴리스가 없으며, 첫 공개 릴리스는 1.0.2입니다.
 
+## [1.3.3] - 2026-11-02
+
+### 개선
+
+- 일부 UI 배치 변경
+
 ## [1.3.2] - 2026-11-01
 
 ### 새 기능
@@ -202,6 +208,7 @@ Ancestor's Map의 주요 변경 사항을 기록합니다. 버전 번호는 `주
 
 - 그 밖에 전투 카드의 밝기 보정과 미터기 집계 정확도 등 여러 문제를 수정했습니다.
 
+[1.3.3]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.3
 [1.3.2]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.2
 [1.3.0]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.3.0
 [1.2.0]: https://github.com/Eolaloe/DD-AncestorsMap/releases/tag/v1.2.0
