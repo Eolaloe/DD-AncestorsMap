@@ -6,15 +6,17 @@ Ancestor's Map — DD Field Guide
 
 허용
   - 개인적인 용도로 자유롭게 사용할 수 있습니다.
-  - 스크린샷, 영상, 글에 담아 소개하는 것은 환영합니다. 출처를 밝혀 주세요.
+  - 스크린샷, 영상, 글로 소개하는 것은 환영합니다.
+    소개할 때는 공식 저장소 링크(https://github.com/Eolaloe/DD-AncestorsMap)를 함께 적어 주세요.
 
-금지
-  - 제작자 표시를 지우거나 바꾸어 배포하는 것.
-  - 자신이 만든 것처럼 소개하거나 공개하는 것.
+금지 (먼저 제작자의 허락을 받은 경우는 예외)
+  - 파일을 다른 곳에 다시 올리는 것.
+  - 수정하거나 변형한 판을 배포하는 것.
+  - 제작자 표시를 지우거나 바꾸는 것, 자신이 만든 것처럼 소개하는 것.
   - 유료로 판매하거나 유료 묶음에 포함하는 것.
 
-공유는 파일 대신 공식 저장소 링크(https://github.com/Eolaloe/DD-AncestorsMap)로 해 주세요.
-파일을 다른 곳에 다시 올리거나 수정본을 배포하려면 먼저 제작자에게 문의해 주세요.
+다른 곳에 올라간 파일은 변조되었거나 지난 판일 수 있습니다.
+앱은 공식 저장소의 Releases 에서만 받아 주세요.
 
 ---
 
@@ -24,13 +26,14 @@ Created by Eolaloe.
 
 Permitted
   - Personal use.
-  - Showing it in screenshots, videos or write-ups, with attribution.
+  - Showing it in screenshots, videos or write-ups is welcome.
+    When you do, please include the official repository link (https://github.com/Eolaloe/DD-AncestorsMap).
 
-Not permitted
-  - Removing or altering the authorship information.
-  - Presenting it as your own work.
+Not permitted (unless you have the author's permission first)
+  - Re-uploading the files anywhere else.
+  - Distributing modified or altered builds.
+  - Removing or altering the authorship information, or presenting it as your own work.
   - Selling it, or bundling it into anything sold.
 
-Please share the official repository link (https://github.com/Eolaloe/DD-AncestorsMap)
-instead of the file. To re-upload the file elsewhere, or to distribute a modified
-build, ask the author first.
+Copies uploaded elsewhere may be tampered with or out of date.
+Please download the app only from the official repository's Releases page.
