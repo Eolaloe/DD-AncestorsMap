@@ -55,7 +55,9 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <td valign="top" width="380">
 <b>Expedition</b>
 <ul>
-<li><b>Speed settings (speed multipliers)</b><br><sub>Adjust forward movement, backward movement, combat and scouting separately</sub></li>
+<li><b>Speed settings (speed multipliers)</b><br><sub>Adjust forward movement, backward movement, combat, scouting and room transitions separately</sub></li>
+<li><b>Map bottom bar auto-hide</b><br><sub>Hover near the bottom of the overlay map to show counters and supply totals</sub></li>
+<li><b>Hide the Butcher’s Circus</b><br><sub>Choose whether to show the icon in town settings</sub></li>
 <li><b>Detailed dungeon map</b><br><sub>Curios, traps and enemy groups per tile</sub></li>
 <li><b>Full map reveal</b><br><sub>Preview unexplored areas</sub></li>
 <li><b>Spoiler controls</b><br><sub>Revealed areas only; hide enemy info</sub></li>
@@ -134,8 +136,9 @@ New here? The question-mark button opens a guided tour with 31 steps across seve
 
 | Memory access | Scope |
 |---|---|
-| **Read** | Reads the current game state for maps, combat information and other features. Features other than Speed settings do not write directly to game memory. |
-| **Write — Speed settings only** | Changes only the speed values you select. Original values are recorded before changes and restored when you reset or close the app. |
+| **Read** | Reads the current game state for maps, combat information and other features. Only the two features below write directly to game memory. |
+| **Write — Speed settings** | Changes the selected speed values. Original values are recorded before changes and restored when you reset or close the app normally. |
+| **Write — Hide the Butcher’s Circus** | Changes only the icon’s display coordinates. Original coordinates are restored when you turn hiding off or close the app normally. |
 
 - No direct writes to game files or saves, and no code injection.
   App settings and expedition records are stored separately.
@@ -158,7 +161,7 @@ See the [user guide](docs/en/guide.md) for details on safety and input controls.
 | 1.0 (1.0.2 ~ 1.0.8) | Dungeon map and combat cards, logs and meters, room travel, supply recommendations and auto-buy. |
 | 1.1 (1.1.0 ~ 1.1.4) | Battle screen, clickable exploration cards, trap stopping, inventory sorting, riposte and auto torch. |
 | 1.2 (1.2.0) | Overlay mode: information placed directly on the game's UI. |
-| 1.3 (1.3.0 ~ 1.3.2) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
+| 1.3 (1.3.0 ~ 1.3.5) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
 
 For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
 

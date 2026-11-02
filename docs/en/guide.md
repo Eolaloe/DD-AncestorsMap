@@ -4,7 +4,7 @@
 
 [Back to the overview](../../README.md)
 
-How to use each feature in 1.3.2, with controls and safety information. Game names and descriptions follow the game and your active mods. For changes by version, see the [changelog](CHANGELOG.md).
+How to use each feature in 1.3.5, with controls and safety information. Game names and descriptions follow the game and your active mods. For changes by version, see the [changelog](CHANGELOG.md).
 
 ## Standalone window mode
 
@@ -36,10 +36,19 @@ Overlay mode folds the app window into a single candle button and **adds a trans
 
 ### Speed settings (speed multipliers)
 
-- Open the first tab in the overlay side panel. Adjust forward movement, backward movement, combat and scouting speeds separately.
-- Adjust the multiplier with the − / + buttons, the mouse wheel, or direct number entry.
-- Adjust in steps of 0.1×, from 0.5× to 4.0× for movement and scouting, or 0.5× to 2.0× for combat.
-- Reset or close the app to restore the original values. Speed settings is the only feature that writes directly to game memory; the app records the original values before changing them.
+- Open the first tab in the overlay side panel. Adjust forward movement, backward movement, combat, scouting and room transition speeds separately.
+- Adjust the multiplier with the − / + buttons, mouse wheel or direct number entry.
+- Adjust in steps of 0.1×, from 1.0× to 4.0× for movement, scouting and room transitions, or 1.0× to 2.0× for combat.
+- Room transition speed affects fades during room entry and exit and related transitions. It also speeds up the walk into a room, then returns to your selected forward movement speed.
+- Reset or close the app normally to restore the original values, which are recorded before changes.
+
+### Additional map and town settings
+
+- Scouting automatically switches to the map tab. Scouting waves and tile reveal animations appear in both window and overlay modes.
+- Use the curio icon below the map to hide details of unvisited curios and their entries in the supply tally. This setting is independent of the full-map and battle-information toggles.
+- The fifth button on the overlay map toggles bottom bar auto-hide: off keeps it visible; on hides it automatically. Hover anywhere along the bottom edge to slide it into view. It slides away about 1.5 seconds after you leave, with a gold handle marking its position while hidden.
+- The combat, curio preview, auto-stop before traps and hunger tile checkboxes in overlay settings share the existing map toggle settings.
+- Town settings let you hide trinket presets or automatically close the trinket inventory and hero window after applying one. **Hide The Butcher's Circus** under miscellaneous settings is off by default and hides only the town icon.
 
 ### Combat
 
@@ -106,8 +115,9 @@ Overlay mode folds the app window into a single candle button and **adds a trans
 
 | Memory access | Scope |
 |---|---|
-| **Read** | Reads the current game state for maps, combat information and other features. Features other than Speed settings do not write directly to game memory. |
-| **Write — Speed settings only** | Changes only the speed values you select. Original values are recorded before changes and restored when you reset or close the app. |
+| **Read** | Reads the current game state for maps, combat information and other features. Only the two features below write directly to game memory. |
+| **Write — Speed settings** | Changes the selected speed values. Original values are recorded before changes and restored when you reset or close the app normally. |
+| **Write — Hide the Butcher’s Circus** | Changes only the icon’s display coordinates. Original coordinates are restored when you turn hiding off or close the app normally. |
 
 - **Game files and saves** — The app does not write to them directly or inject code into the game process. Its own settings and expedition records are stored separately.
 - **Input helpers operate the game.** Moving between rooms, choosing card options, using items, disarming traps, buying, sorting, restoring party order, forming parties and equipping trinkets all send clicks, keystrokes or drag-and-drop input to the game. The game may save the results of these actions as part of its normal saves.

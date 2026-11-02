@@ -7,6 +7,22 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.3.5] - 2026-11-02
+
+### New features
+- **Room transition speed**: added a separate speed setting, up to 4×. Also speeds up the walk into a room, then returns to your normal forward movement speed
+- **Scouting effects and automatic map switching**: automatically opens the map when scouting begins, with an expanding wave and tile reveal animations. Available in both window and overlay modes
+- **Curio preview toggle** (curio icon below the map): hides details of curios you have not reached yet, along with their entries in the supply tally. Works independently of the full-map toggle
+- **Map bottom bar auto-hide** (overlay only): the fifth map button toggles auto-hide for counters and supply totals. Hover near the bottom edge to slide the bar into view; a small gold handle marks it while hidden
+- **Town settings**: options to hide the Butcher’s Circus icon or the trinket preset panel, and to automatically close the trinket inventory and hero window after applying a trinket preset
+
+### Improvements
+- Town overlays now follow screen fades. Dungeon torch and scouting information follows the game HUD’s visibility, and the curio auto-switch toggle follows its hero’s health bar
+- Added battle, curio, trap and hunger-tile options to the overlay settings panel, linked to the existing map toggles
+
+### Bug fixes
+- Various bug fixes
+
 ## [1.3.3] - 2026-11-02
 
 ### Improvements
