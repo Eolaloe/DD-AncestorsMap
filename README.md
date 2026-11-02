@@ -44,6 +44,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Roster-wide meter</b><br><sub>Compare cumulative stats across all heroes</sub></li>
 <li><b>Building upgrade planner</b><br><sub>Compare upgrade costs with available resources</sub></li>
 <li><b>Building navigation</b><br><sub>Q / E: previous / next building</sub></li>
+<li><b>Hide the Butcher’s Circus</b><br><sub>Choose whether to show the icon in town settings</sub></li>
 <li><b>Party presets</b><br><sub>Stored per save file; reload your most recent party</sub></li>
 <li><b>Trinket presets</b><br><sub>10 per class; equip the whole party at once</sub></li>
 <li><b>Random party selection</b></li>
@@ -57,7 +58,6 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <ul>
 <li><b>Speed settings (speed multipliers)</b><br><sub>Adjust forward movement, backward movement, combat, scouting and room transitions separately</sub></li>
 <li><b>Map bottom bar auto-hide</b><br><sub>Hover near the bottom of the overlay map to show counters and supply totals</sub></li>
-<li><b>Hide the Butcher’s Circus</b><br><sub>Choose whether to show the icon in town settings</sub></li>
 <li><b>Detailed dungeon map</b><br><sub>Curios, traps and enemy groups per tile</sub></li>
 <li><b>Full map reveal</b><br><sub>Preview unexplored areas</sub></li>
 <li><b>Spoiler controls</b><br><sub>Revealed areas only; hide enemy info</sub></li>
