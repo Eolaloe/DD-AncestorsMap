@@ -46,7 +46,7 @@ Overlay mode folds the app window into a single candle button and **adds a trans
 
 - Scouting automatically switches to the map tab. Scouting waves and tile reveal animations appear in both window and overlay modes.
 - Use the curio icon below the map to hide details of unvisited curios and their entries in the supply tally. This setting is independent of the full-map and battle-information toggles.
-- The fifth button on the overlay map toggles bottom bar auto-hide: off keeps it visible; on hides it automatically. Hover anywhere along the bottom edge to slide it into view. It slides away about 1.5 seconds after you leave, with a gold handle marking its position while hidden.
+- The fifth button on the overlay map toggles auto-hide for the object counters and supply totals: off keeps them visible; on hides them automatically. Hover anywhere along the bottom edge to slide them into view. They slide away about 1.5 seconds after you leave, with a gold handle marking their position while hidden.
 - The combat, curio preview, auto-stop before traps and hunger tile checkboxes in overlay settings share the existing map toggle settings.
 - Town settings let you hide trinket presets or automatically close the trinket inventory and hero window after applying one. **Hide The Butcher's Circus** under miscellaneous settings is off by default and hides only the town icon.
 

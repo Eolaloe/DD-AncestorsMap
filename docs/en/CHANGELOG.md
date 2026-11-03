@@ -7,6 +7,18 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.3.6] - 2026-11-04
+
+### Improvements
+- The overlay no longer covers in-game tooltips
+- Secret rooms you can enter and ones you cannot yet enter now use different icons
+- Traps revealed by scouting and unrevealed traps now use different icons
+
+### Bug fixes
+- Fixed a bug in speed settings
+- Fixed room moves being attempted while camping
+- Fixed torch info and other unneeded overlays staying visible while camping
+
 ## [1.3.5] - 2026-11-02
 
 ### New features

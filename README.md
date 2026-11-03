@@ -57,7 +57,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <b>Expedition</b>
 <ul>
 <li><b>Speed settings (speed multipliers)</b><br><sub>Adjust forward movement, backward movement, combat, scouting and room transitions separately</sub></li>
-<li><b>Map bottom bar auto-hide</b><br><sub>Hover near the bottom of the overlay map to show counters and supply totals</sub></li>
+<li><b>Auto-hide object counters</b><br><sub>Hover near the bottom of the overlay map to show the counters and supply totals</sub></li>
 <li><b>Detailed dungeon map</b><br><sub>Curios, traps and enemy groups per tile</sub></li>
 <li><b>Full map reveal</b><br><sub>Preview unexplored areas</sub></li>
 <li><b>Spoiler controls</b><br><sub>Revealed areas only; hide enemy info</sub></li>
