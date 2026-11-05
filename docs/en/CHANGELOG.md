@@ -7,6 +7,19 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.4.0] - 2026-11-06
+
+### New features
+- Added support for new game versions (Steam public version 26437048 and the DRM-free version), with continued support for older game versions
+- Calculations for new game versions now include combat rules added in the Modding Update (effect chance modifiers, critical damage, healing received, Daze, forced resistance checks, effect target conditions, skill locks, and more)
+
+### Improvements
+- Map bottom bar auto-hide: now opens after hovering over the map’s bottom-left corner for 0.5 seconds (no longer pops up when clicking near the bottom of the map)
+- Code structure improvements and optimizations
+
+### Bug fixes
+- Various bug fixes
+
 ## [1.3.6] - 2026-11-04
 
 ### Improvements
