@@ -7,6 +7,16 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.5.1] - 2026-11-12
+
+### Improvements
+- The overlay no longer stutters on high-resolution, high-end PCs when the game runs without a frame limit — the overlay now draws without waiting for the GPU
+- Lower CPU use while the map is shown
+- Info cards in overlay mode now keep the same size relative to the game, regardless of Windows display scaling
+
+### Bug fixes
+- Various bug fixes
+
 ## [1.5.0] - 2026-11-12
 
 ### New features
