@@ -158,7 +158,9 @@ See the [user guide](docs/en/guide.md) for details on safety and input controls.
 | 1.0 (1.0.2 ~ 1.0.8) | Dungeon map and combat cards, logs and meters, room travel, supply recommendations and auto-buy. |
 | 1.1 (1.1.0 ~ 1.1.4) | Battle screen, clickable exploration cards, trap stopping, inventory sorting, riposte and auto torch. |
 | 1.2 (1.2.0) | Overlay mode: information placed directly on the game's UI. |
-| 1.3 (1.3.0 ~ 1.3.5) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
+| 1.3 (1.3.0 ~ 1.3.6) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
+| 1.4 (1.4.0) | Support for game version 28385 (Steam and DRM-free), with the combat rules added by the modding update. |
+| 1.5 (1.5.0 ~ 1.5.1) | GOG support, more accurate combat numbers (most approximate values now exact), smooth overlay on high-resolution, high-end PCs. |
 
 For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
 

@@ -4,7 +4,7 @@
 
 [Back to the overview](../../README.md)
 
-How to use each feature in 1.3.5, with controls and safety information. Game names and descriptions follow the game and your active mods. For changes by version, see the [changelog](CHANGELOG.md).
+How to use each feature in 1.5.1, with controls and safety information. Game names and descriptions follow the game and your active mods. For changes by version, see the [changelog](CHANGELOG.md).
 
 ## Standalone window mode
 
@@ -88,7 +88,7 @@ Overlay mode folds the app window into a single candle button and **adds a trans
 
 ### Records and town preparation
 
-- The activity log keeps recording combat, exploration and camping events. Open it with `[End]`; combat no longer opens the log automatically. Review the last ten expeditions for each save, including their final meters.
+- Open the activity log with `[End]` to review the meters for the last ten expeditions of each save. Combat does not open the log automatically.
 - The town hero table compares levels, expedition counts, steps and cumulative stats recorded by the app. Hover over a portrait for equipment, combat skills and camping skills.
 - The provisions table recommends amounts by dungeon and expedition length. Dungeons from enabled dungeon mods (Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide, The Fiend Festival) are listed too, and the quest you picked is highlighted with its dungeon moved to the top. Click a row to preview purchases, sales and cost, then **click the same row again within 3 seconds to buy**. Ranges use the higher amount, and free provisions are not sold. It also adjusts Blood for cursed party members while reserving Blood for wasting heroes left in town.
 - Search the Codex for enemies, trinkets, town events, diseases, virtues, afflictions and quirks by name, rarity, class or effect. The building and district view compares planned upgrade costs with your resources. Use it to plan upgrades; it does not build them for you in the game.
