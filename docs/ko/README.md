@@ -72,7 +72,7 @@
 <li><b>횃불 자동 사용</b><br><sub>고른 밝기 유지 · 암흑 고정</sub></li>
 <li><b>정찰 · 야습 확률</b></li>
 <li><b>소지품 자동 정리 · 판매가</b><br><sub>묶음 합치기 · 칸 정렬</sub></li>
-<li><b>활동 일지 · 미터기</b><br><sub>전투 · 탐험 기록과 영웅별 기여</sub></li>
+<li><b>활동 일지 · 미터기</b><br><sub>지난 원정 10개의 전투 · 탐험 미터기와 영웅별 기여</sub></li>
 </ul>
 </td>
 <td valign="top" width="380">
@@ -119,15 +119,12 @@
 - Windows 10/11, [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0), 설치된 Darkest Dungeon 1이 필요합니다.
 
 - 실시간 정보와 입력 보조를 쓰려면 앱이 지원하는 **64비트** 게임이 필요합니다.
-  스팀 공개판과 `coming_in_hot` 베타에서 스팀용 실행 파일과 DRM 없는(`_windowsnosteam`) 실행 파일을 지원합니다.
+  스팀 · DRM 없는 판(`_windowsnosteam`) · GOG 판을 지원합니다.
   32비트 게임이나 앱이 인식하지 못하는 버전에서는 메모리를 읽지 않습니다. 세이브를 바탕으로 하는 기능만 쓸 수 있으며, 일지 상태 줄에 이유가 나옵니다.
 
 - 켜 둔 DLC와 모드를 확인하고 적용 순서에 맞춰 자료를 읽습니다.
   던전 추가 모드는 Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide, The Fiend Festival에서 동작을 확인했습니다.
   모든 모드를 검증한 것은 아닙니다.
-
-- 스팀 설치 환경을 기준으로 만들었으며, DRM 없는 실행 파일에서도 동작을 확인했습니다.
-  GOG 등 다른 플랫폼에서는 게임 설치 폴더나 세이브 경로를 자동으로 찾지 못할 수 있습니다.
 
 - 한국어·English·日本語·简体中文을 지원합니다.
   처음에는 게임 언어를 따르고, 이후에는 앱에서 선택한 언어를 사용합니다.
@@ -175,7 +172,7 @@
 
 ## 문제 제보
 
-[Issues](https://github.com/Eolaloe/DD-AncestorsMap/issues)에 앱 버전(서명 클릭), 게임 버전(공개판 / `coming_in_hot` / DRM 없는 판), 켜 둔 모드 목록, 어느 화면에서 어떤 조작을 했는지 적어 주세요.
+[Issues](https://github.com/Eolaloe/DD-AncestorsMap/issues)에 앱 버전(서명 클릭), 게임 버전(스팀 / DRM 없는 판 / GOG), 켜 둔 모드 목록, 어느 화면에서 어떤 조작을 했는지 적어 주세요.
 가능하면 스크린샷과 앱에 나온 알림 문구도 첨부해 주세요.
 
 ## 라이선스 · 크레딧

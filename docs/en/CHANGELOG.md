@@ -7,6 +7,20 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.5.0] - 2026-11-12
+
+### New features
+- Added support for the GOG version of the game
+
+### Improvements
+- Combat numbers now follow the game's own calculations more closely — most approximate (≈) values are now shown as exact values (critical follow-up effects, turn order with Daze, horror ticks, buff steals, and more)
+- The activity log's text entries have been removed — the log tab now shows meters for your last 10 expeditions (meters and combat numbers are unchanged)
+- Removed the AI odds (chance to use a skill / target a hero) from enemy cards in window mode
+- The app now shows a notice right away when it can't run because of the game version, a 32-bit game, or permissions
+
+### Bug fixes
+- Various bug fixes
+
 ## [1.4.0] - 2026-11-06
 
 ### New features

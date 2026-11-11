@@ -106,9 +106,8 @@
 ## 系统要求与兼容性
 
 - 需要Windows 10/11、[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)，并已安装《暗黑地牢》一代。运行时需另行安装。
-- 实时信息与输入辅助需要工具支持的**64位**游戏。支持Steam公开版和`coming_in_hot`测试版的Steam及无DRM（`_windowsnosteam`）可执行文件。对于32位或无法识别的游戏版本，工具不会读取内存，只提供基于存档的功能，并在日志状态栏说明原因。
+- 实时信息与输入辅助需要工具支持的**64位**游戏。支持Steam版、无DRM版（`_windowsnosteam`）和GOG版。对于32位或无法识别的游戏版本，工具不会读取内存，只提供基于存档的功能，并在日志状态栏说明原因。
 - 会读取启用的DLC、模组及其加载顺序。已测试的地牢模组包括Courtyard Plus、Farmstead Plus、The Sunward Isles、Vermintide和The Fiend Festival，并非所有模组都经过验证。
-- 工具以Steam安装环境为基础开发，也测试过无DRM可执行文件。GOG等其他平台的安装位置或存档路径可能无法自动识别。
 - 支持한국어、English、日本語和简体中文。首次启动跟随游戏语言，此后使用你在工具中选择的语言。
 
 ## 安全说明
@@ -171,7 +170,7 @@
 
 ## 问题反馈
 
-请在[Issues](https://github.com/Eolaloe/DD-AncestorsMap/issues)中说明工具版本（点击署名查看）、游戏版本（公开版／`coming_in_hot`／无DRM版）、启用的模组，以及在哪个界面进行了什么操作。方便的话，请附上截图和工具显示的通知文字。
+请在[Issues](https://github.com/Eolaloe/DD-AncestorsMap/issues)中说明工具版本（点击署名查看）、游戏版本（Steam版／无DRM版／GOG版）、启用的模组，以及在哪个界面进行了什么操作。方便的话，请附上截图和工具显示的通知文字。
 
 ## 许可与致谢
 

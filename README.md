@@ -72,7 +72,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Auto torch</b><br><sub>Maintain chosen light level or darkness</sub></li>
 <li><b>Scouting and nighttime ambush chances</b></li>
 <li><b>Inventory sorting and sell values</b><br><sub>Merge stacks and organize items</sub></li>
-<li><b>Activity log and meter</b><br><sub>Track combat, exploration and each hero’s contributions</sub></li>
+<li><b>Activity log and meter</b><br><sub>Meters for combat, exploration and each hero’s contributions over your last 10 expeditions</sub></li>
 </ul>
 </td>
 <td valign="top" width="380">
@@ -119,15 +119,12 @@ New here? The question-mark button opens a guided tour with 31 steps across seve
 - Windows 10/11, the [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0) and an installed copy of Darkest Dungeon 1.
 
 - Live information and input assistance require a supported **64-bit** game build.
-  The Steam public and `coming_in_hot` beta builds are supported, with either the Steam or DRM-free (`_windowsnosteam`) executable.
+  Steam, DRM-free (`_windowsnosteam`) and GOG are supported.
   With a 32-bit or unrecognised build, the app skips memory reading, offers save-based features only, and explains why in the log's status line.
 
 - Active DLC, mods and their load order are read from your save.
   Tested dungeon mods include Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide and The Fiend Festival.
   Not every mod has been tested.
-
-- Designed for Steam installations and also tested with the DRM-free executable.
-  Other platforms, including GOG, may use game or save locations the app cannot find automatically.
 
 - Supports 한국어, English, 日本語 and 简体中文.
   It follows the game language on first run, then uses the language you choose in the app.
@@ -176,7 +173,7 @@ For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and 
 
 ## Reporting issues
 
-Open an [issue](https://github.com/Eolaloe/DD-AncestorsMap/issues) with your app version (click the signature), game version (public / `coming_in_hot` / DRM-free), active mods, and which screen and action caused the problem.
+Open an [issue](https://github.com/Eolaloe/DD-AncestorsMap/issues) with your app version (click the signature), game version (Steam / DRM-free / GOG), active mods, and which screen and action caused the problem.
 Include a screenshot and the app's notification text if possible.
 
 ## License & credits

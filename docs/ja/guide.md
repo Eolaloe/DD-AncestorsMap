@@ -106,9 +106,8 @@
 ## 動作環境・互換性
 
 - Windows 10/11、[.NET 8 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/8.0)、インストール済みのDarkest Dungeon 1が必要です。ランタイムは別途インストールします。
-- リアルタイム情報と操作補助は、対応する**64ビット版**のゲームで使えます。Steam公開版・`coming_in_hot`ベータのSteam用およびDRMフリー用（`_windowsnosteam`）実行ファイルに対応しています。32ビット版や未対応のバージョンではメモリを読み取らず、セーブに基づく機能のみ利用できます。理由はログの状態欄に表示します。
+- リアルタイム情報と操作補助は、対応する**64ビット版**のゲームで使えます。Steam版・DRMフリー版（`_windowsnosteam`）・GOG版に対応しています。32ビット版や未対応のバージョンではメモリを読み取らず、セーブに基づく機能のみ利用できます。理由はログの状態欄に表示します。
 - 有効なDLC・MODと適用順を読み取ります。ダンジョン追加MODはCourtyard Plus、Farmstead Plus、The Sunward Isles、Vermintide、The Fiend Festivalで確認しています。すべてのMODを検証したわけではありません。
-- Steamのインストール環境を前提に開発しており、DRMフリーの実行ファイルでも動作を確認しています。GOGなどではインストール先やセーブの場所を自動検出できない場合があります。
 - 한국어・English・日本語・简体中文に対応しています。初回はゲームの言語を使い、その後はアプリで選んだ言語を使います。
 
 ## 安全性
@@ -171,7 +170,7 @@
 
 ## 不具合の報告
 
-[Issues](https://github.com/Eolaloe/DD-AncestorsMap/issues)に、アプリのバージョン（署名をクリックして確認）、ゲームのバージョン（公開版／`coming_in_hot`／DRMフリー版）、有効なMOD、どの画面で何をしたかを書いてください。可能ならスクリーンショットとアプリに表示された通知文も添えてください。
+[Issues](https://github.com/Eolaloe/DD-AncestorsMap/issues)に、アプリのバージョン（署名をクリックして確認）、ゲームのバージョン（Steam版／DRMフリー版／GOG版）、有効なMOD、どの画面で何をしたかを書いてください。可能ならスクリーンショットとアプリに表示された通知文も添えてください。
 
 ## ライセンス・クレジット
 
