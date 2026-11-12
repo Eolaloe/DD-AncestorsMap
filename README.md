@@ -122,6 +122,10 @@ New here? The question-mark button opens a guided tour with 31 steps across seve
   Steam, DRM-free (`_windowsnosteam`) and GOG are supported.
   With a 32-bit or unrecognised build, the app skips memory reading, offers save-based features only, and explains why in the log's status line.
 
+- Keep the game's vertical sync on (Darkest Dungeon's default).
+  If it is forced off in your graphics card settings or a Steam launch option, the game uses up the GPU and the overlay can lag badly.
+  The app shows a notice when the game runs without vertical sync.
+
 - Active DLC, mods and their load order are read from your save.
   Tested dungeon mods include Courtyard Plus, Farmstead Plus, The Sunward Isles, Vermintide and The Fiend Festival.
   Not every mod has been tested.
@@ -160,7 +164,7 @@ See the [user guide](docs/en/guide.md) for details on safety and input controls.
 | 1.2 (1.2.0) | Overlay mode: information placed directly on the game's UI. |
 | 1.3 (1.3.0 ~ 1.3.6) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
 | 1.4 (1.4.0) | Support for game version 28385 (Steam and DRM-free), with the combat rules added by the modding update. |
-| 1.5 (1.5.0 ~ 1.5.1) | GOG support, more accurate combat numbers (most approximate values now exact), smooth overlay on high-resolution, high-end PCs. |
+| 1.5 (1.5.0 ~ 1.5.2) | GOG support, more accurate combat numbers (most approximate values now exact), Death's Door death chance, frame limit notice. |
 
 For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
 

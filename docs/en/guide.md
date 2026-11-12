@@ -4,7 +4,7 @@
 
 [Back to the overview](../../README.md)
 
-How to use each feature in 1.5.1, with controls and safety information. Game names and descriptions follow the game and your active mods. For changes by version, see the [changelog](CHANGELOG.md).
+How to use each feature in 1.5.2, with controls and safety information. Game names and descriptions follow the game and your active mods. For changes by version, see the [changelog](CHANGELOG.md).
 
 ## Standalone window mode
 

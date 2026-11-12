@@ -7,6 +7,21 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.5.2] - 2026-11-12
+
+### New features
+- Frame limit notice — if the game runs without a frame limit (vertical sync off), the app shows a notice with the GeForce or Radeon setting to turn it back on and a button that opens your graphics control panel
+- Death's Door death chance — when an enemy targets a hero at Death's Door, the death chance shows above that hero in place of the damage. The status columns above each character also show the chance of dying to upcoming damage over time this turn
+
+### Improvements
+- Overlay drawing is back on the GPU — the CPU drawing from 1.5.1 made animations stutter. Heavy overlay lag on high-end PCs comes from the game's vertical sync being forced off; keep it on (the game's default)
+- Burn now shows one line per effect, with chance and amount, like Blight and Bleed
+
+### Bug fixes
+- Fixed quest objective info and pathfinding for quests that start with a quest item (such as the Courtyard)
+- Fixed missing curio images for some curios, including those in the Ruins tutorial
+- Various bug fixes
+
 ## [1.5.1] - 2026-11-12
 
 ### Improvements
