@@ -36,6 +36,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Mod and DLC support</b><br><sub>Values from active mods and DLC</sub></li>
 <li><b>Codex</b><br><sub>Enemy, trinket, quirk and disease search</sub></li>
 <li><b>Four languages</b><br><sub>Uses the game’s official terminology</sub></li>
+<li><b>Skin Spine Separation</b><br><sub>Use skin mods with different spines on the same class at once</sub></li>
 </ul>
 </td>
 <td valign="top" width="380">
@@ -45,6 +46,9 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Building upgrade planner</b><br><sub>Compare upgrade costs with available resources</sub></li>
 <li><b>Building navigation</b><br><sub>Q / E: previous / next building</sub></li>
 <li><b>Hide the Butcher’s Circus</b><br><sub>Choose whether to show the icon in town settings</sub></li>
+<li><b>Disable Courtyard Town Event</b><br><sub>Stops the recurring stress event that overrides other town events</sub></li>
+<li><b>Expedition Level Limit</b><br><sub>Default · Relaxed · Removed</sub></li>
+<li><b>Inventory Stacking</b><br><sub>Adjust stack sizes for base game and mod items</sub></li>
 <li><b>Party presets</b><br><sub>Stored per save file; reload your most recent party</sub></li>
 <li><b>Trinket presets</b><br><sub>10 per class; equip the whole party at once</sub></li>
 <li><b>Random party selection</b></li>
@@ -72,6 +76,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Auto torch</b><br><sub>Maintain chosen light level or darkness</sub></li>
 <li><b>Scouting and nighttime ambush chances</b></li>
 <li><b>Inventory sorting and sell values</b><br><sub>Merge stacks and organize items</sub></li>
+<li><b>Auto-collect Journals</b><br><sub>Journal pages register as soon as they drop</sub></li>
 <li><b>Activity log and meter</b><br><sub>Meters for combat, exploration and each hero’s contributions over your last 10 expeditions</sub></li>
 </ul>
 </td>
@@ -101,6 +106,10 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <td width="380" align="center"><img src="images/overlay_preset.webp" alt="Party presets"><br><sub>Party presets</sub></td>
 <!-- SHOT S5: 보급품 구입 화면 추천 표 · 자동 구매 (영어 · 1600×900) -->
 <td width="380" align="center"><img src="images/overlay_supplies.webp" alt="Recommended provisions and auto-buy"><br><sub>Recommended provisions and auto-buy</sub></td>
+</tr>
+<tr>
+<td width="380" align="center"><img src="images/overlay_skin_spine.webp" alt="Skin Spine Separation"><br><sub>Skin Spine Separation</sub></td>
+<td width="380" align="center"><img src="images/overlay_stacking.en.webp" alt="Inventory Stacking"><br><sub>Inventory Stacking</sub></td>
 </tr>
 </table>
 
@@ -137,11 +146,11 @@ New here? The question-mark button opens a guided tour with 31 steps across seve
 
 | Memory access | Scope |
 |---|---|
-| **Read** | Reads the current game state for maps, combat information and other features. Only the two features below write directly to game memory. |
-| **Write — Speed settings** | Changes the selected speed values. Original values are recorded before changes and restored when you reset or close the app normally. |
-| **Write — Hide the Butcher’s Circus** | Changes only the icon’s display coordinates. Original coordinates are restored when you turn hiding off or close the app normally. |
+| **Read** | Reads the current game state for maps, combat information and other features. |
+| **Write** | Changes only the values each feature needs: Speed settings · Hide the Butcher’s Circus · Disable Courtyard Town Event · Auto-collect Journals · Expedition Level Limit · Inventory Stacking. Original values are recorded first and restored when you turn the feature off or close the app normally. |
+| **Hooking** | Skin Spine Separation: loads a module into the running game and changes only which spine and effects each hero uses. Nothing is saved, and it is gone when the game closes. |
 
-- No direct writes to game files or saves, and no code injection.
+- No direct writes to game files or saves.
   App settings and expedition records are stored separately.
 
 - Input helpers send real clicks, keystrokes and drags.
@@ -165,6 +174,7 @@ See the [user guide](docs/en/guide.md) for details on safety and input controls.
 | 1.3 (1.3.0 ~ 1.3.6) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
 | 1.4 (1.4.0) | Support for game version 28385 (Steam and DRM-free), with the combat rules added by the modding update. |
 | 1.5 (1.5.0 ~ 1.5.2) | GOG support, more accurate combat numbers (most approximate values now exact), Death's Door death chance, frame limit notice. |
+| 1.6 (1.6.0) | Skin Spine Separation (skin mods with different spines on the same class), Inventory Stacking, Disable Courtyard Town Event, Auto-collect Journals, Expedition Level Limit. |
 
 For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
 
