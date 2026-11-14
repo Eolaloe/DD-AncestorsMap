@@ -7,6 +7,11 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.6.1] - 2026-11-15
+
+### Bug fixes
+- Hide the Butcher's Circus disappeared from Town settings › Other (and stopped working) on Steam when the Circus DLC was disabled, even though the Circus icon still shows in town
+
 ## [1.6.0] - 2026-11-14
 
 ### New features

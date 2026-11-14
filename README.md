@@ -174,7 +174,7 @@ See the [user guide](docs/en/guide.md) for details on safety and input controls.
 | 1.3 (1.3.0 ~ 1.3.6) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
 | 1.4 (1.4.0) | Support for game version 28385 (Steam and DRM-free), with the combat rules added by the modding update. |
 | 1.5 (1.5.0 ~ 1.5.3) | GOG support, more accurate combat numbers (most approximate values now exact), Death's Door death chance, frame limit notice. |
-| 1.6 (1.6.0) | Skin Spine Separation (skin mods with different spines on the same class), Inventory Stacking, Disable Courtyard Town Event, Auto-collect Journals, Expedition Level Limit. |
+| 1.6 (1.6.0 ~ 1.6.1) | Skin Spine Separation (skin mods with different spines on the same class), Inventory Stacking, Disable Courtyard Town Event, Auto-collect Journals, Expedition Level Limit. |
 
 For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
 
