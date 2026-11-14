@@ -37,6 +37,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Codex</b><br><sub>Enemy, trinket, quirk and disease search</sub></li>
 <li><b>Four languages</b><br><sub>Uses the game’s official terminology</sub></li>
 <li><b>Skin Spine Separation</b><br><sub>Use skin mods with different spines on the same class at once</sub></li>
+<li><b>Inventory Stacking</b><br><sub>Adjust stack sizes for base game and mod items</sub></li>
 </ul>
 </td>
 <td valign="top" width="380">
@@ -47,8 +48,6 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Building navigation</b><br><sub>Q / E: previous / next building</sub></li>
 <li><b>Hide the Butcher’s Circus</b><br><sub>Choose whether to show the icon in town settings</sub></li>
 <li><b>Disable Courtyard Town Event</b><br><sub>Stops the recurring stress event that overrides other town events</sub></li>
-<li><b>Expedition Level Limit</b><br><sub>Default · Relaxed · Removed</sub></li>
-<li><b>Inventory Stacking</b><br><sub>Adjust stack sizes for base game and mod items</sub></li>
 <li><b>Party presets</b><br><sub>Stored per save file; reload your most recent party</sub></li>
 <li><b>Trinket presets</b><br><sub>10 per class; equip the whole party at once</sub></li>
 <li><b>Random party selection</b></li>
@@ -77,6 +76,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Scouting and nighttime ambush chances</b></li>
 <li><b>Inventory sorting and sell values</b><br><sub>Merge stacks and organize items</sub></li>
 <li><b>Auto-collect Journals</b><br><sub>Journal pages register as soon as they drop</sub></li>
+<li><b>Expedition Level Limit</b><br><sub>Default · Relaxed · Removed</sub></li>
 <li><b>Activity log and meter</b><br><sub>Meters for combat, exploration and each hero’s contributions over your last 10 expeditions</sub></li>
 </ul>
 </td>
@@ -173,7 +173,7 @@ See the [user guide](docs/en/guide.md) for details on safety and input controls.
 | 1.2 (1.2.0) | Overlay mode: information placed directly on the game's UI. |
 | 1.3 (1.3.0 ~ 1.3.6) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
 | 1.4 (1.4.0) | Support for game version 28385 (Steam and DRM-free), with the combat rules added by the modding update. |
-| 1.5 (1.5.0 ~ 1.5.2) | GOG support, more accurate combat numbers (most approximate values now exact), Death's Door death chance, frame limit notice. |
+| 1.5 (1.5.0 ~ 1.5.3) | GOG support, more accurate combat numbers (most approximate values now exact), Death's Door death chance, frame limit notice. |
 | 1.6 (1.6.0) | Skin Spine Separation (skin mods with different spines on the same class), Inventory Stacking, Disable Courtyard Town Event, Auto-collect Journals, Expedition Level Limit. |
 
 For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).

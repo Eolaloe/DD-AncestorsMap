@@ -7,6 +7,18 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.6.0] - 2026-11-14
+
+### New features
+- Skin Spine Separation — use skin mods with different spines (skeletons) on the same class at the same time, applied automatically while the app runs
+- Inventory Stacking — change how many of each item stack in one slot, for base game and mod items
+- Disable Courtyard Town Event — stops the recurring stress event that replaced other town events after the Courtyard opens (on by default; Town settings › Other)
+- Auto-collect Journals — journal pages are registered as soon as they drop as loot (on by default; Town settings › Other)
+- Expedition Level Limit — Default · Relaxed (one tier) · Removed
+
+### Bug fixes
+- Various bug fixes
+
 ## [1.5.3] - 2026-11-14
 
 ### Improvements
