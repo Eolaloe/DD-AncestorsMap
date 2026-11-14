@@ -7,6 +7,11 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.5.3] - 2026-11-14
+
+### Improvements
+- Frame limit notice now has a "Don't show this again" checkbox — once checked, the notice no longer pops up. The red status line in the app info card stays
+
 ## [1.5.2] - 2026-11-12
 
 ### New features
