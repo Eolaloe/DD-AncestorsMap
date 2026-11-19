@@ -89,6 +89,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Stalling warning</b><br><sub>Reinforcement risk and actions that prevent it</sub></li>
 <li><b>Retreat chance and outcome</b></li>
 <li><b>Restore default party order</b><br><sub>Automatically after battle or with Caps Lock</sub></li>
+<li><b>Virtue : Affliction ratio</b><br><sub>Adjust the base affliction chance of the stress check in steps of 5</sub></li>
 </ul>
 </td>
 </tr>
@@ -147,7 +148,7 @@ New here? The question-mark button opens a guided tour with 31 steps across seve
 | Memory access | Scope |
 |---|---|
 | **Read** | Reads the current game state for maps, combat information and other features. |
-| **Write** | Changes only the values each feature needs: Speed settings · Hide the Butcher’s Circus · Disable Courtyard Town Event · Auto-collect Journals · Expedition Level Limit · Inventory Stacking. Original values are recorded first and restored when you turn the feature off or close the app normally. |
+| **Write** | Changes only the values each feature needs: Speed settings · Hide the Butcher’s Circus · Disable Courtyard Town Event · Auto-collect Journals · Expedition Level Limit · Inventory Stacking · Virtue : Affliction Ratio. Original values are recorded first and restored when you turn the feature off or close the app normally. |
 | **Hooking** | Skin Spine Separation: loads a module into the running game and changes only which spine and effects each hero uses. Nothing is saved, and it is gone when the game closes. |
 
 - No direct writes to game files or saves.
@@ -174,7 +175,7 @@ See the [user guide](docs/en/guide.md) for details on safety and input controls.
 | 1.3 (1.3.0 ~ 1.3.6) | Party and trinket presets, turn-order odds, overlay controls, building navigation, auto-switching at curios and speed settings. |
 | 1.4 (1.4.0) | Support for game version 28385 (Steam and DRM-free), with the combat rules added by the modding update. |
 | 1.5 (1.5.0 ~ 1.5.3) | GOG support, more accurate combat numbers (most approximate values now exact), Death's Door death chance, frame limit notice. |
-| 1.6 (1.6.0 ~ 1.6.1) | Skin Spine Separation (skin mods with different spines on the same class), Inventory Stacking, Disable Courtyard Town Event, Auto-collect Journals, Expedition Level Limit. |
+| 1.6 (1.6.0 ~ 1.6.2) | Skin Spine Separation (skin mods with different spines on the same class), Inventory Stacking, Disable Courtyard Town Event, Auto-collect Journals, Expedition Level Limit, Virtue : Affliction Ratio. |
 
 For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
 

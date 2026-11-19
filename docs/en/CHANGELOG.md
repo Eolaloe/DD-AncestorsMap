@@ -7,6 +7,20 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.6.2] - 2026-11-20
+
+### New features
+- Virtue : Affliction ratio — change the base affliction chance of the stress check in steps of 5 (expedition side panel › Combat › Other). Click the numbers to return to the game value; the original value is restored when the app closes
+
+### Improvements
+- Skin Spine Separation — guild header image split per skin (status panel background)
+
+### Bug fixes
+- With a very large number of mods (e.g. dozens to hundreds of class mods), auto-purchase, inventory stacking and inventory sorting stopped working ([#5](https://github.com/Eolaloe/DD-AncestorsMap/issues/5)). The game already loaded them; the app failed to read the full item list
+- On a PC with several Steam accounts that have save slots with the same number, the app could not recognize the loaded save, or kept reading the other account's save until restart. It now picks the save of the Steam account that is logged in
+- When the save's mod list still held old mod titles (e.g. after renaming mod folders), inventory stacking was locked for every item. The app now reads the mods the game actually loaded
+- Other bug fixes and logic improvements
+
 ## [1.6.1] - 2026-11-15
 
 ### Bug fixes
