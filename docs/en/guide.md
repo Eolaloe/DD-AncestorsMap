@@ -86,6 +86,7 @@ Overlay mode folds the app window into a single candle button and **adds a trans
 - Pick a preset for each departing hero, then click **Equip trinkets** to equip the whole party at once. The two trinket loadouts most recently taken on an expedition by each class are kept as **Recent trinkets 1 and 2**: gold star for 1, silver for 2. Click a star again to choose a preset to save it to.
 
 - **After equipping (1.3.2)** — Applying a trinket preset moves the cursor to the trinket bag's close button.
+- **Trinket Sort (1.7.0)** — Click the round button under the trinket inventory header to open a stat list, then pick a stat to sort your stored trinkets by it. Class-specific trinkets show their class portrait.
 
 ### Records and town preparation
 

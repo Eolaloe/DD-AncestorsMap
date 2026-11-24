@@ -7,6 +7,16 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.7.0] - 2026-11-24
+
+### New features
+- Trinket Sort — a round button under the trinket inventory header opens a stat list; pick a stat (attack, defense, healing, stress, status chance and resistance, exploration) to sort your stored trinkets by it
+- Class portraits on class trinkets — class-specific trinkets show their class portrait in the trinket inventory
+- Skip Narration — on boss and story quests, the loading screen no longer waits for the Ancestor's narration to finish (on by default; Town settings › Other)
+
+### Bug fixes
+- Various bug fixes and logic improvements
+
 ## [1.6.2] - 2026-11-20
 
 ### New features

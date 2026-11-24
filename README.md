@@ -48,8 +48,10 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Building navigation</b><br><sub>Q / E: previous / next building</sub></li>
 <li><b>Hide the Butcher’s Circus</b><br><sub>Choose whether to show the icon in town settings</sub></li>
 <li><b>Disable Courtyard Town Event</b><br><sub>Stops the recurring stress event that overrides other town events</sub></li>
+<li><b>Skip Narration</b><br><sub>Skip the loading screen that waits for the Ancestor's narration on boss and story quests</sub></li>
 <li><b>Party presets</b><br><sub>Stored per save file; reload your most recent party</sub></li>
 <li><b>Trinket presets</b><br><sub>10 per class; equip the whole party at once</sub></li>
+<li><b>Trinket Sort</b><br><sub>Sort stored trinkets by stat · class portraits on class trinkets</sub></li>
 <li><b>Random party selection</b></li>
 <li><b>Recommended provisions and auto-buy</b><br><sub>Buy recommended amounts; sell surplus</sub></li>
 </ul>
@@ -148,8 +150,8 @@ New here? The question-mark button opens a guided tour with 31 steps across seve
 | Memory access | Scope |
 |---|---|
 | **Read** | Reads the current game state for maps, combat information and other features. |
-| **Write** | Changes only the values each feature needs: Speed settings · Hide the Butcher’s Circus · Disable Courtyard Town Event · Auto-collect Journals · Expedition Level Limit · Inventory Stacking · Virtue : Affliction Ratio. Original values are recorded first and restored when you turn the feature off or close the app normally. |
-| **Hooking** | Skin Spine Separation: loads a module into the running game and changes only which spine and effects each hero uses. Nothing is saved, and it is gone when the game closes. |
+| **Write** | Changes only the values each feature needs: Speed settings · Hide the Butcher’s Circus · Disable Courtyard Town Event · Auto-collect Journals · Expedition Level Limit · Inventory Stacking · Virtue : Affliction Ratio · Skip Narration. Original values are recorded first and restored when you turn the feature off or close the app normally (Skip Narration changes a value the game resets on every loading screen, so there is nothing to restore). |
+| **Hooking** | Loads a module into the running game for these only. Skin Spine Separation: changes only which spine and effects each hero uses; nothing is saved, and it is gone when the game closes. Trinket Sort: runs the game's own trinket inventory sort in the chosen stat order; like the game's sort buttons, only the order of stored trinkets changes. |
 
 - No direct writes to game files or saves.
   App settings and expedition records are stored separately.
@@ -176,6 +178,7 @@ See the [user guide](docs/en/guide.md) for details on safety and input controls.
 | 1.4 (1.4.0) | Support for game version 28385 (Steam and DRM-free), with the combat rules added by the modding update. |
 | 1.5 (1.5.0 ~ 1.5.3) | GOG support, more accurate combat numbers (most approximate values now exact), Death's Door death chance, frame limit notice. |
 | 1.6 (1.6.0 ~ 1.6.2) | Skin Spine Separation (skin mods with different spines on the same class), Inventory Stacking, Disable Courtyard Town Event, Auto-collect Journals, Expedition Level Limit, Virtue : Affliction Ratio. |
+| 1.7 (1.7.0) | Trinket Sort, class portraits on class trinkets, Skip Narration. |
 
 For details on each version, see the [full changelog](docs/en/CHANGELOG.md) and [Releases](https://github.com/Eolaloe/DD-AncestorsMap/releases).
 
