@@ -38,6 +38,7 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Four languages</b><br><sub>Uses the game’s official terminology</sub></li>
 <li><b>Skin Spine Separation</b><br><sub>Use skin mods with different spines on the same class at once</sub></li>
 <li><b>Inventory Stacking</b><br><sub>Adjust stack sizes for base game and mod items</sub></li>
+<li><b>Skip Narration</b><br><sub>Skip the loading screen that waits for the Ancestor's narration on boss and story quests</sub></li>
 </ul>
 </td>
 <td valign="top" width="380">
@@ -48,7 +49,6 @@ Free for personal use · Mod support · No direct changes to game files. See [Sa
 <li><b>Building navigation</b><br><sub>Q / E: previous / next building</sub></li>
 <li><b>Hide the Butcher’s Circus</b><br><sub>Choose whether to show the icon in town settings</sub></li>
 <li><b>Disable Courtyard Town Event</b><br><sub>Stops the recurring stress event that overrides other town events</sub></li>
-<li><b>Skip Narration</b><br><sub>Skip the loading screen that waits for the Ancestor's narration on boss and story quests</sub></li>
 <li><b>Party presets</b><br><sub>Stored per save file; reload your most recent party</sub></li>
 <li><b>Trinket presets</b><br><sub>10 per class; equip the whole party at once</sub></li>
 <li><b>Trinket Sort</b><br><sub>Sort stored trinkets by stat · class portraits on class trinkets</sub></li>
