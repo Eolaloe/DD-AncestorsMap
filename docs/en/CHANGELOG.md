@@ -10,7 +10,7 @@ There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first pub
 ## [1.7.1] - 2026-11-24
 
 ### Improvements
-- Inventory value labels — stay inside each slot with inventory mods that change the number of rows (the bottom row could be cut off before)
+- Item value label position fix
 
 ## [1.7.0] - 2026-11-24
 
