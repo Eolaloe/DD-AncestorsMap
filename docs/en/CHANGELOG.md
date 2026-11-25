@@ -7,6 +7,12 @@ This follows the [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format
 
 There were no public releases for 1.0.0, 1.0.1 or 1.1.1; 1.0.2 was the first public release.
 
+## [1.7.2] - 2026-11-25
+
+### Improvements
+- Class portrait draw order adjustment on class trinkets
+- Option to hide class portraits on class trinkets
+
 ## [1.7.1] - 2026-11-24
 
 ### Improvements
